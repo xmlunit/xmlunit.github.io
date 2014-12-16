@@ -28,10 +28,22 @@
    href="#about-xmlunit"
    aria-hidden="true"><span class="octicon octicon-link"></span></a>About XMLUnit</h3>
 
-        <p>XMLUnit is a library of tools that help testing code which
-          emits XML.  It provides helpers to validate against an XML
-          Schema, assert the values of XPath queries or compare XML
-          documents against expected outcomes.</p>
+        <p>When testing XML your application creates, simple string
+          comparisons don't cut it as there are many different ways the
+          same XML content is serialized to a string.  It doesn't even
+          stop with serialization as sometimes you don't care for the
+          order of XML elements and sometimes you do.</p>
+
+        <p>XMLUnit provides you with the tools to verify the XML you
+          emit is the one you want to create.  It provides helpers to
+          validate against an XML Schema, assert the values of XPath
+          queries or compare XML documents against expected
+          outcomes.</p>
+        
+        <p>The most important part is a diff-engine that provides you
+          with full control over what kind of difference is important
+          to you and which part of the generated document to compare
+          with which part of your reference document.</p>
 
         <h4>
 <a id="about-xmlunit" class="anchor"
