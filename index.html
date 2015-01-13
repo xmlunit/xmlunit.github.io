@@ -41,51 +41,125 @@
           to you and which part of the generated document to compare
           with which part of your reference document.</p>
 
+        <h4>
+          <a id="about-xmlunit2" class="anchor" href="#about-xmlunit2"
+             aria-hidden="true"><span class="octicon
+             octicon-link"></span></a>About XMLUnit 2.x</h4>
+
         <p>XMLUnit 2.x is developed for Java and .NET.</p>
         
+        <p>XMLUnit 2.x is a complete rewrite and is based on the
+        experience of XMLUnit for Java 1.x.  It's main goals are:</p>
+
+        <ul>
+          <li>create .NET and Java versions that are compatible in design while
+            trying to be idiomatic for each platform</li>
+          <li>focus on the parts that are useful for testing:
+            <ul>
+              <li>XPath</li>
+              <li>(Schema) validation</li>
+              <li>comparisons</li>
+            </ul>
+          </li>
+          <li>be test framework agnostic (this applies to eh Java
+            version more than to XMLUnit.NET)</li>
+          <li>remove all static configuration (the
+            old <code>XMLUnit</code> class setter methods)</li>
+        </ul>
+
+        <p>The code has been split into separate git repositories for
+          Java and .NET, but both share quite a bit of history.  The
+          user's guide will be created inside
+          a <a href="https://github.com/xmlunit/user-guide/wiki">github
+          wiki</a>.</p>
+
+        <p>Right now the focus is on validating / refining the API and
+          creating a viable roadmap towards the first release of
+          XMLUnit 2.0.</p>
+
+        <ul>
+          <li>XMLUnit 2.x is distibuted
+            under <a href="https://github.com/xmlunit/xmlunit/blob/master/LICENSE">the
+              Apache License Version 2.0</a></li>
+          <li><a href="https://github.com/xmlunit/user-guide/wiki">XMLUnit
+              2.x user guide</a> (currently empty)</li>
+          <li><a href="https://github.com/xmlunit/xmlunit/wiki">XMLUnit
+              2.x developer guide</a></li>
+        </ul>
+
+        <h5>
+          <a id="about-xmlunit2-java" class="anchor"
+             href="#about-xmlunit2-java"
+             aria-hidden="true"><span class="octicon
+             octicon-link"></span></a>About XMLUnit for Java 2.x</h5>
+
+        <p>XMLUnit for Java also contains a <code>legacy</code> module
+          that provides an API compatible to XMLUnit 1.x on top of the
+          new API.  The legacy component is distributed using the
+          same <a href="https://github.com/xmlunit/xmlunit/blob/master/xmlunit-legacy/LICENSE.txt">three-clause
+          BSD license XMLUnit 1.x used</a>.</p>
+        
+        <ul>
+          <li><a href="https://github.com/xmlunit/xmlunit">Source Repository</a></li>
+          <li>Travis CI build status: <a href="https://travis-ci.org/xmlunit/xmlunit"><img src="https://travis-ci.org/xmlunit/xmlunit.svg?branch=master"></a></li>
+          <li><a href="api/java/master/index.html">Javadocs of XMLUnit for
+              Java's master branch</a></li>
+          <li><code>SNAPSHOT</code> builds are available
+            from <a href="https://oss.sonatype.org/content/repositories/snapshots/">Sonatype's
+            OSS Nexus</a>, we use
+            the <a href="https://oss.sonatype.org/content/repositories/snapshots/org/xmlunit/">the <code>org.xmlunit</code>
+            groupId</a></li>
+        </ul>
+
+        <h5>
+          <a id="about-xmlunit2-net" class="anchor"
+             href="#about-xmlunit2-net"
+             aria-hidden="true"><span class="octicon
+             octicon-link"></span></a>About XMLUnit.NET 2.x</h5>
+
+        <p>XMLUnit.NET doesn't share anything with the old 0.x
+          releases.  Right now there are no API docs and no snapshot
+          assemblies.</p>
+        
+        <ul>
+          <li><a href="https://github.com/xmlunit/xmlunit.net">Source Repository</a></li>
+          <li>Travis CI build status (Mono): <a href="https://travis-ci.org/xmlunit/xmlunit.net"><img src="https://travis-ci.org/xmlunit/xmlunit.net.svg?branch=master"></a></li>
+        </ul>
+        
         <h4>
-<a id="about-xmlunit" class="anchor"
-   href="#about-xmlunit2"
-   aria-hidden="true"><span class="octicon octicon-link"></span></a>About XMLUnit 2.x</h4>
+          <a id="about-xmlunit1" class="anchor"
+             href="#about-xmlunit1"
+             aria-hidden="true"><span class="octicon octicon-link"></span></a>About XMLUnit 1.x</h4>
 
-        <p>The development of XMLUnit 2.x - both for Java and .NET is in the process of moving to github.</p>
+        <p>XMLUnit for Java 1.x still has its home at <a href="http://sourceforge.net/p/xmlunit">sourceforge</a>, if you want to report bugs, please use the issue tracker <a href="http://sourceforge.net/p/xmlunit/bugs/?source=navbar">over there</a> - any feature request should go against the 2.x version here.</p>
 
-<p>Currently the code lives
-  in <a href="https://github.com/xmlunit/xmlunit">https://github.com/xmlunit/xmlunit</a>
-  for Java
-  and <a href="https://github.com/xmlunit/xmlunit.net">https://github.com/xmlunit/xmlunit.net</a>,
-  both share quite a bit of history.  The user's guide will be created
-  inside a <a href="https://github.com/xmlunit/user-guide/wiki">github
-  wiki</a>.</p>
+        <ul>
+          <li><a href="http://sourceforge.net/p/xmlunit/code/HEAD/tree/trunk/">Source Repository</a></li>
+          <li>XMLUnit 1.x user
+              guide: <a href="http://xmlunit.sourceforge.net/userguide/html/index.html">HTML</a>
+              / <a href="http://xmlunit.sourceforge.net/userguide/XMLUnit-Java.pdf">PDF</a></li>
+          <li><a href="http://xmlunit.sourceforge.net/api/index.html">Javadocs
+              of XMLUnit for Java 1.6</a></li>
+        </ul>
 
-<p>Right now the focus is on migrating content and creating a viable roadmap towards the first release of XMLUnit 2.0.</p>
+        <h3>
+          <a id="contributing" class="anchor"
+             href="#contributing"
+             aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h3>
 
-<ul>
-  <li><a href="api/java/master/index.html">Javadocs of XMLUnit for
-      Java's master branch</a></li>
-</ul>
+        <p>We need your help, some ideas are
+          outlined <a href="https://github.com/xmlunit/xmlunit/blob/master/HELP_WANTED.md">here</a>.
+          Contributions of tests, documentation and code are more than
+          welcome.  Please
+          see <a href="https://github.com/xmlunit/xmlunit/blob/master/CONTRIBUTING.md">our
+          contributing page</a> for details.  In short, we like pull
+          requests, please use github's infrastructure for XMLUnit 2.x
+          and Sourceforge's infrastructure for XMLUnit 1.x.</p>
 
-<h4>
-<a id="about-xmlunit" class="anchor"
-   href="#about-xmlunit1"
-   aria-hidden="true"><span class="octicon octicon-link"></span></a>About XMLUnit 1.x</h4>
+        <p>The future of XMLUnit is discussed on
+          the <code>xmlunit-general</code> mailing list hosted at <a href="http://sourceforge.net/p/xmlunit/mailman/?source=navbar">Sourceforge</a></p>
 
-<p>XMLUnit for Java 1.x still has its home at <a href="http://xmlunit.sourceforge.net/">sourceforge</a>, if you want to report bugs, please use the issue tracker <a href="http://sourceforge.net/p/xmlunit/bugs/?source=navbar">over there</a> - any feature request should go against the 2.x version here.</p>
-
-<h3>
-<a id="about-xmlunit" class="anchor"
-   href="#about-xmlunit2"
-   aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h3>
-
-<p>Contributions of tests, documentation and code are more than
-  welcome.  Please
-  see <a href="https://github.com/xmlunit/xmlunit/CONTRIBUTING.md">our
-    contributing page</a> for details.</p>
-
-<p>The future of XMLUnit is discussed on
-  the <code>xmlunit-general</code> mailing list hosted at <a href="http://sourceforge.net/p/xmlunit/mailman/?source=navbar">Sourceforge</a></p>
-
-</section>
+      </section>
       <footer>
         <p class="view"><a href="https://github.com/xmlunit">View XMLUnit's github Profile</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
