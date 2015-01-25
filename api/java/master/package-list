@@ -3,9 +3,9 @@ org.custommonkey.xmlunit.examples
 org.custommonkey.xmlunit.exceptions
 org.custommonkey.xmlunit.jaxp13
 org.custommonkey.xmlunit.util
+org.xmlunit
 org.xmlunit.builder
 org.xmlunit.diff
-org.xmlunit.exceptions
 org.xmlunit.input
 org.xmlunit.matchers
 org.xmlunit.transform
