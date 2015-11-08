@@ -917,7 +917,25 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+            <p>There is an important difference between using
+            ElementSelectors#Or to combine multiple ElementSelectors
+            and using DefaultNodeMatcher's constructor with multiple
+            ElementSelectors:</p>
+            <p>Consider ElementSelectors e1 and e2 and
+            two control and test nodes each.  Assume e1 would match the
+            first control node to the second test node and vice versa if used
+            alone, while e2 would match the nodes in order (the first
+            control node to the first test and so on).</p>
+            <p>ElementSelectors#Or creates a combined
+            ElementSelector that is willing to match the first control node to
+            both of the test nodes - and the same for the second control node.
+            Since nodes are compared in order when possible the result will be
+            the same as running e2 alone.</p>
+            <p>DefaultNodeMatcher with two ElementSelectors
+            will consult the ElementSelectors separately and only
+            invoke e2 if there are any nodes not matched by e1
+            at all.  In this case the result will be the same as running
+            e1 alone.</p>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Version Information">

@@ -216,7 +216,25 @@
     <div class="Remarks" id="T:Org.XmlUnit.Diff.DefaultNodeMatcher:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.DefaultNodeMatcher:Docs:Remarks">
-        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+        <p>There is an important difference between using
+            ElementSelectors#Or to combine multiple ElementSelectors
+            and using DefaultNodeMatcher's constructor with multiple
+            ElementSelectors:</p>
+        <p>Consider ElementSelectors e1 and e2 and
+            two control and test nodes each.  Assume e1 would match the
+            first control node to the second test node and vice versa if used
+            alone, while e2 would match the nodes in order (the first
+            control node to the first test and so on).</p>
+        <p>ElementSelectors#Or creates a combined
+            ElementSelector that is willing to match the first control node to
+            both of the test nodes - and the same for the second control node.
+            Since nodes are compared in order when possible the result will be
+            the same as running e2 alone.</p>
+        <p>DefaultNodeMatcher with two ElementSelectors
+            will consult the ElementSelectors separately and only
+            invoke e2 if there are any nodes not matched by e1
+            at all.  In this case the result will be the same as running
+            e1 alone.</p>
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.DefaultNodeMatcher:Docs:Version Information">
@@ -254,11 +272,11 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector)">DefaultNodeMatcher</a>
-                    </b>(<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)</div>
+                      <a href="#C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[])">DefaultNodeMatcher</a>
+                    </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[])</div>
                 </td>
                 <td>
-            Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher.html#M:Org.XmlUnit.Diff.DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType,System.Xml.XmlNodeType)">DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType, System.Xml.XmlNodeType)</a>.
+            Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a>s and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher.html#M:Org.XmlUnit.Diff.DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType,System.Xml.XmlNodeType)">DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType, System.Xml.XmlNodeType)</a>.
             </td>
               </tr>
               <tr valign="top">
@@ -269,8 +287,8 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher)">DefaultNodeMatcher</a>
-                    </b>(<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>, <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">DefaultNodeMatcher.NodeTypeMatcher</a>)</div>
+                      <a href="#C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[])">DefaultNodeMatcher</a>
+                    </b>(<a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">DefaultNodeMatcher.NodeTypeMatcher</a>, <b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[])</div>
                 </td>
                 <td>
             Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher</a>.
@@ -346,57 +364,59 @@
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector)">DefaultNodeMatcher Constructor</h3>
-        <blockquote id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector):member">
+        <h3 id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[])">DefaultNodeMatcher Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[]):member">
           <p class="Summary">
-            Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher.html#M:Org.XmlUnit.Diff.DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType,System.Xml.XmlNodeType)">DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType, System.Xml.XmlNodeType)</a>.
+            Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a>s and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher.html#M:Org.XmlUnit.Diff.DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType,System.Xml.XmlNodeType)">DefaultNodeMatcher.DefaultNodeTypeMatcher(System.Xml.XmlNodeType, System.Xml.XmlNodeType)</a>.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>DefaultNodeMatcher</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <div class="Signature">public  <b>DefaultNodeMatcher</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[] es)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector):Parameters">
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[]):Parameters">
             <dl>
               <dt>
                 <i>es</i>
               </dt>
-              <dd>the element selector to use</dd>
+              <dd>the element selectors to use</dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector):Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[]):Remarks">The <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a>s are consulted in order so that
+            the second <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> only gets to match the nodes
+            that the first one couldn't match to any test nodes ate all and
+            so on.</div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector):Version Information">
+          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector[]):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher)">DefaultNodeMatcher Constructor</h3>
-        <blockquote id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher):member">
+        <h3 id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[])">DefaultNodeMatcher Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[]):member">
           <p class="Summary">
             Creates a new DefaultNodeMatcher using the given <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> and <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher</a>.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>DefaultNodeMatcher</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es, <a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">DefaultNodeMatcher.NodeTypeMatcher</a> ntm)</div>
+          <div class="Signature">public  <b>DefaultNodeMatcher</b> (<a href="../Org.XmlUnit.Diff/DefaultNodeMatcher+NodeTypeMatcher.html">DefaultNodeMatcher.NodeTypeMatcher</a> ntm, <b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[] es)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher):Parameters">
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[]):Parameters">
             <dl>
-              <dt>
-                <i>es</i>
-              </dt>
-              <dd>the element selector to use</dd>
               <dt>
                 <i>ntm</i>
               </dt>
               <dd>NodeTypeMatcher to use</dd>
+              <dt>
+                <i>es</i>
+              </dt>
+              <dd>the element selector to use</dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher):Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[]):Remarks">The <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a>s are consulted in order so that
+            the second <a href="../Org.XmlUnit.Diff/ElementSelector.html">Org.XmlUnit.Diff.ElementSelector</a> only gets to match the nodes
+            that the first one couldn't match to any test nodes ate all and
+            so on.</div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher):Version Information">
+          <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultNodeMatcher(Org.XmlUnit.Diff.DefaultNodeMatcher.NodeTypeMatcher,Org.XmlUnit.Diff.ElementSelector[]):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>
