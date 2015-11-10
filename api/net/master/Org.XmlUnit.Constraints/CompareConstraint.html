@@ -307,6 +307,18 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Registers a filter for attributes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter</a>
                   </b>(<a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">Org.XmlUnit.Diff.IComparisonFormatter</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
             Use a custom Formatter for the Error Messages. The defaultFormatter is DefaultComparisonFormatter.
@@ -559,6 +571,46 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-constraints (in xmlunit-constraints.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):member">
+          <p class="Summary">
+            Registers a filter for attributes.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithAttributeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> attributeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Parameters">
+            <dl>
+              <dt>
+                <i>attributeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Remarks">
+            <p>
+            Only attributes for which the predicate returns true are
+            part of the comparison.  By default all attributes are
+            considered.
+            </p>
+            <p>
+            The "special" namespace, namespace-location and
+            schema-instance-type attributes can not be ignored this way.
+            If you want to suppress comparison of them you'll need to
+            implement <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a></p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-constraints (in xmlunit-constraints.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>

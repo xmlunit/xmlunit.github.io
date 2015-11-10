@@ -231,6 +231,21 @@
                 <td>[write-only]<div></div></td>
                 <td>
                   <b>
+                    <a href="#P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter">AttributeFilter</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a>
+                  </i>. 
+            Sets the optional strategy that decides which attributes to
+            consider and which to ignore during comparison.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
                     <a href="#P:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonController">ComparisonController</a>
                   </b>
                 </td>
@@ -381,6 +396,36 @@
     <div class="Members" id="T:Org.XmlUnit.Diff.IDifferenceEngine:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
+        <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter">AttributeFilter Property</h3>
+        <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:member">
+          <p class="Summary">
+            Sets the optional strategy that decides which attributes to
+            consider and which to ignore during comparison.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> <b>AttributeFilter</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:Remarks">
+            <p>
+            Only attributes for which the predicate returns true are
+            part of the comparison.  By default all attributes are
+            considered.
+            </p>
+            <p>
+            The "special" namespace, namespace-location and
+            schema-instance-type attributes can not be ignored this way.
+            If you want to suppress comparison of them you'll need to
+            implement <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a></p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.IDifferenceEngine.Compare(Org.XmlUnit.ISource,Org.XmlUnit.ISource)">Compare Method</h3>
         <blockquote id="M:Org.XmlUnit.Diff.IDifferenceEngine.Compare(Org.XmlUnit.ISource,Org.XmlUnit.ISource):member">
           <p class="Summary">
