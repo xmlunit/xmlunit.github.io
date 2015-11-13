@@ -290,6 +290,21 @@
                 <td>[write-only]<div></div></td>
                 <td>
                   <b>
+                    <a href="#P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter">NodeFilter</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>
+                  </i>. 
+            Sets the optional strategy that decides which nodes to
+            consider and which to ignore during comparison.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
                     <a href="#P:Org.XmlUnit.Diff.IDifferenceEngine.NodeMatcher">NodeMatcher</a>
                   </b>
                 </td>
@@ -566,6 +581,29 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NamespaceContext:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter">NodeFilter Property</h3>
+        <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:member">
+          <p class="Summary">
+            Sets the optional strategy that decides which nodes to
+            consider and which to ignore during comparison.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> <b>NodeFilter</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:Remarks">
+            Only nodes for which the predicate returns true are part
+            of the comparison.  By default nodes that are neither
+            document types nor XML declarations are considered.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:Version Information">
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>

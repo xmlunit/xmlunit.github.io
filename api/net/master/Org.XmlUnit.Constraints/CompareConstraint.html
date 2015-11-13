@@ -367,6 +367,18 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Registers a filter for nodes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher</a>
                   </b>(<a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
             Use the given <a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a> when comparing.
@@ -729,6 +741,39 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-constraints (in xmlunit-constraints.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):member">
+          <p class="Summary">
+            Registers a filter for nodes.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithNodeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> nodeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Parameters">
+            <dl>
+              <dt>
+                <i>nodeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Remarks">
+            Only nodes for which the predicate returns true are part
+            of the comparison.  By default nodes that are neither
+            document types nor XML declarations are considered.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-constraints (in xmlunit-constraints.dll)<br /><b>Assembly Versions: </b>2.0.0.0</div>
           <hr size="1" />
         </blockquote>
