@@ -216,9 +216,10 @@
     <div class="Remarks" id="T:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder:Docs:Remarks">
-            All pairs created by the when*/thenUse pairs
-            are evaluated in order until one returns true, finally the
-            default, if any, is consulted.
+            All When*s are consulted in order and if one returns true
+            then the associated ElementSelector is used.  If all of
+            them return false, the default set up with ElseUse if any
+            is used.
             </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder:Docs:Version Information">
@@ -248,9 +249,10 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector)">DefaultTo</a>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector)">ElseUse</a>
                   </b>(<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a></nobr><blockquote>
-            Assigns a default ElementSelector.
+            Assigns a default ElementSelector that is used if all
+            Whens have returned false.
             </blockquote></td>
               </tr>
               <tr valign="top">
@@ -335,15 +337,16 @@
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.25</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector)">DefaultTo Method</h3>
-        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector):member">
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector)">ElseUse Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector):member">
           <p class="Summary">
-            Assigns a default ElementSelector.
+            Assigns a default ElementSelector that is used if all
+            Whens have returned false.
             </p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../Org.XmlUnit.Diff/ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a> <b>DefaultTo</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <div class="Signature">public <a href="../Org.XmlUnit.Diff/ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a> <b>ElseUse</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector):Parameters">
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector):Parameters">
             <dl>
               <dt>
                 <i>es</i>
@@ -354,15 +357,15 @@
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector):Returns">
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector):Returns">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector):Remarks">
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector):Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.DefaultTo(Org.XmlUnit.Diff.ElementSelector):Version Information">
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.IConditionalSelectorBuilder.ElseUse(Org.XmlUnit.Diff.ElementSelector):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.0.25</div>
           <hr size="1" />
         </blockquote>
