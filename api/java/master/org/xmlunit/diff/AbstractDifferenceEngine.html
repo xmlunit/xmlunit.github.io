@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -261,44 +261,50 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEngine.html" title="inte
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#getParentXPath-org.xmlunit.diff.XPathContext-">getParentXPath</a></span>(<a href="../../../org/xmlunit/diff/XPathContext.html" title="class in org.xmlunit.diff">XPathContext</a>&nbsp;ctx)</code>
+<div class="block">Returns a string representation of the given XPathContext's parent context.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#getXPath-org.xmlunit.diff.XPathContext-">getXPath</a></span>(<a href="../../../org/xmlunit/diff/XPathContext.html" title="class in org.xmlunit.diff">XPathContext</a>&nbsp;ctx)</code>
 <div class="block">Returns a string representation of the given XPathContext.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setAttributeFilter-org.xmlunit.util.Predicate-">setAttributeFilter</a></span>(<a href="../../../org/xmlunit/util/Predicate.html" title="interface in org.xmlunit.util">Predicate</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Attr.html?is-external=true" title="class or interface in org.w3c.dom">Attr</a>&gt;&nbsp;af)</code>
 <div class="block">Sets the optional strategy that decides which attributes to
  consider and which to ignore during comparison.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setComparisonController-org.xmlunit.diff.ComparisonController-">setComparisonController</a></span>(<a href="../../../org/xmlunit/diff/ComparisonController.html" title="interface in org.xmlunit.diff">ComparisonController</a>&nbsp;c)</code>
 <div class="block">Determines whether the comparison should stop after given
  difference has been found.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">setDifferenceEvaluator</a></span>(<a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a>&nbsp;e)</code>
 <div class="block">Evaluates the severity of a difference.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setNamespaceContext-java.util.Map-">setNamespaceContext</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;prefix2uri)</code>
 <div class="block">Establish a namespace context that will be used in <a href="../../../org/xmlunit/diff/Comparison.Detail.html#getXPath--"><code>Comparison.Detail#getXPath</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setNodeFilter-org.xmlunit.util.Predicate-">setNodeFilter</a></span>(<a href="../../../org/xmlunit/util/Predicate.html" title="interface in org.xmlunit.util">Predicate</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</a>&gt;&nbsp;nf)</code>
 <div class="block">Sets the optional strategy that decides which nodes to
  consider and which to ignore during comparison.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/AbstractDifferenceEngine.html#setNodeMatcher-org.xmlunit.diff.NodeMatcher-">setNodeMatcher</a></span>(<a href="../../../org/xmlunit/diff/NodeMatcher.html" title="interface in org.xmlunit.diff">NodeMatcher</a>&nbsp;n)</code>
 <div class="block">Sets the strategy for selecting nodes to compare.</div>
@@ -587,11 +593,21 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEngine.html" title="inte
 <a name="getXPath-org.xmlunit.diff.XPathContext-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getXPath</h4>
 <pre>protected static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getXPath(<a href="../../../org/xmlunit/diff/XPathContext.html" title="class in org.xmlunit.diff">XPathContext</a>&nbsp;ctx)</pre>
 <div class="block">Returns a string representation of the given XPathContext.</div>
+</li>
+</ul>
+<a name="getParentXPath-org.xmlunit.diff.XPathContext-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getParentXPath</h4>
+<pre>protected static&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getParentXPath(<a href="../../../org/xmlunit/diff/XPathContext.html" title="class in org.xmlunit.diff">XPathContext</a>&nbsp;ctx)</pre>
+<div class="block">Returns a string representation of the given XPathContext's parent context.</div>
 </li>
 </ul>
 </li>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -226,29 +226,35 @@ implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Cloneable
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#getParentXPath--">getParentXPath</a></span>()</code>
+<div class="block">Stringifies the XPath of the current node's parent.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#getXPath--">getXPath</a></span>()</code>
 <div class="block">Stringifies the XPath of the current node.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#navigateToAttribute-javax.xml.namespace.QName-">navigateToAttribute</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;attribute)</code>
 <div class="block">Moves from the current node to the given attribute.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#navigateToChild-int-">navigateToChild</a></span>(int&nbsp;index)</code>
 <div class="block">Moves from the current node to the given child node.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#navigateToParent--">navigateToParent</a></span>()</code>
 <div class="block">Moves back to the parent.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/XPathContext.html#setChildren-java.lang.Iterable-">setChildren</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../org/xmlunit/diff/XPathContext.NodeInfo.html" title="interface in org.xmlunit.diff">XPathContext.NodeInfo</a>&gt;&nbsp;children)</code>
 <div class="block">Adds knowledge about the current node's children replacing
@@ -307,7 +313,7 @@ implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Cloneable
 <div class="block">Starts with an empty context and a given namespace mapping.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prefix2Uri</code> - maps from prefix to namespace URI.</dd>
+<dd><code>prefix2uri</code> - maps from prefix to namespace URI.</dd>
 </dl>
 </li>
 </ul>
@@ -323,7 +329,7 @@ implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Cloneable
  optional namespace mapping.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>prefix2Uri</code> - maps from prefix to namespace URI.</dd>
+<dd><code>prefix2uri</code> - maps from prefix to namespace URI.</dd>
 <dd><code>root</code> - optional root node that determines the initial XPath</dd>
 </dl>
 </li>
@@ -416,6 +422,16 @@ implements <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Cloneable
 <h4>getXPath</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getXPath()</pre>
 <div class="block">Stringifies the XPath of the current node.</div>
+</li>
+</ul>
+<a name="getParentXPath--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParentXPath</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getParentXPath()</pre>
+<div class="block">Stringifies the XPath of the current node's parent.</div>
 </li>
 </ul>
 <a name="clone--">
