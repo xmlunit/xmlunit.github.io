@@ -110,15 +110,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/NodeTester.html#noMoreNodes-org.custommonkey.xmlunit.NodeTest-">noMoreNodes</a></span>(<a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
-<div class="block">Validate that the Nodes passed one-by-one to the <code>testNode</code>
+<td class="colLast"><span class="typeNameLabel">AbstractNodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/AbstractNodeTester.html#noMoreNodes-org.custommonkey.xmlunit.NodeTest-">noMoreNodes</a></span>(<a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
+<div class="block">Validate that the Nodes validated one-by-one in the <code>isValid</code>
  method were all the Nodes expected.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractNodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/AbstractNodeTester.html#noMoreNodes-org.custommonkey.xmlunit.NodeTest-">noMoreNodes</a></span>(<a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
-<div class="block">Validate that the Nodes validated one-by-one in the <code>isValid</code>
+<td class="colLast"><span class="typeNameLabel">NodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/NodeTester.html#noMoreNodes-org.custommonkey.xmlunit.NodeTest-">noMoreNodes</a></span>(<a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
+<div class="block">Validate that the Nodes passed one-by-one to the <code>testNode</code>
  method were all the Nodes expected.</div>
 </td>
 </tr>
@@ -180,16 +180,16 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/NodeTester.html#testNode-org.w3c.dom.Node-org.custommonkey.xmlunit.NodeTest-">testNode</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</a>&nbsp;aNode,
+<td class="colLast"><span class="typeNameLabel">AbstractNodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/AbstractNodeTester.html#testNode-org.w3c.dom.Node-org.custommonkey.xmlunit.NodeTest-">testNode</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</a>&nbsp;aNode,
         <a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
-<div class="block">Validate a single Node</div>
+<div class="block">Validate a single Node by delegating to node type specific methods.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractNodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/AbstractNodeTester.html#testNode-org.w3c.dom.Node-org.custommonkey.xmlunit.NodeTest-">testNode</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</a>&nbsp;aNode,
+<td class="colLast"><span class="typeNameLabel">NodeTester.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/NodeTester.html#testNode-org.w3c.dom.Node-org.custommonkey.xmlunit.NodeTest-">testNode</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</a>&nbsp;aNode,
         <a href="../../../../org/custommonkey/xmlunit/NodeTest.html" title="class in org.custommonkey.xmlunit">NodeTest</a>&nbsp;forTest)</code>
-<div class="block">Validate a single Node by delegating to node type specific methods.</div>
+<div class="block">Validate a single Node</div>
 </td>
 </tr>
 <tr class="rowColor">

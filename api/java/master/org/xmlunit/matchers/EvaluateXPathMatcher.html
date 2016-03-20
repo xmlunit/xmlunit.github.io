@@ -147,7 +147,7 @@ extends org.hamcrest.BaseMatcher&lt;<a href="http://docs.oracle.com/javase/6/doc
 
     HashMap&lt;String, String&gt; prefix2Uri = new HashMap&lt;String, String&gt;();
     prefix2Uri.put(&quot;atom&quot;, &quot;http://www.w3.org/2005/Atom&quot;);
-    assertThat(xmlRootElement,
+    assertThat(xml,
           hasXPath(&quot;//atom:feed/atom:entry/atom:id/text()&quot;, equalTo(&quot;id1&quot;))
           .withNamespaceContext(prefix2Uri));
  </pre></div>
@@ -343,8 +343,6 @@ extends org.hamcrest.BaseMatcher&lt;<a href="http://docs.oracle.com/javase/6/doc
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>prefix2Uri</code> - prefix2Uri maps from prefix to namespace URI. It is used to resolve
                    XML namespace prefixes in the XPath expression</dd>
-<dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>XMLUnit 2.0.1</dd>
 </dl>
 </li>
 </ul>

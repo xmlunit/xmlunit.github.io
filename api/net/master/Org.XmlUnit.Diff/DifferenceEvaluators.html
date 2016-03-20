@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.DifferenceEvaluators:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.1.0</div>
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -274,10 +274,71 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[])">DowngradeDifferencesToEqual</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
+            Creates a DifferenceEvaluator that returns a EQUAL result for
+            differences found in one of the given ComparisonTypes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[])">DowngradeDifferencesToSimilar</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
+            Creates a DifferenceEvaluator that returns a SIMILAR result for
+            differences (Comparisons that are not EQUAL) found in one of
+            the given ComparisonTypes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.First(Org.XmlUnit.Diff.DifferenceEvaluator[])">First</a>
                   </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
             Combines multiple DifferenceEvaluators so that the first
             one that changes the outcome wins.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences()">IgnorePrologDifferences</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
+            Ignore any differences that are part of the XML prolog.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype()">IgnorePrologDifferencesExceptDoctype</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
+            Ignore any differences except differences inside the doctype
+            declaration that are part of the XML prolog.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[])">UpgradeDifferencesToDifferent</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a></nobr><blockquote>
+            Creates a DifferenceEvaluator that returns a DIFFERENT result
+            for differences (Comparisons that are not EQUAL) found in one
+            of the given ComparisonTypes.
             </blockquote></td>
               </tr>
             </table>
@@ -322,7 +383,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.Accept(Org.XmlUnit.Diff.Comparison,Org.XmlUnit.Diff.ComparisonResult):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.1.0</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.Chain(Org.XmlUnit.Diff.DifferenceEvaluator[])">Chain Method</h3>
@@ -355,7 +416,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.Chain(Org.XmlUnit.Diff.DifferenceEvaluator[]):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.1.0</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.Default(Org.XmlUnit.Diff.Comparison,Org.XmlUnit.Diff.ComparisonResult)">Default Method</h3>
@@ -394,7 +455,72 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.Default(Org.XmlUnit.Diff.Comparison,Org.XmlUnit.Diff.ComparisonResult):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.1.0</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[])">DowngradeDifferencesToEqual Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[]):member">
+          <p class="Summary">
+            Creates a DifferenceEvaluator that returns a EQUAL result for
+            differences found in one of the given ComparisonTypes.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>DowngradeDifferencesToEqual</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[] types)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[]):Parameters">
+            <dl>
+              <dt>
+                <i>types</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[]):Remarks">
+            since XMLUnit 2.1.0
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToEqual(Org.XmlUnit.Diff.ComparisonType[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[])">DowngradeDifferencesToSimilar Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[]):member">
+          <p class="Summary">
+            Creates a DifferenceEvaluator that returns a SIMILAR result for
+            differences (Comparisons that are not EQUAL) found in one of
+            the given ComparisonTypes.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>DowngradeDifferencesToSimilar</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[] types)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[]):Parameters">
+            <dl>
+              <dt>
+                <i>types</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[]):Remarks">
+            since XMLUnit 2.1.0
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.DowngradeDifferencesToSimilar(Org.XmlUnit.Diff.ComparisonType[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.First(Org.XmlUnit.Diff.DifferenceEvaluator[])">First Method</h3>
@@ -426,7 +552,81 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.First(Org.XmlUnit.Diff.DifferenceEvaluator[]):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.0.1.0</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences()">IgnorePrologDifferences Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences():member">
+          <p class="Summary">
+            Ignore any differences that are part of the XML prolog.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>IgnorePrologDifferences</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences():Remarks">Here "ignore" means return {@code ComparisonResult.EQUAL}.
+            since XMLUnit 2.1.0
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferences():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype()">IgnorePrologDifferencesExceptDoctype Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype():member">
+          <p class="Summary">
+            Ignore any differences except differences inside the doctype
+            declaration that are part of the XML prolog.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>IgnorePrologDifferencesExceptDoctype</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype():Remarks">Here "ignore" means return {@code ComparisonResult.EQUAL}.
+            since XMLUnit 2.1.0
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.IgnorePrologDifferencesExceptDoctype():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[])">UpgradeDifferencesToDifferent Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[]):member">
+          <p class="Summary">
+            Creates a DifferenceEvaluator that returns a DIFFERENT result
+            for differences (Comparisons that are not EQUAL) found in one
+            of the given ComparisonTypes.
+            </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>UpgradeDifferencesToDifferent</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>[] types)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[]):Parameters">
+            <dl>
+              <dt>
+                <i>types</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[]):Remarks">
+            since XMLUnit 2.1.0
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DifferenceEvaluators.UpgradeDifferencesToDifferent(Org.XmlUnit.Diff.ComparisonType[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.0.0</div>
           <hr size="1" />
         </blockquote>
       </div>

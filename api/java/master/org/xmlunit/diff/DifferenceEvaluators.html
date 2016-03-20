@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,6 +190,23 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/DifferenceEvaluators.html#ignorePrologDifferences--">ignorePrologDifferences</a></span>()</code>
+<div class="block">Ignore any differences that are part of the <a
+ href="https://www.w3.org/TR/2008/REC-xml-20081126/#sec-prolog-dtd">XML
+ prolog</a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/DifferenceEvaluators.html#ignorePrologDifferencesExceptDoctype--">ignorePrologDifferencesExceptDoctype</a></span>()</code>
+<div class="block">Ignore any differences except differences inside the doctype
+ declaration that are part of the <a
+ href="https://www.w3.org/TR/2008/REC-xml-20081126/#sec-prolog-dtd">XML
+ prolog</a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/diff/DifferenceEvaluators.html#upgradeDifferencesToDifferent-org.xmlunit.diff.ComparisonType...-">upgradeDifferencesToDifferent</a></span>(<a href="../../../org/xmlunit/diff/ComparisonType.html" title="enum in org.xmlunit.diff">ComparisonType</a>...&nbsp;types)</code>
 <div class="block">Creates a DifferenceEvaluator that returns a DIFFERENT result
  for differences (Comparisons that are not EQUAL) found in one
@@ -279,6 +296,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <pre>public static&nbsp;<a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a>&nbsp;downgradeDifferencesToEqual(<a href="../../../org/xmlunit/diff/ComparisonType.html" title="enum in org.xmlunit.diff">ComparisonType</a>...&nbsp;types)</pre>
 <div class="block">Creates a DifferenceEvaluator that returns a EQUAL result for
  differences found in one of the given ComparisonTypes.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>XMLUnit 2.1.0</dd>
+</dl>
 </li>
 </ul>
 <a name="downgradeDifferencesToSimilar-org.xmlunit.diff.ComparisonType...-">
@@ -291,18 +312,72 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <div class="block">Creates a DifferenceEvaluator that returns a SIMILAR result for
  differences (Comparisons that are not EQUAL) found in one of
  the given ComparisonTypes.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>XMLUnit 2.1.0</dd>
+</dl>
 </li>
 </ul>
 <a name="upgradeDifferencesToDifferent-org.xmlunit.diff.ComparisonType...-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>upgradeDifferencesToDifferent</h4>
 <pre>public static&nbsp;<a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a>&nbsp;upgradeDifferencesToDifferent(<a href="../../../org/xmlunit/diff/ComparisonType.html" title="enum in org.xmlunit.diff">ComparisonType</a>...&nbsp;types)</pre>
 <div class="block">Creates a DifferenceEvaluator that returns a DIFFERENT result
  for differences (Comparisons that are not EQUAL) found in one
  of the given ComparisonTypes.</div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>XMLUnit 2.1.0</dd>
+</dl>
+</li>
+</ul>
+<a name="ignorePrologDifferences--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ignorePrologDifferences</h4>
+<pre>public static&nbsp;<a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a>&nbsp;ignorePrologDifferences()</pre>
+<div class="block">Ignore any differences that are part of the <a
+ href="https://www.w3.org/TR/2008/REC-xml-20081126/#sec-prolog-dtd">XML
+ prolog</a>.
+
+ <p>Here "ignore" means return <code>ComparisonResult.EQUAL</code>.</p></div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>XMLUnit 2.1.0</dd>
+</dl>
+</li>
+</ul>
+<a name="ignorePrologDifferencesExceptDoctype--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ignorePrologDifferencesExceptDoctype</h4>
+<pre>public static&nbsp;<a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a>&nbsp;ignorePrologDifferencesExceptDoctype()</pre>
+<div class="block">Ignore any differences except differences inside the doctype
+ declaration that are part of the <a
+ href="https://www.w3.org/TR/2008/REC-xml-20081126/#sec-prolog-dtd">XML
+ prolog</a>.
+
+ <p>Here "ignore" means return <code>ComparisonResult.EQUAL</code>.</p>
+
+ <p>This is one of the building blocks for mimicing the behavior
+ of XMLUnit for Java 1.x. In order to get the same behavior you
+ need:</p>
+
+ <pre>
+ chain(Default, // so CDATA and Text are the same
+       ignorePrologDifferencesExceptDoctype()) // so most of the prolog is ignored
+ </pre></div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>XMLUnit 2.1.0</dd>
+</dl>
 </li>
 </ul>
 </li>

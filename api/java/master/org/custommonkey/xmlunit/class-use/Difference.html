@@ -313,13 +313,15 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">DifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/DifferenceListener.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>
-<div class="block">Receive notification that 2 nodes are different.</div>
+<td class="colLast"><span class="typeNameLabel">Diff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/Diff.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>
+<div class="block">DifferenceListener implementation.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">IgnoreTextAndAttributeValuesDifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/IgnoreTextAndAttributeValuesDifferenceListener.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/DifferenceListener.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>
+<div class="block">Receive notification that 2 nodes are different.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -329,9 +331,7 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">Diff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/Diff.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>
-<div class="block">DifferenceListener implementation.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">IgnoreTextAndAttributeValuesDifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/IgnoreTextAndAttributeValuesDifferenceListener.html#differenceFound-org.custommonkey.xmlunit.Difference-">differenceFound</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;difference)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -339,20 +339,20 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">Diff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/Diff.html#haltComparison-org.custommonkey.xmlunit.Difference-">haltComparison</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;afterDifference)</code>
+<div class="block">ComparisonController implementation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">ComparisonController.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/ComparisonController.html#haltComparison-org.custommonkey.xmlunit.Difference-">haltComparison</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;afterDifference)</code>
 <div class="block">Determine whether a Difference that the listener has been notified of
   should halt further XML comparison.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">DetailedDiff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/DetailedDiff.html#haltComparison-org.custommonkey.xmlunit.Difference-">haltComparison</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;afterDifference)</code>
-<div class="block">ComparisonController implementation.</div>
-</td>
-</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Diff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/Diff.html#haltComparison-org.custommonkey.xmlunit.Difference-">haltComparison</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;afterDifference)</code>
+<td class="colLast"><span class="typeNameLabel">DetailedDiff.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/DetailedDiff.html#haltComparison-org.custommonkey.xmlunit.Difference-">haltComparison</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;afterDifference)</code>
 <div class="block">ComparisonController implementation.</div>
 </td>
 </tr>
@@ -426,17 +426,17 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><span class="typeNameLabel">CaseInsensitiveDifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/examples/CaseInsensitiveDifferenceListener.html#textualDifference-org.custommonkey.xmlunit.Difference-">textualDifference</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;d)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><span class="typeNameLabel">TextDifferenceListenerBase.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/examples/TextDifferenceListenerBase.html#textualDifference-org.custommonkey.xmlunit.Difference-">textualDifference</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;d)</code>
 <div class="block">Delegates to the nested DifferenceListener.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><span class="typeNameLabel">FloatingPointTolerantDifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/examples/FloatingPointTolerantDifferenceListener.html#textualDifference-org.custommonkey.xmlunit.Difference-">textualDifference</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;d)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><span class="typeNameLabel">CaseInsensitiveDifferenceListener.</span><code><span class="memberNameLink"><a href="../../../../org/custommonkey/xmlunit/examples/CaseInsensitiveDifferenceListener.html#textualDifference-org.custommonkey.xmlunit.Difference-">textualDifference</a></span>(<a href="../../../../org/custommonkey/xmlunit/Difference.html" title="class in org.custommonkey.xmlunit">Difference</a>&nbsp;d)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
