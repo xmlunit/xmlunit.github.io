@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Org.XmlUnit.Input.AbstractSource</title>
+    <title>Org.XmlUnit.Input.StringSource</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -190,37 +190,36 @@
       <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Input Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:Org.XmlUnit.Input.AbstractSource">Overview</a>
+        <a href="#T:Org.XmlUnit.Input.StringSource">Overview</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Input.AbstractSource:Signature">Signature</a>
+        <a href="#T:Org.XmlUnit.Input.StringSource:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Input.AbstractSource:Docs">Remarks</a>
+        <a href="#T:Org.XmlUnit.Input.StringSource:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Input.AbstractSource:Members">Member Details</a>
+        <a href="#T:Org.XmlUnit.Input.StringSource:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:Org.XmlUnit.Input.AbstractSource">AbstractSource  Class</h1>
-    <p class="Summary" id="T:Org.XmlUnit.Input.AbstractSource:Summary">
-            Provides a base implementation for the different concrete ISource
-            implementations.
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Input.StringSource">StringSource  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Input.StringSource:Summary">
+            Source that provides XML from a string.
             </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:Org.XmlUnit.Input.AbstractSource:Signature">public abstract class  <b>AbstractSource</b> : <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a></div>
+      <div class="Signature" id="T:Org.XmlUnit.Input.StringSource:Signature">public sealed class  <b>StringSource</b> : <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a></div>
     </div>
-    <div class="Remarks" id="T:Org.XmlUnit.Input.AbstractSource:Docs">
+    <div class="Remarks" id="T:Org.XmlUnit.Input.StringSource:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:Org.XmlUnit.Input.AbstractSource:Docs:Remarks">
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.StringSource:Docs:Remarks">
         <span class="NotEntered">Documentation for this section has not yet been entered.</span>
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:Org.XmlUnit.Input.AbstractSource:Docs:Version Information">
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.StringSource:Docs:Version Information">
         <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
@@ -228,8 +227,8 @@
 								See Also: Inherited members from
 								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
 							</p>
-        <h2 class="Section">Protected Constructors</h2>
-        <div class="SectionBox" id="Protected Constructors">
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
           <div class="SubsectionBox">
             <table class="TypeMembers">
               <tr valign="top">
@@ -240,11 +239,11 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader)">AbstractSource</a>
-                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a>)</div>
+                      <a href="#C:Org.XmlUnit.Input.StringSource(System.String)">StringSource</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
                 </td>
                 <td>
-            Creates a new Source wrapping a reader.
+            Creates a new Source wrapping a string.
             </td>
               </tr>
             </table>
@@ -258,7 +257,7 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Org.XmlUnit.Input.AbstractSource.Reader">Reader</a>
+                    <a href="#P:Org.XmlUnit.Input.StringSource.Reader">Reader</a>
                   </b>
                 </td>
                 <td>
@@ -273,7 +272,7 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:Org.XmlUnit.Input.AbstractSource.SystemId">SystemId</a>
+                    <a href="#P:Org.XmlUnit.Input.StringSource.SystemId">SystemId</a>
                   </b>
                 </td>
                 <td>
@@ -294,7 +293,7 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:Org.XmlUnit.Input.AbstractSource.ToString()">ToString</a>
+                    <a href="#M:Org.XmlUnit.Input.StringSource.ToString()">ToString</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
               </tr>
             </table>
@@ -342,91 +341,91 @@
         </div>
       </div>
     </div>
-    <div class="Members" id="T:Org.XmlUnit.Input.AbstractSource:Members">
+    <div class="Members" id="T:Org.XmlUnit.Input.StringSource:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader)">AbstractSource Constructor</h3>
-        <blockquote id="C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader):member">
+        <h3 id="C:Org.XmlUnit.Input.StringSource(System.String)">StringSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.StringSource(System.String):member">
           <div class="msummary">
-            Creates a new Source wrapping a reader.
+            Creates a new Source wrapping a string.
             </div>
           <h2>Syntax</h2>
-          <div class="Signature">protected  <b>AbstractSource</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a> r)</div>
+          <div class="Signature">public  <b>StringSource</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> c)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader):Parameters">
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.StringSource(System.String):Parameters">
             <dl>
               <dt>
-                <i>r</i>
+                <i>c</i>
               </dt>
-              <dd>the reader to wrap</dd>
+              <dd>the string to wrap</dd>
             </dl>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader):Remarks">
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.StringSource(System.String):Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Input.AbstractSource(System.Xml.XmlReader):Version Information">
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.StringSource(System.String):Version Information">
             <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:Org.XmlUnit.Input.AbstractSource.Reader">Reader Property</h3>
-        <blockquote id="P:Org.XmlUnit.Input.AbstractSource.Reader:member">
+        <h3 id="P:Org.XmlUnit.Input.StringSource.Reader">Reader Property</h3>
+        <blockquote id="P:Org.XmlUnit.Input.StringSource.Reader:member">
           <div class="msummary">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a> <b>Reader</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.AbstractSource.Reader:Value">
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.StringSource.Reader:Value">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Input.AbstractSource.Reader:Remarks">
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.StringSource.Reader:Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Input.AbstractSource.Reader:Version Information">
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.StringSource.Reader:Version Information">
             <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:Org.XmlUnit.Input.AbstractSource.SystemId">SystemId Property</h3>
-        <blockquote id="P:Org.XmlUnit.Input.AbstractSource.SystemId:member">
+        <h3 id="P:Org.XmlUnit.Input.StringSource.SystemId">SystemId Property</h3>
+        <blockquote id="P:Org.XmlUnit.Input.StringSource.SystemId:member">
           <div class="msummary">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>SystemId</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.AbstractSource.SystemId:Value">
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.StringSource.SystemId:Value">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Input.AbstractSource.SystemId:Remarks">
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.StringSource.SystemId:Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Input.AbstractSource.SystemId:Version Information">
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.StringSource.SystemId:Version Information">
             <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="M:Org.XmlUnit.Input.AbstractSource.ToString()">ToString Method</h3>
-        <blockquote id="M:Org.XmlUnit.Input.AbstractSource.ToString():member">
+        <h3 id="M:Org.XmlUnit.Input.StringSource.ToString()">ToString Method</h3>
+        <blockquote id="M:Org.XmlUnit.Input.StringSource.ToString():member">
           <div class="msummary">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2>Syntax</h2>
           <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Input.AbstractSource.ToString():Returns">
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Input.StringSource.ToString():Returns">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Input.AbstractSource.ToString():Remarks">
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.StringSource.ToString():Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Input.AbstractSource.ToString():Version Information">
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.StringSource.ToString():Version Information">
             <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>

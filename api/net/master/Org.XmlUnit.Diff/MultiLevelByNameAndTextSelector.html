@@ -207,10 +207,10 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector">MultiLevelByNameAndTextSelector  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector:Summary">
-             ElementSelector that allows two elements to be compared if
-             their name (including namespace URI, if any) and textual
-             content is the same at a certain level of nesting.
-             </p>
+            ElementSelector that allows two elements to be compared if
+            their name (including namespace URI, if any) and textual
+            content is the same at a certain level of nesting.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector:Signature">public class  <b>MultiLevelByNameAndTextSelector</b></div>
@@ -219,19 +219,19 @@
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector:Docs:Remarks">
         <p>This means ElementSelectors.ByNameAndText and
-             MultiLevelByNameAndTextSelector(1).CanBeCompared should lead
-             to the same results.</p>
+            MultiLevelByNameAndTextSelector(1).CanBeCompared should lead
+            to the same results.</p>
         <p>Any attribute values are completely ignored.  Only works
-             on elements with exactly one child element at each
-             level.</p>
+            on elements with exactly one child element at each
+            level.</p>
         <p>This class mostly exists as an example for custom
-             ElementSelectors and may need to be combined inside a
-             ConditionalSelector in order to be useful for the document as
-             a whole.</p>
+            ElementSelectors and may need to be combined inside a
+            ConditionalSelector in order to be useful for the document as
+            a whole.</p>
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -321,11 +321,11 @@
       <div class="SectionBox" id="_MemberDetails">
         <h3 id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32)">MultiLevelByNameAndTextSelector Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32):member">
-          <p class="Summary">
+          <div class="msummary">
             Uses element names and the text nested levels
             child elements deeper into the element to compare
             elements.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>MultiLevelByNameAndTextSelector</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> levels)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -339,20 +339,20 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32):Remarks">
-              Does not ignore empty text nodes.
-              </div>
+            Does not ignore empty text nodes.
+            </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32,System.Boolean)">MultiLevelByNameAndTextSelector Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32,System.Boolean):member">
-          <p class="Summary">
+          <div class="msummary">
             Uses element names and the text nested levels
             child elements deeper into the element to compare
             elements.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>MultiLevelByNameAndTextSelector</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> levels, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> ignoreEmptyTexts)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -375,14 +375,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector(System.Int32,System.Boolean):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector.CanBeCompared(System.Xml.XmlElement,System.Xml.XmlElement)">CanBeCompared Method</h3>
         <blockquote id="M:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector.CanBeCompared(System.Xml.XmlElement,System.Xml.XmlElement):member">
-          <p class="Summary">
+          <div class="msummary">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </p>
+          </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>CanBeCompared</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> controlElement, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> testElement)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -412,7 +412,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.MultiLevelByNameAndTextSelector.CanBeCompared(System.Xml.XmlElement,System.Xml.XmlElement):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
       </div>

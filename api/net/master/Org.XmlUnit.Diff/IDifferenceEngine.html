@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.IDifferenceEngine:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <h2 class="Section">Public Properties</h2>
@@ -413,10 +413,10 @@
       <div class="SectionBox" id="_MemberDetails">
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter">AttributeFilter Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:member">
-          <p class="Summary">
+          <div class="msummary">
             Sets the optional strategy that decides which attributes to
             consider and which to ignore during comparison.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> <b>AttributeFilter</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -429,23 +429,23 @@
             Only attributes for which the predicate returns true are
             part of the comparison.  By default all attributes are
             considered.
-              </p>
+            </p>
             <p>
             The "special" namespace, namespace-location and
             schema-instance-type attributes can not be ignored this way.
             If you want to suppress comparison of them you'll need to
-            implement <a href="../Org.XmlUnit.Diff/IDifferenceEngine.html#P:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceEvaluator">IDifferenceEngine.DifferenceEvaluator</a></p>
+            implement <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a></p>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.AttributeFilter:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.IDifferenceEngine.Compare(Org.XmlUnit.ISource,Org.XmlUnit.ISource)">Compare Method</h3>
         <blockquote id="M:Org.XmlUnit.Diff.IDifferenceEngine.Compare(Org.XmlUnit.ISource,Org.XmlUnit.ISource):member">
-          <p class="Summary">
+          <div class="msummary">
             Compares two pieces of XML and invokes the registered listeners.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Compare</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> control, <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> test)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -467,15 +467,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.IDifferenceEngine.Compare(Org.XmlUnit.ISource,Org.XmlUnit.ISource):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonController">ComparisonController Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonController:member">
-          <p class="Summary">
+          <div class="msummary">
             Determines whether the comparison should stop after given
             difference has been found.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit.Diff/ComparisonController.html">ComparisonController</a> <b>ComparisonController</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -488,14 +488,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonController:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="E:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonListener">ComparisonListener Event</h3>
         <blockquote id="E:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonListener:member">
-          <p class="Summary">
+          <div class="msummary">
             Is notified of each comparison.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public event <a href="../Org.XmlUnit.Diff/ComparisonListener.html">ComparisonListener</a> <b>ComparisonListener</b> </div>
           <h2 class="Section">Remarks</h2>
@@ -504,14 +504,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="E:Org.XmlUnit.Diff.IDifferenceEngine.ComparisonListener:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceEvaluator">DifferenceEvaluator Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceEvaluator:member">
-          <p class="Summary">
+          <div class="msummary">
             Evaluates the severity of a difference.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">DifferenceEvaluator</a> <b>DifferenceEvaluator</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -524,15 +524,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceEvaluator:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="E:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceListener">DifferenceListener Event</h3>
         <blockquote id="E:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceListener:member">
-          <p class="Summary">
+          <div class="msummary">
             Is notified of each comparison with
             outcome other than {@link ComparisonResult#EQUAL}.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public event <a href="../Org.XmlUnit.Diff/ComparisonListener.html">ComparisonListener</a> <b>DifferenceListener</b> </div>
           <h2 class="Section">Remarks</h2>
@@ -541,15 +541,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="E:Org.XmlUnit.Diff.IDifferenceEngine.DifferenceListener:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="E:Org.XmlUnit.Diff.IDifferenceEngine.MatchListener">MatchListener Event</h3>
         <blockquote id="E:Org.XmlUnit.Diff.IDifferenceEngine.MatchListener:member">
-          <p class="Summary">
+          <div class="msummary">
             Is notified of each comparison with outcome {@link
             ComparisonResult#EQUAL}.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public event <a href="../Org.XmlUnit.Diff/ComparisonListener.html">ComparisonListener</a> <b>MatchListener</b> </div>
           <h2 class="Section">Remarks</h2>
@@ -558,15 +558,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="E:Org.XmlUnit.Diff.IDifferenceEngine.MatchListener:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.NamespaceContext">NamespaceContext Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.NamespaceContext:member">
-          <p class="Summary">
+          <div class="msummary">
             Establish a namespace context mapping from prefix to URI
             that will be used in Comparison.Detail.XPath.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a> <b>NamespaceContext</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -581,15 +581,15 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NamespaceContext:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter">NodeFilter Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:member">
-          <p class="Summary">
+          <div class="msummary">
             Sets the optional strategy that decides which nodes to
             consider and which to ignore during comparison.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> <b>NodeFilter</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -601,17 +601,17 @@
             Only nodes for which the predicate returns true are part
             of the comparison.  By default nodes that are neither
             document types nor XML declarations are considered.
-              </div>
+            </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeFilter:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeMatcher">NodeMatcher Property</h3>
         <blockquote id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeMatcher:member">
-          <p class="Summary">
+          <div class="msummary">
             Sets the strategy for selecting nodes to compare.
-            </p>
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit.Diff/INodeMatcher.html">INodeMatcher</a> <b>NodeMatcher</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -624,7 +624,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Diff.IDifferenceEngine.NodeMatcher:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.1.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
           <hr size="1" />
         </blockquote>
       </div>
