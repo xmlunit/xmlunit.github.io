@@ -1,0 +1,898 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Builder.Input</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Builder Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.Input">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.Input:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.Input:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.Input:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Builder.Input">Input  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Builder.Input:Summary">
+            Fluent API to create ISource instances.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Builder.Input:Signature">public sealed class  <b>Input</b></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Builder.Input:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Builder.Input:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Builder.Input:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Builder.Input()">Input</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder)">ByTransforming</a>
+                  </b>(<a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+ITransformationBuilder.html">Input.ITransformationBuilder</a></nobr><blockquote>
+            Build an ISource by XSLT transforming a different ISource.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource)">ByTransforming</a>
+                  </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+ITransformationBuilder.html">Input.ITransformationBuilder</a></nobr><blockquote>
+            Build an ISource by XSLT transforming a different ISource.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.From(System.Object)">From</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Return the matching Builder for the supported types:
+            ISource, IBuilder, XmlDocument, XmlNode, byte[] (XML as
+            byte[]), string (XML as String) Uri (to an XML-Document),
+            Stream, TextReader, XDocument, XNode
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[])">FromByteArray</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[])<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from an array of bytes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument)">FromDocument</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.Linq.XDocument">System.Xml.Linq.XDocument</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a System.Xml.Linq Document.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument)">FromDocument</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a DOM Document.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromFile(System.String)">FromFile</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a named file.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode)">FromNode</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.Linq.XNode">System.Xml.Linq.XNode</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a System.Xml.Linq Node.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode)">FromNode</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a DOM Node.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader)">FromReader</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextReader">System.IO.TextReader</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a reader.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream)">FromStream</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a stream.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromString(System.String)">FromString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from a string.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromURI(System.String)">FromURI</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from an URI.
+            must represent a valid URL</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.Input.FromURI(System.Uri)">FromURI</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<nobr> : <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a></nobr><blockquote>
+            Build an ISource from an URI.
+            must represent a valid URL</blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            An enumerable containing a single element.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Builder.Input:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:Org.XmlUnit.Builder.Input()">Input Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Builder.Input():member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>Input</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Builder.Input():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Builder.Input():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder)">ByTransforming Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder):member">
+          <div class="msummary">
+            Build an ISource by XSLT transforming a different ISource.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+ITransformationBuilder.html">Input.ITransformationBuilder</a> <b>ByTransforming</b> (<a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> b)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder):Parameters">
+            <dl>
+              <dt>
+                <i>b</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.Builder.Input.IBuilder):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource)">ByTransforming Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource):member">
+          <div class="msummary">
+            Build an ISource by XSLT transforming a different ISource.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+ITransformationBuilder.html">Input.ITransformationBuilder</a> <b>ByTransforming</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> s)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource):Parameters">
+            <dl>
+              <dt>
+                <i>s</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.ByTransforming(Org.XmlUnit.ISource):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.From(System.Object)">From Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.From(System.Object):member">
+          <div class="msummary">
+            Return the matching Builder for the supported types:
+            ISource, IBuilder, XmlDocument, XmlNode, byte[] (XML as
+            byte[]), string (XML as String) Uri (to an XML-Document),
+            Stream, TextReader, XDocument, XNode
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>From</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> source)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.From(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>source</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.From(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.From(System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.From(System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[])">FromByteArray Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[]):member">
+          <div class="msummary">
+            Build an ISource from an array of bytes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromByteArray</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[] b)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[]):Parameters">
+            <dl>
+              <dt>
+                <i>b</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromByteArray(System.Byte[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument)">FromDocument Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument):member">
+          <div class="msummary">
+            Build an ISource from a System.Xml.Linq Document.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromDocument</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.Linq.XDocument">System.Xml.Linq.XDocument</a> d)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument):Parameters">
+            <dl>
+              <dt>
+                <i>d</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.Linq.XDocument):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument)">FromDocument Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument):member">
+          <div class="msummary">
+            Build an ISource from a DOM Document.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromDocument</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a> d)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument):Parameters">
+            <dl>
+              <dt>
+                <i>d</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromDocument(System.Xml.XmlDocument):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromFile(System.String)">FromFile Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromFile(System.String):member">
+          <div class="msummary">
+            Build an ISource from a named file.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromFile</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromFile(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromFile(System.String):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromFile(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromFile(System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode)">FromNode Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode):member">
+          <div class="msummary">
+            Build an ISource from a System.Xml.Linq Node.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromNode</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.Linq.XNode">System.Xml.Linq.XNode</a> n)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode):Parameters">
+            <dl>
+              <dt>
+                <i>n</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.Linq.XNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode)">FromNode Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Build an ISource from a DOM Node.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromNode</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>n</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromNode(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader)">FromReader Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader):member">
+          <div class="msummary">
+            Build an ISource from a reader.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromReader</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextReader">System.IO.TextReader</a> r)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader):Parameters">
+            <dl>
+              <dt>
+                <i>r</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromReader(System.IO.TextReader):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream)">FromStream Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream):member">
+          <div class="msummary">
+            Build an ISource from a stream.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromStream</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> s)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream):Parameters">
+            <dl>
+              <dt>
+                <i>s</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromStream(System.IO.Stream):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromString(System.String)">FromString Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromString(System.String):member">
+          <div class="msummary">
+            Build an ISource from a string.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromString</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> s)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromString(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>s</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromString(System.String):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromString(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromString(System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromURI(System.String)">FromURI Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromURI(System.String):member">
+          <div class="msummary">
+            Build an ISource from an URI.
+            must represent a valid URL</div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromURI</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> uri)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>uri</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.String):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri)">FromURI Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri):member">
+          <div class="msummary">
+            Build an ISource from an URI.
+            must represent a valid URL</div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/Input+IBuilder.html">Input.IBuilder</a> <b>FromURI</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri):Parameters">
+            <dl>
+              <dt>
+                <i>uri</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.Input.FromURI(System.Uri):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

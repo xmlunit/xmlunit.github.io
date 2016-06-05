@@ -1,0 +1,855 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Constraints.CompareConstraint</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-nunit3-constraints</a> : <a href="index.html">Org.XmlUnit.Constraints Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Constraints.CompareConstraint">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Constraints.CompareConstraint:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Constraints.CompareConstraint:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Constraints.CompareConstraint:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Constraints.CompareConstraint">CompareConstraint  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Constraints.CompareConstraint:Summary">
+            Constraint that compares two XML sources with each other.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Constraints.CompareConstraint:Signature">public class  <b>CompareConstraint</b> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.Constraint</a></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Constraints.CompareConstraint:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Constraints.CompareConstraint:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Constraints.CompareConstraint:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.Constraint</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0)">ApplyTo&lt;TActual&gt;</a>
+                  </b>(<i title="To be added.">TActual</i>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.ConstraintResult</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments()">IgnoreComments</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Ignore comments.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace()">IgnoreWhitespace</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Ignore whitespace differences.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object)">IsIdenticalTo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+              Create a CompareConstraint which compares the
+              test-Object with the given control Object for identity.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object)">IsSimilarTo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+              Create a CompareConstraint which compares the
+              test-Object with the given control Object for similarity.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace()">NormalizeWhitespace</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Normalize whitespace before comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+              Registers a filter for attributes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">Org.XmlUnit.Diff.IComparisonFormatter</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+              Use a custom Formatter for the Error Messages. The defaultFormatter is DefaultComparisonFormatter.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithComparisonListeners</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[])<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Use the given <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>s when comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator)">WithDifferenceEvaluator</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Use the given <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a> when comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithDifferenceListeners</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[])<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Use the given <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>s as difference listeners when comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Establish a namespace context mapping from prefix to URI
+            that will be used in Comparison.Detail.XPath.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+              Registers a filter for nodes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a></nobr><blockquote>
+            Use the given <a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a> when comparing.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            An enumerable containing a single element.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Constraints.CompareConstraint:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0)">ApplyTo&lt;TActual&gt; Generic Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public override <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.ConstraintResult</a> <b>ApplyTo&lt;TActual&gt;</b> (<i title="To be added.">TActual</i> actual)</div>
+          <h4 class="Subsection">Type Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>TActual</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>actual</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.ApplyTo``1(``0):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments()">IgnoreComments Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments():member">
+          <div class="msummary">
+            Ignore comments.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>IgnoreComments</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreComments():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace()">IgnoreWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace():member">
+          <div class="msummary">
+            Ignore whitespace differences.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>IgnoreWhitespace</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IgnoreWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object)">IsIdenticalTo Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object):member">
+          <div class="msummary">
+              Create a CompareConstraint which compares the
+              test-Object with the given control Object for identity.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>IsIdenticalTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> control)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>control</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsIdenticalTo(System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object)">IsSimilarTo Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object):member">
+          <div class="msummary">
+              Create a CompareConstraint which compares the
+              test-Object with the given control Object for similarity.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>IsSimilarTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> control)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>control</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object):Remarks">
+                Example for Similar: The XML node
+                "&lt;a&gt;Text&lt;/a&gt;" and
+                "&lt;a&gt;&lt;![CDATA[Text]]&gt;&lt;/a&gt;" are
+                similar and the Test will not fail.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.IsSimilarTo(System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace()">NormalizeWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace():member">
+          <div class="msummary">
+            Normalize whitespace before comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>NormalizeWhitespace</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.NormalizeWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):member">
+          <div class="msummary">
+              Registers a filter for attributes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithAttributeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> attributeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Parameters">
+            <dl>
+              <dt>
+                <i>attributeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Remarks">
+            <p>
+            Only attributes for which the predicate returns true are
+            part of the comparison.  By default all attributes are
+            considered.
+              </p>
+            <p>
+            The "special" namespace, namespace-location and
+            schema-instance-type attributes can not be ignored this way.
+            If you want to suppress comparison of them you'll need to
+            implement <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a></p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):member">
+          <div class="msummary">
+              Use a custom Formatter for the Error Messages. The defaultFormatter is DefaultComparisonFormatter.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithComparisonFormatter</b> (<a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">Org.XmlUnit.Diff.IComparisonFormatter</a> comparisonFormatter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonFormatter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithComparisonListeners Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):member">
+          <div class="msummary">
+            Use the given <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>s when comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithComparisonListeners</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[] comparisonListeners)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonListeners</i>
+              </dt>
+              <dd>ComparisonListeners to use</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator)">WithDifferenceEvaluator Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):member">
+          <div class="msummary">
+            Use the given <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a> when comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithDifferenceEvaluator</b> (<a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a> differenceEvaluator)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Parameters">
+            <dl>
+              <dt>
+                <i>differenceEvaluator</i>
+              </dt>
+              <dd>DifferenceEvaluator to use</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithDifferenceListeners Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):member">
+          <div class="msummary">
+            Use the given <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>s as difference listeners when comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithDifferenceListeners</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[] comparisonListeners)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonListeners</i>
+              </dt>
+              <dd>ComparisonListeners to use</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):member">
+          <div class="msummary">
+            Establish a namespace context mapping from prefix to URI
+            that will be used in Comparison.Detail.XPath.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithNamespaceContext</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a> ctx)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Parameters">
+            <dl>
+              <dt>
+                <i>ctx</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Remarks">
+            Without a namespace context (or with an empty context) the
+            XPath expressions will only use local names for elements and
+            attributes.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):member">
+          <div class="msummary">
+              Registers a filter for nodes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithNodeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> nodeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Parameters">
+            <dl>
+              <dt>
+                <i>nodeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Remarks">
+            Only nodes for which the predicate returns true are part
+            of the comparison.  By default nodes that are neither
+            document types nor XML declarations are considered.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):member">
+          <div class="msummary">
+            Use the given <a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a> when comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Constraints/CompareConstraint.html">CompareConstraint</a> <b>WithNodeMatcher</b> (<a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a> nodeMatcher)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Parameters">
+            <dl>
+              <dt>
+                <i>nodeMatcher</i>
+              </dt>
+              <dd>INodeMatcher to use</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.CompareConstraint.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.2.0.90</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
