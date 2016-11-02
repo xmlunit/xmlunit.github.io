@@ -207,8 +207,8 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Transform.Transformation">Transformation  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Transform.Transformation:Summary">
-            Provides a convenience layer over System.Xml.Xsl.
-            </p>
+             Provides a convenience layer over System.Xml.Xsl.
+             </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Transform.Transformation:Signature">public sealed class  <b>Transformation</b></div>
@@ -216,16 +216,17 @@
     <div class="Remarks" id="T:Org.XmlUnit.Transform.Transformation:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Transform.Transformation:Docs:Remarks">
-            Apart from ArgumentExceptions if you try to pass in null
-            values only the Transform methods will ever throw exceptions
-            and these will be XMLUnit's exceptions.
-            Each invocation of a Transform method will use a fresh
-            XslCompiledTransform instance, the Transform methods are
-            thread-safe.
-            </div>
+             Apart from ArgumentExceptions if you try to pass in null
+             values only the Transform methods will ever throw exceptions
+             and these will be XMLUnit's exceptions.
+            
+             Each invocation of a Transform method will use a fresh
+             XslCompiledTransform instance, the Transform methods are
+             thread-safe.
+             </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Transform.Transformation:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+        <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -248,8 +249,8 @@
                     </b>()</div>
                 </td>
                 <td>
-            Creates a new transformation without source or stylesheet.
-            </td>
+             Creates a new transformation without source or stylesheet.
+             </td>
               </tr>
               <tr valign="top">
                 <td>
@@ -263,8 +264,8 @@
                     </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
                 </td>
                 <td>
-            Creates a new transformation with a given source.
-            </td>
+             Creates a new transformation with a given source.
+             </td>
               </tr>
             </table>
           </div>
@@ -284,8 +285,8 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                   </i>. 
-            Whether the document() function will be allowed.
-            </td>
+             Whether the document() function will be allowed.
+             </td>
               </tr>
               <tr valign="top">
                 <td>[write-only]<div></div></td>
@@ -298,8 +299,8 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
                   </i>. 
-            Whether embedded script blocks will be allowed.
-            </td>
+             Whether embedded script blocks will be allowed.
+             </td>
               </tr>
               <tr valign="top">
                 <td>[write-only]<div></div></td>
@@ -312,8 +313,8 @@
                   <i>
                     <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>
                   </i>. 
-            Set the source document to transform - must not be null.
-            </td>
+             Set the source document to transform - must not be null.
+             </td>
               </tr>
               <tr valign="top">
                 <td>[write-only]<div></div></td>
@@ -326,9 +327,9 @@
                   <i>
                     <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>
                   </i>. 
-            Set the stylesheet to use - may be null in which case an
-            identity transformation will be performed.
-            </td>
+             Set the stylesheet to use - may be null in which case an
+             identity transformation will be performed.
+             </td>
               </tr>
               <tr valign="top">
                 <td>[write-only]<div></div></td>
@@ -341,8 +342,8 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlResolver">System.Xml.XmlResolver</a>
                   </i>. 
-            Set the resolver to use for document() and xsl:include/import
-            </td>
+             Set the resolver to use for document() and xsl:include/import
+             </td>
               </tr>
             </table>
           </div>
@@ -360,8 +361,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object)">AddExtensionObject</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<blockquote>
-            Add a named extension object.
-            </blockquote></td>
+             Add a named extension object.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -372,8 +373,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object)">AddParameter</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<blockquote>
-            Add a named parameter.
-            </blockquote></td>
+             Add a named parameter.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -384,8 +385,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.Clear()">Clear</a>
                   </b>()<blockquote>
-            Clears all extension objects and parameters.
-            </blockquote></td>
+             Clears all extension objects and parameters.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -396,8 +397,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream)">TransformTo</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)<blockquote>
-            Perform the transformation.
-            </blockquote></td>
+             Perform the transformation.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -408,8 +409,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter)">TransformTo</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextWriter">System.IO.TextWriter</a>)<blockquote>
-            Perform the transformation.
-            </blockquote></td>
+             Perform the transformation.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -420,8 +421,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter)">TransformTo</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a>)<blockquote>
-            Perform the transformation.
-            </blockquote></td>
+             Perform the transformation.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -432,9 +433,9 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.TransformToDocument()">TransformToDocument</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a></nobr><blockquote>
-            Convenience method that returns the result of the
-            transformation as a Document.
-            </blockquote></td>
+             Convenience method that returns the result of the
+             transformation as a Document.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -445,9 +446,9 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Transform.Transformation.TransformToString()">TransformToString</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
-            Convenience method that returns the result of the
-            transformation as a String.
-            </blockquote></td>
+             Convenience method that returns the result of the
+             transformation as a String.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -464,8 +465,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-            An enumerable containing a single element.
-            </blockquote></td>
+             An enumerable containing a single element.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -478,8 +479,8 @@
         <h3 id="C:Org.XmlUnit.Transform.Transformation()">Transformation Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Transform.Transformation():member">
           <div class="msummary">
-            Creates a new transformation without source or stylesheet.
-            </div>
+             Creates a new transformation without source or stylesheet.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>Transformation</b> ()</div>
           <h2 class="Section">Remarks</h2>
@@ -488,14 +489,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource)">Transformation Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):member">
           <div class="msummary">
-            Creates a new transformation with a given source.
-            </div>
+             Creates a new transformation with a given source.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>Transformation</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> s)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -513,14 +514,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object)">AddExtensionObject Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):member">
           <div class="msummary">
-            Add a named extension object.
-            </div>
+             Add a named extension object.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddExtensionObject</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> namespaceUri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> extension)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -546,14 +547,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object)">AddParameter Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):member">
           <div class="msummary">
-            Add a named parameter.
-            </div>
+             Add a named parameter.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddParameter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> nsUri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> parameter)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -585,14 +586,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.Clear()">Clear Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.Clear():member">
           <div class="msummary">
-            Clears all extension objects and parameters.
-            </div>
+             Clears all extension objects and parameters.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Clear</b> ()</div>
           <h2 class="Section">Remarks</h2>
@@ -601,14 +602,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.Clear():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction">EnableDocumentFunction Property</h3>
         <blockquote id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:member">
           <div class="msummary">
-            Whether the document() function will be allowed.
-            </div>
+             Whether the document() function will be allowed.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>EnableDocumentFunction</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -621,14 +622,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks">EnableScriptBlocks Property</h3>
         <blockquote id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:member">
           <div class="msummary">
-            Whether embedded script blocks will be allowed.
-            </div>
+             Whether embedded script blocks will be allowed.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>EnableScriptBlocks</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -641,14 +642,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Transform.Transformation.Source">Source Property</h3>
         <blockquote id="P:Org.XmlUnit.Transform.Transformation.Source:member">
           <div class="msummary">
-            Set the source document to transform - must not be null.
-            </div>
+             Set the source document to transform - must not be null.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> <b>Source</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -661,15 +662,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Source:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Transform.Transformation.Stylesheet">Stylesheet Property</h3>
         <blockquote id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:member">
           <div class="msummary">
-            Set the stylesheet to use - may be null in which case an
-            identity transformation will be performed.
-            </div>
+             Set the stylesheet to use - may be null in which case an
+             identity transformation will be performed.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> <b>Stylesheet</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -682,14 +683,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream)">TransformTo Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):member">
           <div class="msummary">
-            Perform the transformation.
-            </div>
+             Perform the transformation.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -709,14 +710,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter)">TransformTo Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):member">
           <div class="msummary">
-            Perform the transformation.
-            </div>
+             Perform the transformation.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextWriter">System.IO.TextWriter</a> writer)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -736,14 +737,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter)">TransformTo Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):member">
           <div class="msummary">
-            Perform the transformation.
-            </div>
+             Perform the transformation.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a> writer)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -763,15 +764,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument()">TransformToDocument Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():member">
           <div class="msummary">
-            Convenience method that returns the result of the
-            transformation as a Document.
-            </div>
+             Convenience method that returns the result of the
+             transformation as a Document.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a> <b>TransformToDocument</b> ()</div>
           <h4 class="Subsection">Returns</h4>
@@ -784,15 +785,15 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformToString()">TransformToString Method</h3>
         <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformToString():member">
           <div class="msummary">
-            Convenience method that returns the result of the
-            transformation as a String.
-            </div>
+             Convenience method that returns the result of the
+             transformation as a String.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>TransformToString</b> ()</div>
           <h4 class="Subsection">Returns</h4>
@@ -805,14 +806,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToString():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Transform.Transformation.XmlResolver">XmlResolver Property</h3>
         <blockquote id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:member">
           <div class="msummary">
-            Set the resolver to use for document() and xsl:include/import
-            </div>
+             Set the resolver to use for document() and xsl:include/import
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlResolver">System.Xml.XmlResolver</a> <b>XmlResolver</b>  { set; }</div>
           <h4 class="Subsection">Value</h4>
@@ -821,10 +822,10 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:Remarks">may be null in which case an empty XmlUrlResolver
-            will be used.</div>
+             will be used.</div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.1.2.84</div>
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.2.1.90</div>
           <hr size="1" />
         </blockquote>
       </div>
