@@ -1,0 +1,480 @@
+<html>
+  <head>
+    <title>XMLUnit.NET 2.4.0: Org.XmlUnit.Diff</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">XMLUnit.NET 2.4.0</a>
+    </div>
+    <h1 class="PageTitle">Org.XmlUnit.Diff Namespace</h1>
+    <p class="Summary">
+    </p>
+    <div>
+    </div>
+    <div class="Remarks">
+      <h2 class="Section"> Namespace</h2>
+      <p>Contains XMLUnit <a href="../Org.XmlUnit.Diff/IDifferenceEngine.html">Org.XmlUnit.Diff.IDifferenceEngine</a> that is
+    at the heart of all comparisons as well as supporting interfaces
+    and implementations.</p>
+      <table class="TypesListing" style="margin-top: 1em">
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./AbstractDifferenceEngine.html">AbstractDifferenceEngine</a>
+          </td>
+          <td>
+            Useful base-implementation of some parts of the
+            IDifferenceEngine interface.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./AbstractDifferenceEngine+ComparisonState.html">AbstractDifferenceEngine.ComparisonState</a>
+          </td>
+          <td>
+              Encapsulates the current result and a flag that
+              indicates whether comparison should be stopped.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ByNameAndTextRecSelector.html">ByNameAndTextRecSelector</a>
+          </td>
+          <td>
+             ElementSelector that allows two elements to be compared if
+             their name (including namespace URI, if any) and textual
+             content is the same and the same is true for all child
+             elements recursively.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Comparison.html">Comparison</a>
+          </td>
+          <td>
+            Details of a single comparison XMLUnit has performed.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Comparison+Detail.html">Comparison.Detail</a>
+          </td>
+          <td>
+            The details of a target (usually a representation of an
+            XML node) that took part in the comparison.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonController.html">ComparisonController</a>
+          </td>
+          <td>
+            May instruct the difference engine to stop the whole comparison process.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonControllers.html">ComparisonControllers</a>
+          </td>
+          <td>
+            Controllers used for the base cases.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonListener.html">ComparisonListener</a>
+          </td>
+          <td>
+            Is notified of comparisions and their results.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonResult.html">ComparisonResult</a>
+          </td>
+          <td>
+            The possible outcomes of a comparision.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonType.html">ComparisonType</a>
+          </td>
+          <td>
+            The kinds of comparisons XMLUnit performs.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ComparisonTypes.html">ComparisonTypes</a>
+          </td>
+          <td>
+              Extension methods for ComparisonType
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DefaultComparisonFormatter.html">DefaultComparisonFormatter</a>
+          </td>
+          <td>
+            Formatter methods for a Comparison Object.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DefaultNodeMatcher.html">DefaultNodeMatcher</a>
+          </td>
+          <td>
+             Strategy that matches control and tests nodes for comparison.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DefaultNodeMatcher+NodeTypeMatcher.html">DefaultNodeMatcher.NodeTypeMatcher</a>
+          </td>
+          <td>
+            Decides whether to node types can be compared to each other.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Diff.html">Diff</a>
+          </td>
+          <td>
+            The Diff-Object is the result of two comparisons.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Difference.html">Difference</a>
+          </td>
+          <td>
+            Combines a {@link Comparison} and its {@link ComparisonResult result}.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DifferenceEvaluator.html">DifferenceEvaluator</a>
+          </td>
+          <td>
+            May alter the outcome of a comparison.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DifferenceEvaluators.html">DifferenceEvaluators</a>
+          </td>
+          <td>
+            Evaluators used for the base cases.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DOMDifferenceEngine.html">DOMDifferenceEngine</a>
+          </td>
+          <td>
+            Difference engine based on DOM.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ElementSelector.html">ElementSelector</a>
+          </td>
+          <td>
+            Strategy for selecting matching elements.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ElementSelectors.html">ElementSelectors</a>
+          </td>
+          <td>
+            Common ElementSelector implementations.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a>
+          </td>
+          <td>
+              Allows to build complex ElementSelectors by combining simpler blocks.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ElementSelectors+IConditionalSelectorBuilderThen.html">ElementSelectors.IConditionalSelectorBuilderThen</a>
+          </td>
+          <td>
+              then-part of conditional ElementSelectors built
+              via IConditionalSelectorBuilder.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IComparisonFormatter.html">IComparisonFormatter</a>
+          </td>
+          <td>
+            Formatter methods for a Comparison Object.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IDifferenceEngine.html">IDifferenceEngine</a>
+          </td>
+          <td>
+            XMLUnit's difference engine.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./INodeMatcher.html">INodeMatcher</a>
+          </td>
+          <td>
+            Strategy that matches control and tests nodes for comparison.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MultiLevelByNameAndTextSelector.html">MultiLevelByNameAndTextSelector</a>
+          </td>
+          <td>
+             ElementSelector that allows two elements to be compared if
+             their name (including namespace URI, if any) and textual
+             content is the same at a certain level of nesting.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./NodeFilters.html">NodeFilters</a>
+          </td>
+          <td>
+            Common NodeFilter implementations.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./RecursiveXPathBuilder.html">RecursiveXPathBuilder</a>
+          </td>
+          <td>
+            Finds the XPathContext of a Node by recursively building up the XPathContext.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./XPathContext.html">XPathContext</a>
+          </td>
+          <td>
+            Mutable representation of an XPath.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./XPathContext+DOMNodeInfo.html">XPathContext.DOMNodeInfo</a>
+          </td>
+          <td>
+            DOM based implementation of <a href="../Org.XmlUnit.Diff/XPathContext+INodeInfo.html">Org.XmlUnit.Diff.XPathContext.INodeInfo</a>.
+            </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./XPathContext+INodeInfo.html">XPathContext.INodeInfo</a>
+          </td>
+          <td>
+            Abstract representation of a node inside the XPathContext.
+            </td>
+        </tr>
+      </table>
+    </div>
+    <div class="Members">
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

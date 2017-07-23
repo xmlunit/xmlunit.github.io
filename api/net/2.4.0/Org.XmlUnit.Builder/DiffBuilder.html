@@ -1,0 +1,974 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Builder.DiffBuilder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Builder Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.DiffBuilder">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.DiffBuilder:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.DiffBuilder:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Builder.DiffBuilder:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Builder.DiffBuilder">DiffBuilder  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Builder.DiffBuilder:Summary">
+              DiffBuilder to create a Diff instance.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Builder.DiffBuilder:Signature">public class  <b>DiffBuilder</b></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Builder.DiffBuilder:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Builder.DiffBuilder:Docs:Remarks">
+                Valid inputs for control and test are all objects supported by Input#From(object).
+              </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Builder.DiffBuilder:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.Build()">Build</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Diff/Diff.html">Org.XmlUnit.Diff.Diff</a></nobr><blockquote>
+              Compare the Test-XML (WithTest(Object)) with the
+              Control-XML (Ccompare(Object)) and return the collected
+              differences in a Diff object.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical()">CheckForIdentical</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              check test source with the control source for identically.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar()">CheckForSimilar</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              check test source with the control source for similarity.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object)">Compare</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Create a DiffBuilder from all kind of types supported by Input#From(object).
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments()">IgnoreComments</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Will remove all comment-Tags "&lt;!-- Comment --&gt;" from
+            test- and control-XML before comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace()">IgnoreWhitespace</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Ignore whitespace by removing all empty text nodes and trimming the non-empty ones.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace()">NormalizeWhitespace</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Normalize Text-Elements by removing all empty text nodes and normalizing the non-empty ones.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Registers a filter for attributes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController)">WithComparisonController</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/ComparisonController.html">Org.XmlUnit.Diff.ComparisonController</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Replace the {@link ComparisonControllers#Default} with your own ComparisonController.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">Org.XmlUnit.Diff.IComparisonFormatter</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Sets a non-default formatter for the differences found.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithComparisonListeners</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[])<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Registers a listener that is notified of each comparison.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator)">WithDifferenceEvaluator</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Provide your own custom {@link DifferenceEvaluator} implementation.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithDifferenceListeners</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[])<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Registers a listener that is notified of each comparison with
+              outcome other than ComparisonResult#EQUAL.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Establish a namespace context mapping from URI to prefix
+            that will be used in Comparison.Detail.XPath.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Registers a filter for nodes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Sets the strategy for selecting nodes to compare.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object)">WithTest</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+              Set the Test-Source from all kind of types supported by Input#From(object).
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            An enumerable containing a single element.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Builder.DiffBuilder:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.Build()">Build Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.Build():member">
+          <div class="msummary">
+              Compare the Test-XML (WithTest(Object)) with the
+              Control-XML (Ccompare(Object)) and return the collected
+              differences in a Diff object.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Diff/Diff.html">Org.XmlUnit.Diff.Diff</a> <b>Build</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Build():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Build():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Build():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical()">CheckForIdentical Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical():member">
+          <div class="msummary">
+              check test source with the control source for identically.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>CheckForIdentical</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical():Remarks">
+                This is the Default.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar()">CheckForSimilar Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar():member">
+          <div class="msummary">
+              check test source with the control source for similarity.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>CheckForSimilar</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar():Remarks">
+            <p>
+                Example for Similar: The XML node
+                "&lt;a&gt;Text&lt;/a&gt;" and
+                "&lt;a&gt;&lt;![CDATA[Text]]&gt;&lt;/a&gt;" are
+                similar and the Test will not fail.
+              </p>
+            <p>
+                The rating, if a node is similar, will be done by the
+                DifferenceEvaluators#Default.
+              </p>
+            <p>
+                Default is {@link #CheckForIdentical()}.
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object)">Compare Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):member">
+          <div class="msummary">
+              Create a DiffBuilder from all kind of types supported by Input#From(object).
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>Compare</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> control)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>control</i>
+              </dt>
+              <dd>the expected reference document.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments()">IgnoreComments Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments():member">
+          <div class="msummary">
+            Will remove all comment-Tags "&lt;!-- Comment --&gt;" from
+            test- and control-XML before comparing.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>IgnoreComments</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace()">IgnoreWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():member">
+          <div class="msummary">
+              Ignore whitespace by removing all empty text nodes and trimming the non-empty ones.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>IgnoreWhitespace</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace()">NormalizeWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace():member">
+          <div class="msummary">
+              Normalize Text-Elements by removing all empty text nodes and normalizing the non-empty ones.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>NormalizeWhitespace</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace():Remarks">
+                "normalized" in this context means all whitespace
+                characters are replaced by space characters and
+                consecutive whitespace characters are collapsed.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):member">
+          <div class="msummary">
+              Registers a filter for attributes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithAttributeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> attributeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Parameters">
+            <dl>
+              <dt>
+                <i>attributeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Remarks">
+            <p>
+            Only attributes for which the predicate returns true are
+            part of the comparison.  By default all attributes are
+            considered.
+              </p>
+            <p>
+            The "special" namespace, namespace-location and
+            schema-instance-type attributes can not be ignored this way.
+            If you want to suppress comparison of them you'll need to
+            implement <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a></p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController)">WithComparisonController Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):member">
+          <div class="msummary">
+              Replace the {@link ComparisonControllers#Default} with your own ComparisonController.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithComparisonController</b> (<a href="../Org.XmlUnit.Diff/ComparisonController.html">Org.XmlUnit.Diff.ComparisonController</a> comparisonController)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonController</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):member">
+          <div class="msummary">
+            Sets a non-default formatter for the differences found.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithComparisonFormatter</b> (<a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">Org.XmlUnit.Diff.IComparisonFormatter</a> formatter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Parameters">
+            <dl>
+              <dt>
+                <i>formatter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithComparisonListeners Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):member">
+          <div class="msummary">
+              Registers a listener that is notified of each comparison.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithComparisonListeners</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[] comparisonListeners)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonListeners</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator)">WithDifferenceEvaluator Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):member">
+          <div class="msummary">
+            Provide your own custom {@link DifferenceEvaluator} implementation.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithDifferenceEvaluator</b> (<a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a> differenceEvaluator)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Parameters">
+            <dl>
+              <dt>
+                <i>differenceEvaluator</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Remarks">
+            <p>
+                This overwrites the Default DifferenceEvaluator.
+              </p>
+            <p>
+                If you want use your custom DifferenceEvaluator in
+                combination with the default or another
+                DifferenceEvaluator you should use
+                DifferenceEvaluators#Chain() or
+                DifferenceEvaluators#First() to combine them:
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithDifferenceListeners Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):member">
+          <div class="msummary">
+              Registers a listener that is notified of each comparison with
+              outcome other than ComparisonResult#EQUAL.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithDifferenceListeners</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ComparisonListener.html">Org.XmlUnit.Diff.ComparisonListener</a>[] comparisonListeners)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Parameters">
+            <dl>
+              <dt>
+                <i>comparisonListeners</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):member">
+          <div class="msummary">
+            Establish a namespace context mapping from URI to prefix
+            that will be used in Comparison.Detail.XPath.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithNamespaceContext</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a> ctx)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Parameters">
+            <dl>
+              <dt>
+                <i>ctx</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Remarks">
+            Without a namespace context (or with an empty context) the
+            XPath expressions will only use local names for elements and
+            attributes.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):member">
+          <div class="msummary">
+              Registers a filter for nodes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithNodeFilter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> nodeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Parameters">
+            <dl>
+              <dt>
+                <i>nodeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Remarks">
+            Only nodes for which the predicate returns true are part
+            of the comparison.  By default nodes that are neither
+            document types nor XML declarations are considered.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):member">
+          <div class="msummary">
+            Sets the strategy for selecting nodes to compare.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithNodeMatcher</b> (<a href="../Org.XmlUnit.Diff/INodeMatcher.html">Org.XmlUnit.Diff.INodeMatcher</a> nodeMatcher)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Parameters">
+            <dl>
+              <dt>
+                <i>nodeMatcher</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Remarks">
+            Example with org.xmlunit.diff.DefaultNodeMatcher:
+            
+            .WithNodeMatcher(new DefaultNodeMatcher(ElementSelectors.ByNameAndText))
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object)">WithTest Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):member">
+          <div class="msummary">
+              Set the Test-Source from all kind of types supported by Input#From(object).
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>WithTest</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> test)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>test</i>
+              </dt>
+              <dd>the test document which must be compared with the control document.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.4.0.107</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
