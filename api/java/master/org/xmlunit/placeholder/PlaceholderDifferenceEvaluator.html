@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" target="_top">Frames</a></li>
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -116,11 +116,26 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">PlaceholderDifferenceEvaluator</span>
 extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff">DifferenceEvaluator</a></pre>
-<div class="block">This class is used to add placeholder feature to XML comparison. To use it, just add it with DiffBuilder like below <br><br>
- <code>Diff diff = DiffBuilder.compare(control).withTest(test).withDifferenceEvaluator(new PlaceholderDifferenceEvaluator()).build();</code><br><br>
- Supported scenarios are demonstrated in the unit tests (PlaceholderDifferenceEvaluatorTest).<br><br>
- Default delimiters for placeholder are <code>${</code> and <code>}</code>. To use custom delimiters (in regular expression), create instance with the <code>PlaceholderDifferenceEvaluator(String placeholderOpeningDelimiterRegex, String placeholderClosingDelimiterRegex)</code> constructor. <br><br>
- This class is <b>experimental/unstable</b>, hence the API or supported scenarios could change in future versions.<br><br></div>
+<div class="block">This class is used to add placeholder feature to XML comparison.
+
+ <p><b>This class and the whole module are considered experimental
+ and any API may change between releases of XMLUnit.</b></p>
+
+ <p>To use it, just add it with <a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder"><code>DiffBuilder</code></a> like below</p>
+
+ <pre>
+ Diff diff = DiffBuilder.compare(control).withTest(test).withDifferenceEvaluator(new PlaceholderDifferenceEvaluator()).build();
+ </pre>
+
+ <p>Supported scenarios are demonstrated in the unit tests
+ (PlaceholderDifferenceEvaluatorTest).</p>
+
+ <p>Default delimiters for placeholder are <code>${</code> and
+ <code>}</code>. To use custom delimiters (in regular expression),
+ create instance with the
+ <code>PlaceholderDifferenceEvaluator(String
+ placeholderOpeningDelimiterRegex, String
+ placeholderClosingDelimiterRegex)</code> constructor.</p></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.5.1</dd>
@@ -131,6 +146,29 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX">PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX">PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -143,12 +181,16 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PlaceholderDifferenceEvaluator--">PlaceholderDifferenceEvaluator</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PlaceholderDifferenceEvaluator--">PlaceholderDifferenceEvaluator</a></span>()</code>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with default
+ delimiters <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</code></a>
+ and <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</code></a>.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PlaceholderDifferenceEvaluator-java.lang.String-java.lang.String-">PlaceholderDifferenceEvaluator</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholderOpeningDelimiterRegex,
                               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholderClosingDelimiterRegex)</code>
-<div class="block">Null, empty or whitespaces string argument is omitted.</div>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with custom delimiters.</div>
 </td>
 </tr>
 </table>
@@ -189,6 +231,32 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</pre>
+</li>
+</ul>
+<a name="PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -202,6 +270,9 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <li class="blockList">
 <h4>PlaceholderDifferenceEvaluator</h4>
 <pre>public&nbsp;PlaceholderDifferenceEvaluator()</pre>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with default
+ delimiters <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</code></a>
+ and <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</code></a>.</div>
 </li>
 </ul>
 <a name="PlaceholderDifferenceEvaluator-java.lang.String-java.lang.String-">
@@ -212,11 +283,15 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <h4>PlaceholderDifferenceEvaluator</h4>
 <pre>public&nbsp;PlaceholderDifferenceEvaluator(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholderOpeningDelimiterRegex,
                                       <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;placeholderClosingDelimiterRegex)</pre>
-<div class="block">Null, empty or whitespaces string argument is omitted. Otherwise, argument is trimmed.</div>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with custom delimiters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>placeholderOpeningDelimiterRegex</code> - </dd>
-<dd><code>placeholderClosingDelimiterRegex</code> - </dd>
+<dd><code>placeholderOpeningDelimiterRegex</code> - regular expression for
+ the opening delimiter of placeholder, defaults to <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</code></a>
+ if the parameter is null or blank</dd>
+<dd><code>placeholderClosingDelimiterRegex</code> - regular expression for
+ the closing delimiter of placeholder, defaults to <a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</code></a>
+ if the parameter is null or blank</dd>
 </dl>
 </li>
 </ul>
@@ -274,8 +349,8 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" target="_top">Frames</a></li>
@@ -300,13 +375,13 @@ implements <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="i
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

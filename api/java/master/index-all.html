@@ -1640,6 +1640,10 @@
 <div class="block">Marker exception thrown by the protected compare() method and passed
  upwards through the call stack to the public compare() method.</div>
 </dd>
+<dt><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><span class="typeNameLink">DifferenceEngineConfigurer</span></a>&lt;<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="type parameter in DifferenceEngineConfigurer">D</a> extends <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="type parameter in DifferenceEngineConfigurer">D</a>&gt;&gt; - Interface in <a href="org/xmlunit/builder/package-summary.html">org.xmlunit.builder</a></dt>
+<dd>
+<div class="block">Subset of the configuration options available for a <code>DifferenceEngine</code>.</div>
+</dd>
 <dt><a href="org/custommonkey/xmlunit/DifferenceEngineContract.html" title="interface in org.custommonkey.xmlunit"><span class="typeNameLink">DifferenceEngineContract</span></a> - Interface in <a href="org/custommonkey/xmlunit/package-summary.html">org.custommonkey.xmlunit</a></dt>
 <dd>
 <div class="block">The pieces of DifferenceEngine's API used by Diff.</div>
@@ -1906,8 +1910,15 @@
 <dd>
 <div class="block">May alter the outcome of a comparison.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html#evaluate-java.lang.String-">evaluate(String)</a></span> - Method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder">IgnorePlaceholderHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#evaluate-org.xmlunit.diff.Comparison-org.xmlunit.diff.ComparisonResult-">evaluate(Comparison, ComparisonResult)</a></span> - Method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderHandler.html#evaluate-java.lang.String-">evaluate(String)</a></span> - Method in interface org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder">PlaceholderHandler</a></dt>
+<dd>
+<div class="block">Evaluate the test value when control contained the placeholder
+ handled by this class.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/xpath/JAXPXPathEngine.html#evaluate-java.lang.String-javax.xml.transform.Source-">evaluate(String, Source)</a></span> - Method in class org.xmlunit.xpath.<a href="org/xmlunit/xpath/JAXPXPathEngine.html" title="class in org.xmlunit.xpath">JAXPXPathEngine</a></dt>
 <dd>
 <div class="block">Evaluates an XPath expression and stringifies the result.</div>
@@ -2163,6 +2174,12 @@
 <dt><span class="memberNameLink"><a href="org/custommonkey/xmlunit/jaxp13/Validator.html#getInstanceErrors-javax.xml.transform.Source-">getInstanceErrors(Source)</a></span> - Method in class org.custommonkey.xmlunit.jaxp13.<a href="org/custommonkey/xmlunit/jaxp13/Validator.html" title="class in org.custommonkey.xmlunit.jaxp13">Validator</a></dt>
 <dd>
 <div class="block">Obtain a list of all errors in the given instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html#getKeyword--">getKeyword()</a></span> - Method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder">IgnorePlaceholderHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderHandler.html#getKeyword--">getKeyword()</a></span> - Method in interface org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder">PlaceholderHandler</a></dt>
+<dd>
+<div class="block">The placeholder keyword this handler is responsible for.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/validation/ValidationProblem.html#getLine--">getLine()</a></span> - Method in class org.xmlunit.validation.<a href="org/xmlunit/validation/ValidationProblem.html" title="class in org.xmlunit.validation">ValidationProblem</a></dt>
 <dd>
@@ -2557,6 +2574,12 @@
 <div class="block">Will remove all comment-Tags "&lt;!</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#ignoreCommentsUsingXSLTVersion-java.lang.String-">ignoreCommentsUsingXSLTVersion(String)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder"><span class="typeNameLink">IgnorePlaceholderHandler</span></a> - Class in <a href="org/xmlunit/placeholder/package-summary.html">org.xmlunit.placeholder</a></dt>
+<dd>
+<div class="block">Handler for the "ignore" placeholder keyword.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html#IgnorePlaceholderHandler--">IgnorePlaceholderHandler()</a></span> - Constructor for class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder">IgnorePlaceholderHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/diff/DifferenceEvaluators.html#ignorePrologDifferences--">ignorePrologDifferences()</a></span> - Static method in class org.xmlunit.diff.<a href="org/xmlunit/diff/DifferenceEvaluators.html" title="class in org.xmlunit.diff">DifferenceEvaluators</a></dt>
 <dd>
@@ -3176,15 +3199,32 @@
 <dd>
 <div class="block">Does this NodeTest pass using the specified NodeTester instance?</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX">PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</a></span> - Static variable in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX">PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</a></span> - Static variable in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder"><span class="typeNameLink">PlaceholderDifferenceEvaluator</span></a> - Class in <a href="org/xmlunit/placeholder/package-summary.html">org.xmlunit.placeholder</a></dt>
 <dd>
 <div class="block">This class is used to add placeholder feature to XML comparison.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PlaceholderDifferenceEvaluator--">PlaceholderDifferenceEvaluator()</a></span> - Constructor for class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with default
+ delimiters <a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_OPENING_DELIMITER_REGEX</code></a>
+ and <a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX"><code>PLACEHOLDER_DEFAULT_CLOSING_DELIMITER_REGEX</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html#PlaceholderDifferenceEvaluator-java.lang.String-java.lang.String-">PlaceholderDifferenceEvaluator(String, String)</a></span> - Constructor for class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></dt>
 <dd>
-<div class="block">Null, empty or whitespaces string argument is omitted.</div>
+<div class="block">Creates a PlaceholderDifferenceEvaluator with custom delimiters.</div>
+</dd>
+<dt><a href="org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder"><span class="typeNameLink">PlaceholderHandler</span></a> - Interface in <a href="org/xmlunit/placeholder/package-summary.html">org.xmlunit.placeholder</a></dt>
+<dd>
+<div class="block">Interface implemented by classes that are responsible for a
+ placeholder keyword.</div>
+</dd>
+<dt><a href="org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder"><span class="typeNameLink">PlaceholderSupport</span></a> - Class in <a href="org/xmlunit/placeholder/package-summary.html">org.xmlunit.placeholder</a></dt>
+<dd>
+<div class="block">Adds support for the placeholder feature to a <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a> - like <a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder"><code>DiffBuilder</code></a> or <code>org.xmlunit.matchers.CompareMatcher</code>.</div>
 </dd>
 <dt><a href="org/xmlunit/util/Predicate.html" title="interface in org.xmlunit.util"><span class="typeNameLink">Predicate</span></a>&lt;<a href="org/xmlunit/util/Predicate.html" title="type parameter in Predicate">T</a>&gt; - Interface in <a href="org/xmlunit/util/package-summary.html">org.xmlunit.util</a></dt>
 <dd>
@@ -4332,13 +4372,30 @@ the order they are declared.</div>
 <dd>
 <div class="block">Registers a filter for attributes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter(Predicate&lt;Attr&gt;)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Registers a filter for attributes.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter(Predicate&lt;Attr&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController(ComparisonController)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Replace the <a href="org/xmlunit/diff/ComparisonControllers.html#Default"><code>ComparisonControllers.Default</code></a> with your own ComparisonController.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController(ComparisonController)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Replace the <code>ComparisonControllers#Default</code> with your own ComparisonController.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController(ComparisonController)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
+<dd>
+<div class="block">Throws an exception as you the <a href="org/xmlunit/diff/ComparisonController.html" title="interface in org.xmlunit.diff"><code>ComparisonController</code></a> is
+ completely determined by the factory method used.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter(ComparisonFormatter)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
+<dd>
+<div class="block">Sets a non-default formatter for the differences found.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter(ComparisonFormatter)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
 <dd>
 <div class="block">Sets a non-default formatter for the differences found.</div>
 </dd>
@@ -4348,7 +4405,11 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
-<div class="block">Registers a listener that is notified of each comparison.</div>
+<div class="block">Registers listeners that are notified of each comparison.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Registers listeners that are notified of each comparison.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
@@ -4356,11 +4417,20 @@ the order they are declared.</div>
 <dd>
 <div class="block">Provide your own custom <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a> implementation.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator(DifferenceEvaluator)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Provide your own custom <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a> implementation.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator(DifferenceEvaluator)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
-<div class="block">Registers a listener that is notified of each comparison with
+<div class="block">Registers listeners that are notified of each comparison with
+ outcome other than <a href="org/xmlunit/diff/ComparisonResult.html#EQUAL"><code>ComparisonResult.EQUAL</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Registers listeners that are notified of each comparison with
  outcome other than <a href="org/xmlunit/diff/ComparisonResult.html#EQUAL"><code>ComparisonResult.EQUAL</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
@@ -4380,6 +4450,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Establish a namespace context that will be used in <a href="org/xmlunit/diff/Comparison.Detail.html#getXPath--"><code>Comparison.Detail#getXPath</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withNamespaceContext-java.util.Map-">withNamespaceContext(Map&lt;String, String&gt;)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Establish a namespace context that will be used in <a href="org/xmlunit/diff/Comparison.Detail.html#getXPath--"><code>Comparison.Detail#getXPath</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withNamespaceContext-java.util.Map-">withNamespaceContext(Map&lt;String, String&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/EvaluateXPathMatcher.html#withNamespaceContext-java.util.Map-">withNamespaceContext(Map&lt;String, String&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/EvaluateXPathMatcher.html" title="class in org.xmlunit.matchers">EvaluateXPathMatcher</a></dt>
@@ -4394,9 +4468,17 @@ the order they are declared.</div>
 <dd>
 <div class="block">Registers a filter for nodes.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter(Predicate&lt;Node&gt;)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
+<dd>
+<div class="block">Registers a filter for nodes.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter(Predicate&lt;Node&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withNodeMatcher-org.xmlunit.diff.NodeMatcher-">withNodeMatcher(NodeMatcher)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
+<dd>
+<div class="block">Sets the strategy for selecting nodes to compare.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/builder/DifferenceEngineConfigurer.html#withNodeMatcher-org.xmlunit.diff.NodeMatcher-">withNodeMatcher(NodeMatcher)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a></dt>
 <dd>
 <div class="block">Sets the strategy for selecting nodes to compare.</div>
 </dd>
@@ -4409,6 +4491,22 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/TransformationBuilderBase.html#withParameter-java.lang.String-java.lang.Object-">withParameter(String, Object)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/TransformationBuilderBase.html" title="interface in org.xmlunit.builder">TransformationBuilderBase</a></dt>
 <dd>
 <div class="block">Adds a parameter.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderSupport.html#withPlaceholderSupport-D-">withPlaceholderSupport(D)</a></span> - Static method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder">PlaceholderSupport</a></dt>
+<dd>
+<div class="block">Adds placeholder support to a <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderSupport.html#withPlaceholderSupportChainedAfter-D-org.xmlunit.diff.DifferenceEvaluator-">withPlaceholderSupportChainedAfter(D, DifferenceEvaluator)</a></span> - Static method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder">PlaceholderSupport</a></dt>
+<dd>
+<div class="block">Adds placeholder support to a <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a> considering an additional <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderSupport.html#withPlaceholderSupportUsingDelimiters-D-java.lang.String-java.lang.String-">withPlaceholderSupportUsingDelimiters(D, String, String)</a></span> - Static method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder">PlaceholderSupport</a></dt>
+<dd>
+<div class="block">Adds placeholder support to a <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/placeholder/PlaceholderSupport.html#withPlaceholderSupportUsingDelimitersChainedAfter-D-java.lang.String-java.lang.String-org.xmlunit.diff.DifferenceEvaluator-">withPlaceholderSupportUsingDelimitersChainedAfter(D, String, String, DifferenceEvaluator)</a></span> - Static method in class org.xmlunit.placeholder.<a href="org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder">PlaceholderSupport</a></dt>
+<dd>
+<div class="block">Adds placeholder support to a <a href="org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a> considering an additional <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/Input.TransformationBuilder.html#withStylesheet-org.xmlunit.builder.Input.Builder-">withStylesheet(Input.Builder)</a></span> - Method in interface org.xmlunit.builder.<a href="org/xmlunit/builder/Input.TransformationBuilder.html" title="interface in org.xmlunit.builder">Input.TransformationBuilder</a></dt>
 <dd>

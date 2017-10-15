@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/xmlunit/builder/Input.html" title="class in org.xmlunit.builder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/xmlunit/builder/DiffBuilder.html" target="_top">Frames</a></li>
@@ -107,10 +107,15 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DiffBuilder</span>
-extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</pre>
 <div class="block">DiffBuilder to create a <a href="../../../org/xmlunit/diff/Diff.html" title="class in org.xmlunit.diff"><code>Diff</code></a> instance.
  <p>
  Valid inputs for control and test are all Objects supported by <a href="../../../org/xmlunit/builder/Input.html#from-java.lang.Object-"><code>Input.from(Object)</code></a>.
@@ -214,7 +219,7 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/builder/DiffBuilder.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners</a></span>(<a href="../../../org/xmlunit/diff/ComparisonListener.html" title="interface in org.xmlunit.diff">ComparisonListener</a>...&nbsp;comparisonListeners)</code>
-<div class="block">Registers a listener that is notified of each comparison.</div>
+<div class="block">Registers listeners that are notified of each comparison.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
@@ -226,7 +231,7 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/builder/DiffBuilder.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners</a></span>(<a href="../../../org/xmlunit/diff/ComparisonListener.html" title="interface in org.xmlunit.diff">ComparisonListener</a>...&nbsp;comparisonListeners)</code>
-<div class="block">Registers a listener that is notified of each comparison with
+<div class="block">Registers listeners that are notified of each comparison with
  outcome other than <a href="../../../org/xmlunit/diff/ComparisonResult.html#EQUAL"><code>ComparisonResult.EQUAL</code></a>.</div>
 </td>
 </tr>
@@ -385,6 +390,8 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
  .withNodeMatcher(new DefaultNodeMatcher(ElementSelectors.byNameAndText))
  </pre></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withNodeMatcher-org.xmlunit.diff.NodeMatcher-">withNodeMatcher</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../org/xmlunit/diff/DifferenceEngine.html#setNodeMatcher-org.xmlunit.diff.NodeMatcher-"><code>DifferenceEngine.setNodeMatcher(NodeMatcher)</code></a></dd>
 </dl>
@@ -411,6 +418,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
          ....
          .build();
  </pre></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="withComparisonController-org.xmlunit.diff.ComparisonController-">
@@ -428,6 +439,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
       .withComparisonController(ComparisonControllers.StopWhenDifferent)
       .build();
  </pre></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">
@@ -437,8 +452,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>withComparisonListeners</h4>
 <pre>public&nbsp;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&nbsp;withComparisonListeners(<a href="../../../org/xmlunit/diff/ComparisonListener.html" title="interface in org.xmlunit.diff">ComparisonListener</a>...&nbsp;comparisonListeners)</pre>
-<div class="block">Registers a listener that is notified of each comparison.</div>
+<div class="block">Registers listeners that are notified of each comparison.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../org/xmlunit/diff/DifferenceEngine.html#addComparisonListener-org.xmlunit.diff.ComparisonListener-"><code>DifferenceEngine.addComparisonListener(ComparisonListener)</code></a></dd>
 </dl>
@@ -451,9 +468,11 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>withDifferenceListeners</h4>
 <pre>public&nbsp;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&nbsp;withDifferenceListeners(<a href="../../../org/xmlunit/diff/ComparisonListener.html" title="interface in org.xmlunit.diff">ComparisonListener</a>...&nbsp;comparisonListeners)</pre>
-<div class="block">Registers a listener that is notified of each comparison with
+<div class="block">Registers listeners that are notified of each comparison with
  outcome other than <a href="../../../org/xmlunit/diff/ComparisonResult.html#EQUAL"><code>ComparisonResult.EQUAL</code></a>.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../org/xmlunit/diff/DifferenceEngine.html#addDifferenceListener-org.xmlunit.diff.ComparisonListener-"><code>DifferenceEngine.addDifferenceListener(ComparisonListener)</code></a></dd>
 </dl>
@@ -502,6 +521,8 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
  XPath expressions will only use local names for elements and
  attributes.</p></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withNamespaceContext-java.util.Map-">withNamespaceContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>prefix2Uri</code> - mapping between prefix and namespace URI</dd>
 </dl>
@@ -524,6 +545,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
  schema-instance-type attributes can not be ignored this way.
  If you want to suppress comparison of them you'll need to
  implement <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="withNodeFilter-org.xmlunit.util.Predicate-">
@@ -538,6 +563,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
  <p>Only nodes for which the predicate returns true are part of
  the comparison.  By default nodes that are not document types
  are considered.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">
@@ -548,6 +577,10 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <h4>withComparisonFormatter</h4>
 <pre>public&nbsp;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&nbsp;withComparisonFormatter(<a href="../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a>&nbsp;formatter)</pre>
 <div class="block">Sets a non-default formatter for the differences found.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder">DifferenceEngineConfigurer</a>&lt;<a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 <a name="withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">
@@ -608,7 +641,7 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../org/xmlunit/builder/Input.html" title="class in org.xmlunit.builder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?org/xmlunit/builder/DiffBuilder.html" target="_top">Frames</a></li>

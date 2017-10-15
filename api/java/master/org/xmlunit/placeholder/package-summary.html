@@ -81,6 +81,24 @@
 <div class="contentContainer">
 <ul class="blockList">
 <li class="blockList">
+<table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/xmlunit/placeholder/PlaceholderHandler.html" title="interface in org.xmlunit.placeholder">PlaceholderHandler</a></td>
+<td class="colLast">
+<div class="block">Interface implemented by classes that are responsible for a
+ placeholder keyword.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
 <caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -89,9 +107,21 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../org/xmlunit/placeholder/IgnorePlaceholderHandler.html" title="class in org.xmlunit.placeholder">IgnorePlaceholderHandler</a></td>
+<td class="colLast">
+<div class="block">Handler for the "ignore" placeholder keyword.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../org/xmlunit/placeholder/PlaceholderDifferenceEvaluator.html" title="class in org.xmlunit.placeholder">PlaceholderDifferenceEvaluator</a></td>
 <td class="colLast">
 <div class="block">This class is used to add placeholder feature to XML comparison.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../org/xmlunit/placeholder/PlaceholderSupport.html" title="class in org.xmlunit.placeholder">PlaceholderSupport</a></td>
+<td class="colLast">
+<div class="block">Adds support for the placeholder feature to a <a href="../../../org/xmlunit/builder/DifferenceEngineConfigurer.html" title="interface in org.xmlunit.builder"><code>DifferenceEngineConfigurer</code></a> - like <a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder"><code>DiffBuilder</code></a> or <code>org.xmlunit.matchers.CompareMatcher</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -106,17 +136,34 @@
  the test engine by using <code>${xmlunit.KEYWORD}</code> sequences
  inside the control document.
 
- <p>You configure the difference engine to use <code>PlaceholderDifferenceEvaluator</code> and it will act on the supported
- keywords.</p>
+ <p><b>This package and the whole module are considered experimental
+ and any API may change between releases of XMLUnit.</b></p>
 
- <p>Currently supported are:</p>
+ <p>The placeholder feature allows a placeholder sequence of <code>${xmlunit.KEYWORD}</code> to be used as nested text in elements or as
+ attribute values of the control document and trigger special
+ handling based on the keyword.</p>
+
+ <p>The "special handling" is controlled by an instance of <code>PlaceholderHandler</code> per keyword. The class <code>PlaceholderDifferenceEvaluator</code> loads all implementations via
+ <code>java.util.ServiceLoader</code> so it is possible to extend the set
+ of handlers via your own modules.</p>
+
+ <p>Keywords currently supported by built-in handlers are:</p>
 
  <ul>
- <li><code>${xmlunit.ignore}</code> which makes XMLUnit ignore the element containing it completely.</li>
+
+ <li><code>${xmlunit.ignore}</code> which makes XMLUnit ignore the nested
+ text or attribute completely. This is handled by <code>IgnorePlaceholderHandler</code>.</li>
+
  </ul>
 
- <p><b>This package and the whole module are considered experimental
- and any API may change between releases of XMLUnit.</b></p></div>
+ <p>The default delimiters of <code>${</code> and <code>}</code> can
+ be overwritten using custom regular expressions.</p>
+
+ <p>The easiest way to activate the placeholder feature is to use
+ one of the methods in <code>PlaceholderSupport</code> to add it to a
+ <a href="../../../org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder"><code>DiffBuilder</code></a> or <code>org.xmlunit.matchers.CompareMatcher</code> instance. The alternative
+ approach is to create an instance of <code>PlaceholderDifferenceEvaluator</code> as a <a href="../../../org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a> and add it to the builder
+ yourself.</p></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.5.1</dd>
