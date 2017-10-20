@@ -1,0 +1,837 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Transform.Transformation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Transform Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Transform.Transformation">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Transform.Transformation:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Transform.Transformation:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Transform.Transformation:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Transform.Transformation">Transformation  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Transform.Transformation:Summary">
+             Provides a convenience layer over System.Xml.Xsl.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Transform.Transformation:Signature">public sealed class  <b>Transformation</b></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Transform.Transformation:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Transform.Transformation:Docs:Remarks">
+             Apart from ArgumentExceptions if you try to pass in null
+             values only the Transform methods will ever throw exceptions
+             and these will be XMLUnit's exceptions.
+            
+             Each invocation of a Transform method will use a fresh
+             XslCompiledTransform instance, the Transform methods are
+             thread-safe.
+             </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Transform.Transformation:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Transform.Transformation()">Transformation</a>
+                    </b>()</div>
+                </td>
+                <td>
+            Creates a new transformation without source or stylesheet.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource)">Transformation</a>
+                    </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
+                </td>
+                <td>
+            Creates a new transformation with a given source.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction">EnableDocumentFunction</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Whether the document() function will be allowed.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks">EnableScriptBlocks</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+            Whether embedded script blocks will be allowed.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Transform.Transformation.Source">Source</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>
+                  </i>. 
+            Set the source document to transform - must not be null.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Transform.Transformation.Stylesheet">Stylesheet</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>
+                  </i>. 
+            Set the stylesheet to use - may be null in which case an
+            identity transformation will be performed.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[write-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Transform.Transformation.XmlResolver">XmlResolver</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlResolver">System.Xml.XmlResolver</a>
+                  </i>. 
+            Set the resolver to use for document() and xsl:include/import
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object)">AddExtensionObject</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<blockquote>
+            Add a named extension object.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object)">AddParameter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<blockquote>
+            Add a named parameter.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.Clear()">Clear</a>
+                  </b>()<blockquote>
+            Clears all extension objects and parameters.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream)">TransformTo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)<blockquote>
+            Perform the transformation.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter)">TransformTo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextWriter">System.IO.TextWriter</a>)<blockquote>
+            Perform the transformation.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter)">TransformTo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a>)<blockquote>
+            Perform the transformation.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.TransformToDocument()">TransformToDocument</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a></nobr><blockquote>
+            Convenience method that returns the result of the
+            transformation as a Document.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Transform.Transformation.TransformToString()">TransformToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Convenience method that returns the result of the
+            transformation as a String.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            An enumerable containing a single element.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Transform.Transformation:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:Org.XmlUnit.Transform.Transformation()">Transformation Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Transform.Transformation():member">
+          <div class="msummary">
+            Creates a new transformation without source or stylesheet.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>Transformation</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource)">Transformation Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):member">
+          <div class="msummary">
+            Creates a new transformation with a given source.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>Transformation</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> s)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):Parameters">
+            <dl>
+              <dt>
+                <i>s</i>
+              </dt>
+              <dd>the source to transform - must not be null.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Transform.Transformation(Org.XmlUnit.ISource):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object)">AddExtensionObject Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):member">
+          <div class="msummary">
+            Add a named extension object.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddExtensionObject</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> namespaceUri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> extension)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>namespaceUri</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>extension</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddExtensionObject(System.String,System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object)">AddParameter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):member">
+          <div class="msummary">
+            Add a named parameter.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddParameter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> nsUri, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> parameter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>nsUri</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>parameter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.AddParameter(System.String,System.String,System.Object):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.Clear()">Clear Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.Clear():member">
+          <div class="msummary">
+            Clears all extension objects and parameters.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Clear</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.Clear():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.Clear():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction">EnableDocumentFunction Property</h3>
+        <blockquote id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:member">
+          <div class="msummary">
+            Whether the document() function will be allowed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>EnableDocumentFunction</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableDocumentFunction:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks">EnableScriptBlocks Property</h3>
+        <blockquote id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:member">
+          <div class="msummary">
+            Whether embedded script blocks will be allowed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>EnableScriptBlocks</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.EnableScriptBlocks:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Transform.Transformation.Source">Source Property</h3>
+        <blockquote id="P:Org.XmlUnit.Transform.Transformation.Source:member">
+          <div class="msummary">
+            Set the source document to transform - must not be null.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> <b>Source</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Transform.Transformation.Source:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Source:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Source:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Transform.Transformation.Stylesheet">Stylesheet Property</h3>
+        <blockquote id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:member">
+          <div class="msummary">
+            Set the stylesheet to use - may be null in which case an
+            identity transformation will be performed.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> <b>Stylesheet</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.Stylesheet:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream)">TransformTo Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):member">
+          <div class="msummary">
+            Perform the transformation.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):Parameters">
+            <dl>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.Stream):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter)">TransformTo Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):member">
+          <div class="msummary">
+            Perform the transformation.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.TextWriter">System.IO.TextWriter</a> writer)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):Parameters">
+            <dl>
+              <dt>
+                <i>writer</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.IO.TextWriter):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter)">TransformTo Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):member">
+          <div class="msummary">
+            Perform the transformation.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TransformTo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a> writer)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):Parameters">
+            <dl>
+              <dt>
+                <i>writer</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformTo(System.Xml.XmlWriter):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument()">TransformToDocument Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():member">
+          <div class="msummary">
+            Convenience method that returns the result of the
+            transformation as a Document.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a> <b>TransformToDocument</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToDocument():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Transform.Transformation.TransformToString()">TransformToString Method</h3>
+        <blockquote id="M:Org.XmlUnit.Transform.Transformation.TransformToString():member">
+          <div class="msummary">
+            Convenience method that returns the result of the
+            transformation as a String.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>TransformToString</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToString():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToString():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Transform.Transformation.TransformToString():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Transform.Transformation.XmlResolver">XmlResolver Property</h3>
+        <blockquote id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:member">
+          <div class="msummary">
+            Set the resolver to use for document() and xsl:include/import
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlResolver">System.Xml.XmlResolver</a> <b>XmlResolver</b>  { set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:Remarks">may be null in which case an empty XmlUrlResolver
+            will be used.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Transform.Transformation.XmlResolver:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Transform<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.5.1.121</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
