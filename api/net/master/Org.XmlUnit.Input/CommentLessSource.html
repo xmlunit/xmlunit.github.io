@@ -207,9 +207,9 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Input.CommentLessSource">CommentLessSource  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Input.CommentLessSource:Summary">
-             ISource implementation that is obtained from a different
-             source by stripping all comments.
-             </p>
+            ISource implementation that is obtained from a different
+            source by stripping all comments.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Input.CommentLessSource:Signature">public sealed class  <b>CommentLessSource</b> : <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a></div>
@@ -217,11 +217,14 @@
     <div class="Remarks" id="T:Org.XmlUnit.Input.CommentLessSource:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Input.CommentLessSource:Docs:Remarks">
-        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-      </div>
+                As of XMLUnit.NET 2.5.0 it is possible to select the XSLT
+                version to use for the stylesheet. The default now is 2.0,
+                it used to be 1.0 and you may need to change the value if
+                your transformer doesn't support XSLT 2.0.
+              </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Input.CommentLessSource:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -244,8 +247,26 @@
                     </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
                 </td>
                 <td>
-             Creates a new Source with the same content as another source removing all comments.
-             </td>
+            Creates a new Source with the same content as another
+            source removing all comments using an XSLT stylesheet of
+            version 2.0.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String)">CommentLessSource</a>
+                    </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+            Creates a new Source with the same content as another
+            source removing all comments.
+            </td>
               </tr>
             </table>
           </div>
@@ -296,8 +317,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-             An enumerable containing a single element.
-             </blockquote></td>
+            An enumerable containing a single element.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -307,8 +328,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Convert.html#M:Org.XmlUnit.Util.Convert.ToDocument(Org.XmlUnit.ISource)">ToDocument</a>
                   </b>(<i>this</i> <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a></nobr><blockquote>
-             Creates a DOM Document from an ISource.
-             </blockquote></td>
+            Creates a DOM Document from an ISource.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -318,8 +339,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Convert.html#M:Org.XmlUnit.Util.Convert.ToNode(Org.XmlUnit.ISource)">ToNode</a>
                   </b>(<i>this</i> <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
-             Creates a DOM Node from an ISource.
-             </blockquote></td>
+            Creates a DOM Node from an ISource.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -332,8 +353,10 @@
         <h3 id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource)">CommentLessSource Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource):member">
           <div class="msummary">
-             Creates a new Source with the same content as another source removing all comments.
-             </div>
+            Creates a new Source with the same content as another
+            source removing all comments using an XSLT stylesheet of
+            version 2.0.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>CommentLessSource</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> originalSource)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -351,7 +374,37 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String)">CommentLessSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String):member">
+          <div class="msummary">
+            Creates a new Source with the same content as another
+            source removing all comments.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>CommentLessSource</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> originalSource, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xsltVersion)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>originalSource</i>
+              </dt>
+              <dd>source with the original content</dd>
+              <dt>
+                <i>xsltVersion</i>
+              </dt>
+              <dd>use this version for the stylesheet</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String):Remarks">
+              since XMLUnit 2.5.0
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.CommentLessSource(Org.XmlUnit.ISource,System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Input.CommentLessSource.Reader">Reader Property</h3>
@@ -371,7 +424,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Input.CommentLessSource.Reader:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Input.CommentLessSource.SystemId">SystemId Property</h3>
@@ -391,7 +444,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Input.CommentLessSource.SystemId:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
       </div>

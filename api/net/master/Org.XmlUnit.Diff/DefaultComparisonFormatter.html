@@ -207,8 +207,8 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Diff.DefaultComparisonFormatter">DefaultComparisonFormatter  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Diff.DefaultComparisonFormatter:Summary">
-             Formatter methods for a Comparison Object.
-             </p>
+            Formatter methods for a Comparison Object.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Diff.DefaultComparisonFormatter:Signature">public class  <b>DefaultComparisonFormatter</b> : <a href="../Org.XmlUnit.Diff/IComparisonFormatter.html">IComparisonFormatter</a></div>
@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Diff.DefaultComparisonFormatter:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -261,7 +261,11 @@
                 <td colspan="2">
                   <b>
                     <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDescription(Org.XmlUnit.Diff.Comparison)">GetDescription</a>
-                  </b>(<a href="../Org.XmlUnit.Diff/Comparison.html">Comparison</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+                  </b>(<a href="../Org.XmlUnit.Diff/Comparison.html">Comparison</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Return a short String of the Comparison including the
+            XPath and the shorten value of the effected control and
+            test Node.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -271,7 +275,218 @@
                 <td colspan="2">
                   <b>
                     <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean)">GetDetails</a>
-                  </b>(<a href="../Org.XmlUnit.Diff/Comparison+Detail.html">Comparison.Detail</a>, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+                  </b>(<a href="../Org.XmlUnit.Diff/Comparison+Detail.html">Comparison.Detail</a>, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Return the xml node from Detail#Target as formatted String.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Protected Methods</h2>
+        <div class="SectionBox" id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute)">AppendAttribute</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlAttribute">System.Xml.XmlAttribute</a>)<blockquote>
+            Formats a placeholder for an attribute for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment)">AppendComment</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlComment">System.Xml.XmlComment</a>)<blockquote>
+            Formats a comment for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument)">AppendDocumentElementIndication</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a>)<blockquote>
+            Appends a short indication of the document's root element
+            like "&lt;ElementName...&gt;" for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType)">AppendDocumentType</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocumentType">System.Xml.XmlDocumentType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Appends the XML DOCTYPE for GetShortString or
+            AppendFullDocumentHeader if present.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration)">AppendDocumentXmlDeclaration</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDeclaration">System.Xml.XmlDeclaration</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Appends the XML declaration for GetShortString or
+            AppendFullDocumentHeader if it contains non-default
+            values.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement)">AppendElement</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>)<blockquote>
+            Formats a placeholder for an element for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument)">AppendFullDocumentHeader</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a>)<blockquote>
+            Appends the XML declaration and DOCTYPE if present as well
+            as the document's root element for GetFullFormattedXml.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction)">AppendProcessingInstruction</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlProcessingInstruction">System.Xml.XmlProcessingInstruction</a>)<blockquote>
+            Formats a processing instruction for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData)">AppendText</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlCharacterData">System.Xml.XmlCharacterData</a>)<blockquote>
+            Formats a text or CDATA node for GetShortString.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String)">AppendXPath</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+            Appends the XPath information for GetShortString if present.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32)">CreateXmlWriter</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a></nobr><blockquote>
+            Create a default Writer to format a XML-Node to a String.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean)">GetFormattedNodeXml</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Formats a node with the help of XmlWriter.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean)">GetFullFormattedXml</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Formats the node using a format suitable for the node type
+            and comparison.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType)">GetShortString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Return a string representation for GetShortString that
+            describes the "thing" that has been compared so users know
+            how to locate it.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType)">GetValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a></nobr><blockquote>
+            May alter the display of a comparison value for
+            GetShortString based on the comparison type.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType)">NodeType</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNodeType">System.Xml.XmlNodeType</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Provides a display text for the constant values of the
+            XmlNodeType enum.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -288,8 +503,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-             An enumerable containing a single element.
-             </blockquote></td>
+            An enumerable containing a single element.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -312,14 +527,355 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Diff.DefaultComparisonFormatter():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute)">AppendAttribute Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute):member">
+          <div class="msummary">
+            Formats a placeholder for an attribute for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendAttribute</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlAttribute">System.Xml.XmlAttribute</a> aNode)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>aNode</i>
+              </dt>
+              <dd>the attribute</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendAttribute(System.Text.StringBuilder,System.Xml.XmlAttribute):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment)">AppendComment Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment):member">
+          <div class="msummary">
+            Formats a comment for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendComment</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlComment">System.Xml.XmlComment</a> aNode)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>aNode</i>
+              </dt>
+              <dd>the comment</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendComment(System.Text.StringBuilder,System.Xml.XmlComment):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument)">AppendDocumentElementIndication Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument):member">
+          <div class="msummary">
+            Appends a short indication of the document's root element
+            like "&lt;ElementName...&gt;" for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendDocumentElementIndication</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a> doc)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>doc</i>
+              </dt>
+              <dd>the XML document node</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentElementIndication(System.Text.StringBuilder,System.Xml.XmlDocument):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType)">AppendDocumentType Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType):member">
+          <div class="msummary">
+            Appends the XML DOCTYPE for GetShortString or
+            AppendFullDocumentHeader if present.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AppendDocumentType</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocumentType">System.Xml.XmlDocumentType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>the document type</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentType(System.Text.StringBuilder,System.Xml.XmlDocumentType):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration)">AppendDocumentXmlDeclaration Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration):member">
+          <div class="msummary">
+            Appends the XML declaration for GetShortString or
+            AppendFullDocumentHeader if it contains non-default
+            values.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AppendDocumentXmlDeclaration</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDeclaration">System.Xml.XmlDeclaration</a> dec)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>dec</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendDocumentXmlDeclaration(System.Text.StringBuilder,System.Xml.XmlDeclaration):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement)">AppendElement Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement):member">
+          <div class="msummary">
+            Formats a placeholder for an element for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendElement</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> aNode)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>aNode</i>
+              </dt>
+              <dd>the element</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendElement(System.Text.StringBuilder,System.Xml.XmlElement):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument)">AppendFullDocumentHeader Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument):member">
+          <div class="msummary">
+            Appends the XML declaration and DOCTYPE if present as well
+            as the document's root element for GetFullFormattedXml.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendFullDocumentHeader</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a> doc)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>doc</i>
+              </dt>
+              <dd>the document to format</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendFullDocumentHeader(System.Text.StringBuilder,System.Xml.XmlDocument):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction)">AppendProcessingInstruction Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction):member">
+          <div class="msummary">
+            Formats a processing instruction for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendProcessingInstruction</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlProcessingInstruction">System.Xml.XmlProcessingInstruction</a> instr)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>instr</i>
+              </dt>
+              <dd>the processing instruction</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendProcessingInstruction(System.Text.StringBuilder,System.Xml.XmlProcessingInstruction):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData)">AppendText Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData):member">
+          <div class="msummary">
+            Formats a text or CDATA node for GetShortString.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendText</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlCharacterData">System.Xml.XmlCharacterData</a> aNode)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>aNode</i>
+              </dt>
+              <dd>the text or CDATA node</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendText(System.Text.StringBuilder,System.Xml.XmlCharacterData):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String)">AppendXPath Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String):member">
+          <div class="msummary">
+            Appends the XPath information for GetShortString if present.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AppendXPath</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xpath)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>the builder to append to</dd>
+              <dt>
+                <i>xpath</i>
+              </dt>
+              <dd>the xpath to append, if any</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.AppendXPath(System.Text.StringBuilder,System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32)">CreateXmlWriter Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32):member">
+          <div class="msummary">
+            Create a default Writer to format a XML-Node to a String.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlWriter">System.Xml.XmlWriter</a> <b>CreateXmlWriter</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.StringBuilder">System.Text.StringBuilder</a> sb, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> numberOfBlanksToIndent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>sb</i>
+              </dt>
+              <dd>StringBuilder to wrap as writer</dd>
+              <dt>
+                <i>numberOfBlanksToIndent</i>
+              </dt>
+              <dd>the number of spaces
+            which is used for indent the XML-structure</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.CreateXmlWriter(System.Text.StringBuilder,System.Int32):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDescription(Org.XmlUnit.Diff.Comparison)">GetDescription Method</h3>
         <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDescription(Org.XmlUnit.Diff.Comparison):member">
           <div class="msummary">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+            Return a short String of the Comparison including the
+            XPath and the shorten value of the effected control and
+            test Node.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetDescription</b> (<a href="../Org.XmlUnit.Diff/Comparison.html">Comparison</a> difference)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -339,18 +895,29 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDescription(Org.XmlUnit.Diff.Comparison):Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+            <p>
+            In general the String will look like "Expected X 'Y' but
+            was 'Z' - comparing A to B" where A and B are the result
+            of invoking GetShortString on the target and XPath of the
+            control and test details of the comparison. A is the
+            description of the comparison and B and C are the control
+            and test values (passed through GetValue) respectively.
+              </p>
+            <p>
+            For missing attributes the string has a slightly different
+            format.
+              </p>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDescription(Org.XmlUnit.Diff.Comparison):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean)">GetDetails Method</h3>
         <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean):member">
           <div class="msummary">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+            Return the xml node from Detail#Target as formatted String.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetDetails</b> (<a href="../Org.XmlUnit.Diff/Comparison+Detail.html">Comparison.Detail</a> difference, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a> type, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> formatXml)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -365,15 +932,13 @@
               <dt>
                 <i>type</i>
               </dt>
-              <dd>
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </dd>
+              <dd>The implementation can return different
+            details depending on the ComparisonType.</dd>
               <dt>
                 <i>formatXml</i>
               </dt>
-              <dd>
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </dd>
+              <dd>set this to true if the Comparison
+            was generated with DiffBuilder#IgnoreWhitespace.</dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
@@ -382,11 +947,202 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Remarks">
+            Delegates to GetFullFormattedXml unless the
+            Comparison.Detail's Target is null.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean)">GetFormattedNodeXml Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean):member">
+          <div class="msummary">
+            Formats a node with the help of XmlWriter.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetFormattedNodeXml</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> nodeToConvert, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> formatXml)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>nodeToConvert</i>
+              </dt>
+              <dd>the node to format</dd>
+              <dt>
+                <i>formatXml</i>
+              </dt>
+              <dd>true if the Comparison was generated with IgnoreWhitespace - this affects the indentation of the generated output</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean):Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetDetails(Org.XmlUnit.Diff.Comparison.Detail,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.3.2.100</div>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFormattedNodeXml(System.Xml.XmlNode,System.Boolean):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean)">GetFullFormattedXml Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean):member">
+          <div class="msummary">
+            Formats the node using a format suitable for the node type
+            and comparison.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetFullFormattedXml</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> node, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a> type, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> formatXml)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>the node to format</dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>the comparison type</dd>
+              <dt>
+                <i>formatXml</i>
+              </dt>
+              <dd>true if the Comparison was generated with IgnoreWhitespace - this affects the indentation of the generated output</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Remarks">
+            The implementation outputs the document prolog and start
+            element for Document and DocumentType nodes and may elect
+            to format the node's parent element rather than just the
+            node depending on the node and comparison type. It
+            delegates to AppendFullDocumentHeader or
+            GetFormattedNodeXml.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetFullFormattedXml(System.Xml.XmlNode,Org.XmlUnit.Diff.ComparisonType,System.Boolean):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType)">GetShortString Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType):member">
+          <div class="msummary">
+            Return a string representation for GetShortString that
+            describes the "thing" that has been compared so users know
+            how to locate it.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetShortString</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> node, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xpath, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>the node to describe</dd>
+              <dt>
+                <i>xpath</i>
+              </dt>
+              <dd>xpath of the node if applicable</dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>the comparison type</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType):Remarks">
+            <p>
+            Examples are "&lt;bar ...&gt; at /foo[1]/bar[1]" for a
+            comparison of elements or "&lt;!-- Comment Text --&gt; at
+            /foo[2]/comment()[1]" for a comment.
+            </p>
+            <p>
+            This implementation dispatches to several AppendX methods
+            based on the comparison type or the type of the node.
+            </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetShortString(System.Xml.XmlNode,System.String,Org.XmlUnit.Diff.ComparisonType):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType)">GetValue Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType):member">
+          <div class="msummary">
+            May alter the display of a comparison value for
+            GetShortString based on the comparison type.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> <b>GetValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value, <a href="../Org.XmlUnit.Diff/ComparisonType.html">ComparisonType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>the value to display</dd>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>the comparison type</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType):Remarks">
+            This implementation returns value unless it is a
+            comparison of node types in which case the numeric value
+            (one of the values of the XmlNodeType enum) is mapped to a
+            more useful string.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.GetValue(System.Object,Org.XmlUnit.Diff.ComparisonType):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType)">NodeType Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType):member">
+          <div class="msummary">
+            Provides a display text for the constant values of the
+            XmlNodeType enum.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>NodeType</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNodeType">System.Xml.XmlNodeType</a> type)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType):Parameters">
+            <dl>
+              <dt>
+                <i>type</i>
+              </dt>
+              <dd>the node type</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.DefaultComparisonFormatter.NodeType(System.Xml.XmlNodeType):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
           <hr size="1" />
         </blockquote>
       </div>
