@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        	targetNamespace="http://www.xmlunit.org/publishing"
-			xmlns="http://www.xmlunit.org/publishing"
+        	targetNamespace="https://www.xmlunit.org/publishing"
+			xmlns="https://www.xmlunit.org/publishing"
 			version="1.0"
         	elementFormDefault="qualified">
 	
