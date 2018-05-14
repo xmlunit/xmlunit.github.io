@@ -4,6 +4,8 @@ org.custommonkey.xmlunit.exceptions
 org.custommonkey.xmlunit.jaxp13
 org.custommonkey.xmlunit.util
 org.xmlunit
+org.xmlunit.assertj
+org.xmlunit.assertj.error
 org.xmlunit.builder
 org.xmlunit.diff
 org.xmlunit.input
