@@ -280,6 +280,18 @@
              it won't have any effect anymore</span></div>
 </div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#asBoolean--">asBoolean()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Returns an <code>Assert</code> object that allows performing assertions on boolean value of the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#asDouble--">asDouble()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Returns an <code>Assert</code> object that allows performing assertions on integer value of the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#asInt--">asInt()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Returns an <code>Assert</code> object that allows performing assertions on integer value of the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/util/IterableNodeList.html#asList-org.w3c.dom.NodeList-">asList(NodeList)</a></span> - Static method in class org.xmlunit.util.<a href="org/xmlunit/util/IterableNodeList.html" title="class in org.xmlunit.util">IterableNodeList</a></dt>
 <dd>
 <div class="block">Turns the NodeList into a list.</div>
@@ -874,6 +886,10 @@
 <dd>
 <div class="block">Assert that the evaluation of two Xpaths in two documents are
  NOT equal</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#asXml--">asXml()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Returns an <code>XmlAssert</code> object that allows performing assertions on XML value of the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/custommonkey/xmlunit/DifferenceConstants.html#ATTR_NAME_NOT_FOUND">ATTR_NAME_NOT_FOUND</a></span> - Static variable in interface org.custommonkey.xmlunit.<a href="org/custommonkey/xmlunit/DifferenceConstants.html" title="interface in org.custommonkey.xmlunit">DifferenceConstants</a></dt>
 <dd>
@@ -2766,6 +2782,18 @@
 <dd>
 <div class="block">Creates a new buffer with the given initial capacity.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#isEqualTo-int-">isEqualTo(int)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Try convert the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test to int using <a href="org/xmlunit/assertj/ValueAssert.html#asInt--"><code>ValueAssert.asInt()</code></a> and compare with given value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#isEqualTo-double-">isEqualTo(double)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Try convert the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test to double using <a href="org/xmlunit/assertj/ValueAssert.html#asDouble--"><code>ValueAssert.asDouble()</code></a> and compare with given value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#isEqualTo-boolean-">isEqualTo(boolean)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
+<dd>
+<div class="block">Try convert the <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> under test to boolean using <a href="org/xmlunit/assertj/ValueAssert.html#asBoolean--"><code>ValueAssert.asBoolean()</code></a> and compare with given value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#isIdenticalTo-java.lang.Object-">isIdenticalTo(Object)</a></span> - Static method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>
 <div class="block">Create a <a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers"><code>CompareMatcher</code></a> which compares the test-Object with the given control Object for identity.</div>
@@ -2774,6 +2802,22 @@
 <dd>
 <div class="block">Is the given schema instance valid according to the configured
  schema definition(s)?</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValidationAssert.html#isInvalid--">isInvalid()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValidationAssert.html" title="class in org.xmlunit.assertj">ValidationAssert</a></dt>
+<dd>
+<div class="block">Verifies that actual value is not valid against given schema</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isInvalid--">isInvalid()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is not valid against W3C XML Schema</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isNotValidAgainst-javax.xml.validation.Schema-">isNotValidAgainst(Schema)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is not valid against given schema</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isNotValidAgainst-java.lang.Object...-">isNotValidAgainst(Object...)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is not valid against schema provided by given sources</div>
 </dd>
 <dt><a href="org/xmlunit/util/IsNullPredicate.html" title="class in org.xmlunit.util"><span class="typeNameLink">IsNullPredicate</span></a> - Class in <a href="org/xmlunit/util/package-summary.html">org.xmlunit.util</a></dt>
 <dd>
@@ -2795,9 +2839,25 @@
 <dd>
 <div class="block">Perform the validation of the source against DTD / Schema.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValidationAssert.html#isValid--">isValid()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValidationAssert.html" title="class in org.xmlunit.assertj">ValidationAssert</a></dt>
+<dd>
+<div class="block">Verifies that actual value is valid against given schema</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isValid--">isValid()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is valid against W3C XML Schema</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/validation/ValidationResult.html#isValid--">isValid()</a></span> - Method in class org.xmlunit.validation.<a href="org/xmlunit/validation/ValidationResult.html" title="class in org.xmlunit.validation">ValidationResult</a></dt>
 <dd>
 <div class="block">Has the validation been successful?</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isValidAgainst-javax.xml.validation.Schema-">isValidAgainst(Schema)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is valid against given schema</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#isValidAgainst-java.lang.Object...-">isValidAgainst(Object...)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Check if actual value is valid against schema provided by given sources</div>
 </dd>
 <dt><a href="org/xmlunit/util/IterableNodeList.html" title="class in org.xmlunit.util"><span class="typeNameLink">IterableNodeList</span></a> - Class in <a href="org/xmlunit/util/package-summary.html">org.xmlunit.util</a></dt>
 <dd>
@@ -3811,6 +3871,18 @@
 <dd>
 <div class="block">Sets the XSLT version to set on stylesheets used internally.</div>
 </dd>
+<dt><a href="org/xmlunit/assertj/error/ShouldBeConvertible.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeConvertible</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeConvertible.html#shouldBeConvertible-java.lang.String-java.lang.String-">shouldBeConvertible(String, String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeConvertible.html" title="class in org.xmlunit.assertj.error">ShouldBeConvertible</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/error/ShouldBeInvalid.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeInvalid</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeInvalid.html#shouldBeInvalid-java.lang.String-">shouldBeInvalid(String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeInvalid.html" title="class in org.xmlunit.assertj.error">ShouldBeInvalid</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/error/ShouldBeValid.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeValid</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeValid.html#shouldBeValid-java.lang.String-java.lang.Iterable-">shouldBeValid(String, Iterable&lt;ValidationProblem&gt;)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeValid.html" title="class in org.xmlunit.assertj.error">ShouldBeValid</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/xmlunit/assertj/error/ShouldHaveAttribute.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldHaveAttribute</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldHaveAttribute.html#shouldHaveAttribute-java.lang.String-java.lang.String-">shouldHaveAttribute(String, String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldHaveAttribute.html" title="class in org.xmlunit.assertj.error">ShouldHaveAttribute</a></dt>
@@ -4310,6 +4382,10 @@
 <dd>
 <div class="block">Validates a schema.</div>
 </dd>
+<dt><a href="org/xmlunit/assertj/ValidationAssert.html" title="class in org.xmlunit.assertj"><span class="typeNameLink">ValidationAssert</span></a> - Class in <a href="org/xmlunit/assertj/package-summary.html">org.xmlunit.assertj</a></dt>
+<dd>
+<div class="block">Assertion methods for XML validation.</div>
+</dd>
 <dt><a href="org/xmlunit/matchers/ValidationMatcher.html" title="class in org.xmlunit.matchers"><span class="typeNameLink">ValidationMatcher</span></a> - Class in <a href="org/xmlunit/matchers/package-summary.html">org.xmlunit.matchers</a></dt>
 <dd>
 <div class="block">Hamcrest Matcher for XML Validation against W3C XML Schema using
@@ -4414,6 +4490,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/validation/Validator.html#Validator--">Validator()</a></span> - Constructor for class org.xmlunit.validation.<a href="org/xmlunit/validation/Validator.html" title="class in org.xmlunit.validation">Validator</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj"><span class="typeNameLink">ValueAssert</span></a> - Class in <a href="org/xmlunit/assertj/package-summary.html">org.xmlunit.assertj</a></dt>
+<dd>
+<div class="block">Assertion methods for <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> result of XPath evaluation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#valueByXPath-java.lang.String-">valueByXPath(String)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Create <a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj"><code>ValueAssert</code></a> from value of given <b>xPath</b> expression.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/custommonkey/xmlunit/QualifiedName.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in class org.custommonkey.xmlunit.<a href="org/custommonkey/xmlunit/QualifiedName.html" title="class in org.custommonkey.xmlunit">QualifiedName</a></dt>
 <dd>
 <div class="block">Parses strings of the form "{NS-URI}LOCAL-NAME" or "prefix:localName" as QualifiedNames.</div>
