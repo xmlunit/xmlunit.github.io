@@ -167,6 +167,10 @@
 <div class="block">Determines whether a given predicate holds true for all
  elements.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#and-java.lang.Object-">and(Object)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Create <a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj"><code>CompareAssert</code></a> for given <b>control</b> XML source and actual XML source.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/diff/ElementSelectors.html#and-org.xmlunit.diff.ElementSelector...-">and(ElementSelector...)</a></span> - Static method in class org.xmlunit.diff.<a href="org/xmlunit/diff/ElementSelectors.html" title="class in org.xmlunit.diff">ElementSelectors</a></dt>
 <dd>
 <div class="block">Accepts two elements if all of the given ElementSelectors do.</div>
@@ -279,6 +283,22 @@
              only kept for backwards compatibility, overriding
              it won't have any effect anymore</span></div>
 </div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#areIdentical--">areIdentical()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Check if actual and control XMLs are identical.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#areNotIdentical--">areNotIdentical()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Check if actual and control XMLs are not identical.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#areNotSimilar--">areNotSimilar()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Check if actual and control XMLs are not similar.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#areSimilar--">areSimilar()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Check if actual and control XMLs are similar.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/ValueAssert.html#asBoolean--">asBoolean()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></dt>
 <dd>
@@ -1266,6 +1286,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/diff/DOMDifferenceEngine.html#compare-javax.xml.transform.Source-javax.xml.transform.Source-">compare(Source, Source)</a></span> - Method in class org.xmlunit.diff.<a href="org/xmlunit/diff/DOMDifferenceEngine.html" title="class in org.xmlunit.diff">DOMDifferenceEngine</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj"><span class="typeNameLink">CompareAssert</span></a> - Class in <a href="org/xmlunit/assertj/package-summary.html">org.xmlunit.assertj</a></dt>
+<dd>
+<div class="block">Assertion methods for XMLs comparision.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/custommonkey/xmlunit/DifferenceEngine.html#compareAttribute-org.w3c.dom.Attr-org.w3c.dom.Attr-org.custommonkey.xmlunit.DifferenceListener-">compareAttribute(Attr, Attr, DifferenceListener)</a></span> - Method in class org.custommonkey.xmlunit.<a href="org/custommonkey/xmlunit/DifferenceEngine.html" title="class in org.custommonkey.xmlunit">DifferenceEngine</a></dt>
 <dd>
 <div class="block">Compare two attributes</div>
@@ -2700,18 +2724,25 @@
 <dd>
 <div class="block">Unhandled ContentHandler method</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#ignoreChildNodesOrder--">ignoreChildNodesOrder()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Equivalent for</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#ignoreComments--">ignoreComments()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#ignoreComments--">ignoreComments()</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Will remove all comment-Tags "&lt;!-- Comment --&gt;" from test- and control-XML before comparing.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#ignoreComments--">ignoreComments()</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#ignoreCommentsUsingXSLTVersion-java.lang.String-">ignoreCommentsUsingXSLTVersion(String)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#ignoreCommentsUsingXSLTVersion-java.lang.String-">ignoreCommentsUsingXSLTVersion(String)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Will remove all comment-Tags "&lt;!-- Comment --&gt;" from test- and control-XML before comparing.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#ignoreCommentsUsingXSLTVersion-java.lang.String-">ignoreCommentsUsingXSLTVersion(String)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#ignoreElementContentWhitespace--">ignoreElementContentWhitespace()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#ignoreElementContentWhitespace--">ignoreElementContentWhitespace()</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Ignore element content whitespace by removing all text nodes solely consisting of whitespace.</div>
@@ -2744,6 +2775,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/custommonkey/xmlunit/IgnoreTextAndAttributeValuesDifferenceListener.html#IgnoreTextAndAttributeValuesDifferenceListener--">IgnoreTextAndAttributeValuesDifferenceListener()</a></span> - Constructor for class org.custommonkey.xmlunit.<a href="org/custommonkey/xmlunit/IgnoreTextAndAttributeValuesDifferenceListener.html" title="class in org.custommonkey.xmlunit">IgnoreTextAndAttributeValuesDifferenceListener</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#ignoreWhitespace--">ignoreWhitespace()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#ignoreWhitespace--">ignoreWhitespace()</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Ignore whitespace by removing all empty text nodes and trimming the non-empty ones.</div>
@@ -3244,6 +3276,7 @@
 <div class="block">Creates a new source that is created by "normalizing" the given
  node.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#normalizeWhitespace--">normalizeWhitespace()</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#normalizeWhitespace--">normalizeWhitespace()</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Normalize Text-Elements by removing all empty text nodes and normalizing the non-empty ones.</div>
@@ -3875,9 +3908,21 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeConvertible.html#shouldBeConvertible-java.lang.String-java.lang.String-">shouldBeConvertible(String, String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeConvertible.html" title="class in org.xmlunit.assertj.error">ShouldBeConvertible</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeSimilar.html#shouldBeIdentical-java.lang.String-java.lang.String-org.xmlunit.diff.Comparison-org.xmlunit.diff.ComparisonFormatter-boolean-">shouldBeIdentical(String, String, Comparison, ComparisonFormatter, boolean)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeSimilar</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="org/xmlunit/assertj/error/ShouldBeInvalid.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeInvalid</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeInvalid.html#shouldBeInvalid-java.lang.String-">shouldBeInvalid(String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeInvalid.html" title="class in org.xmlunit.assertj.error">ShouldBeInvalid</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeNotSimilar.html#shouldBeNotIdentical-java.lang.String-java.lang.String-">shouldBeNotIdentical(String, String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeNotSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeNotSimilar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/error/ShouldBeNotSimilar.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeNotSimilar</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeNotSimilar.html#shouldBeNotSimilar-java.lang.String-java.lang.String-">shouldBeNotSimilar(String, String)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeNotSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeNotSimilar</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="org/xmlunit/assertj/error/ShouldBeSimilar.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeSimilar</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/error/ShouldBeSimilar.html#shouldBeSimilar-java.lang.String-java.lang.String-org.xmlunit.diff.Comparison-org.xmlunit.diff.ComparisonFormatter-boolean-">shouldBeSimilar(String, String, Comparison, ComparisonFormatter, boolean)</a></span> - Static method in class org.xmlunit.assertj.error.<a href="org/xmlunit/assertj/error/ShouldBeSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeSimilar</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/xmlunit/assertj/error/ShouldBeValid.html" title="class in org.xmlunit.assertj.error"><span class="typeNameLink">ShouldBeValid</span></a> - Class in <a href="org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></dt>
 <dd>&nbsp;</dd>
@@ -4628,6 +4673,10 @@ the order they are declared.</div>
  exception in <a href="org/xmlunit/util/TransformerFactoryConfigurer.html#configure-javax.xml.transform.TransformerFactory-"><code>TransformerFactoryConfigurer.configure(javax.xml.transform.TransformerFactory)</code></a> if the attribute is not
  supported.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter(Predicate&lt;Attr&gt;)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Registers a filter for attributes.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter(Predicate&lt;Attr&gt;)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Registers a filter for attributes.</div>
@@ -4638,6 +4687,10 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withAttributeFilter-org.xmlunit.util.Predicate-">withAttributeFilter(Predicate&lt;Attr&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController(ComparisonController)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Replace the <code>ComparisonControllers#Default</code> with your own ComparisonController.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonController-org.xmlunit.diff.ComparisonController-">withComparisonController(ComparisonController)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Replace the <a href="org/xmlunit/diff/ComparisonControllers.html#Default"><code>ComparisonControllers.Default</code></a> with your own ComparisonController.</div>
@@ -4651,6 +4704,10 @@ the order they are declared.</div>
 <div class="block">Throws an exception as you the <a href="org/xmlunit/diff/ComparisonController.html" title="interface in org.xmlunit.diff"><code>ComparisonController</code></a> is
  completely determined by the factory method used.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter(ComparisonFormatter)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Sets a non-default formatter for the differences found.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter(ComparisonFormatter)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Sets a non-default formatter for the differences found.</div>
@@ -4663,6 +4720,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Use a custom Formatter for the Error Messages.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Registers listeners that are notified of each comparison.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Registers listeners that are notified of each comparison.</div>
@@ -4673,6 +4734,10 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withComparisonListeners-org.xmlunit.diff.ComparisonListener...-">withComparisonListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator(DifferenceEvaluator)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Provide your own custom <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a> implementation.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator(DifferenceEvaluator)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Provide your own custom <a href="org/xmlunit/diff/DifferenceEvaluator.html" title="interface in org.xmlunit.diff"><code>DifferenceEvaluator</code></a> implementation.</div>
@@ -4683,6 +4748,11 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withDifferenceEvaluator-org.xmlunit.diff.DifferenceEvaluator-">withDifferenceEvaluator(DifferenceEvaluator)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Registers listeners that are notified of each comparison with
+ outcome other than <a href="org/xmlunit/diff/ComparisonResult.html#EQUAL"><code>ComparisonResult.EQUAL</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Registers listeners that are notified of each comparison with
@@ -4695,6 +4765,7 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
@@ -4753,6 +4824,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets a non-default <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/Marshaller.html?is-external=true" title="class or interface in javax.xml.bind"><code>Marshaller</code></a> to use when creating the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform"><code>Source</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withNamespaceContext-java.util.Map-">withNamespaceContext(Map&lt;String, String&gt;)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Establish a namespace context that will be used in <a href="org/xmlunit/diff/Comparison.Detail.html#getXPath--"><code>Comparison.Detail#getXPath</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#withNamespaceContext-java.util.Map-">withNamespaceContext(Map&lt;String, String&gt;)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
 <dd>
 <div class="block">Utility method used for creating a namespace context mapping to be used in XPath matching.</div>
@@ -4775,6 +4850,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Utility method used for creating a namespace context mapping to be used in XPath matching.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter(Predicate&lt;Node&gt;)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Registers a filter for nodes.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter(Predicate&lt;Node&gt;)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Registers a filter for nodes.</div>
@@ -4785,6 +4864,10 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withNodeFilter-org.xmlunit.util.Predicate-">withNodeFilter(Predicate&lt;Node&gt;)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withNodeMatcher-org.xmlunit.diff.NodeMatcher-">withNodeMatcher(NodeMatcher)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dd>
+<div class="block">Sets the strategy for selecting nodes to compare.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withNodeMatcher-org.xmlunit.diff.NodeMatcher-">withNodeMatcher(NodeMatcher)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Sets the strategy for selecting nodes to compare.</div>

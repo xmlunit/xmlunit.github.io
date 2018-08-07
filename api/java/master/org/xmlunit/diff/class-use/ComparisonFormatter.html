@@ -83,6 +83,19 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.xmlunit.assertj">org.xmlunit.assertj</a></td>
+<td class="colLast">
+<div class="block">AssertJ assertions on top of XMLUnit's core.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.xmlunit.assertj.error">org.xmlunit.assertj.error</a></td>
+<td class="colLast">
+<div class="block">Contains internal classes of XMLUnit's AssertJ support that are
+ only public as an implementation detail.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#org.xmlunit.builder">org.xmlunit.builder</a></td>
 <td class="colLast">
 <div class="block">Provides fluent builders for core parts of XMLUnit.</div>
@@ -107,6 +120,56 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.xmlunit.assertj">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a> in <a href="../../../../org/xmlunit/assertj/package-summary.html">org.xmlunit.assertj</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/xmlunit/assertj/package-summary.html">org.xmlunit.assertj</a> with parameters of type <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CompareAssert.</span><code><span class="memberNameLink"><a href="../../../../org/xmlunit/assertj/CompareAssert.html#withComparisonFormatter-org.xmlunit.diff.ComparisonFormatter-">withComparisonFormatter</a></span>(<a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a>&nbsp;formatter)</code>
+<div class="block">Sets a non-default formatter for the differences found.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.xmlunit.assertj.error">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a> in <a href="../../../../org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../org/xmlunit/assertj/error/package-summary.html">org.xmlunit.assertj.error</a> with parameters of type <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../org/xmlunit/assertj/error/ShouldBeSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeSimilar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ShouldBeSimilar.</span><code><span class="memberNameLink"><a href="../../../../org/xmlunit/assertj/error/ShouldBeSimilar.html#shouldBeIdentical-java.lang.String-java.lang.String-org.xmlunit.diff.Comparison-org.xmlunit.diff.ComparisonFormatter-boolean-">shouldBeIdentical</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;controlSystemId,
+                 <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testSystemId,
+                 <a href="../../../../org/xmlunit/diff/Comparison.html" title="class in org.xmlunit.diff">Comparison</a>&nbsp;comparison,
+                 <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a>&nbsp;formatter,
+                 boolean&nbsp;formatXml)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/xmlunit/assertj/error/ShouldBeSimilar.html" title="class in org.xmlunit.assertj.error">ShouldBeSimilar</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ShouldBeSimilar.</span><code><span class="memberNameLink"><a href="../../../../org/xmlunit/assertj/error/ShouldBeSimilar.html#shouldBeSimilar-java.lang.String-java.lang.String-org.xmlunit.diff.Comparison-org.xmlunit.diff.ComparisonFormatter-boolean-">shouldBeSimilar</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;controlSystemId,
+               <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;testSystemId,
+               <a href="../../../../org/xmlunit/diff/Comparison.html" title="class in org.xmlunit.diff">Comparison</a>&nbsp;comparison,
+               <a href="../../../../org/xmlunit/diff/ComparisonFormatter.html" title="interface in org.xmlunit.diff">ComparisonFormatter</a>&nbsp;formatter,
+               boolean&nbsp;formatXml)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.xmlunit.builder">
 <!--   -->
 </a>

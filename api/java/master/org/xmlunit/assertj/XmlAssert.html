@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -173,6 +173,26 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 
     assertThat(xml).isValid();
     assertThat(xml).isValidAgainst(xsd);
+ </pre>
+
+ <p><b>Example with XMLs comparision</b></p>
+
+ <pre>
+    final String control = &quot;&lt;a&gt;&lt;b attr=\&quot;abc\&quot;&gt;&lt;/b&gt;&lt;/a&gt;&quot;;
+    final String test = &quot;&lt;a&gt;&lt;b attr=\&quot;xyz\&quot;&gt;&lt;/b&gt;&lt;/a&gt;&quot;;
+
+    assertThat(test).and(control).areIdentical();
+    assertThat(test).and(control).areNotIdentical();
+    assertThat(test).and(control).areSimilar();
+    assertThat(test).and(control).areNotSimilar();
+
+    assertThat(test).and(control)
+          .normalizeWhitespace()
+          .ignoreComments()
+          .withNodeMatcher(new DefaultNodeMatcher(new MyElementSelector()))
+          .withDifferenceEvaluator(DifferenceEvaluators.chain(
+               DifferenceEvaluators.Default, new MyDifferenceEvaluator()));
+          .areIdentical();
  </pre></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -212,79 +232,85 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#and-java.lang.Object-">and</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;control)</code>
+<div class="block">Create <a href="../../../org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj"><code>CompareAssert</code></a> for given <b>control</b> XML source and actual XML source.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#assertThat-java.lang.Object-">assertThat</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>
 <div class="block">Factory method for <a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj"><code>XmlAssert</code></a></div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#doesNotHaveXPath-java.lang.String-">doesNotHaveXPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xPath)</code>
 <div class="block">Equivalent for</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/MultipleNodeAssert.html" title="class in org.xmlunit.assertj">MultipleNodeAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#hasXPath-java.lang.String-">hasXPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xPath)</code>
 <div class="block">Equivalent for</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isInvalid--">isInvalid</a></span>()</code>
 <div class="block">Check if actual value is not valid against W3C XML Schema</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isNotValidAgainst-java.lang.Object...-">isNotValidAgainst</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;schemaSources)</code>
 <div class="block">Check if actual value is not valid against schema provided by given sources</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isNotValidAgainst-javax.xml.validation.Schema-">isNotValidAgainst</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/Schema.html?is-external=true" title="class or interface in javax.xml.validation">Schema</a>&nbsp;schema)</code>
 <div class="block">Check if actual value is not valid against given schema</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isValid--">isValid</a></span>()</code>
 <div class="block">Check if actual value is valid against W3C XML Schema</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isValidAgainst-java.lang.Object...-">isValidAgainst</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;schemaSources)</code>
 <div class="block">Check if actual value is valid against schema provided by given sources</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#isValidAgainst-javax.xml.validation.Schema-">isValidAgainst</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/validation/Schema.html?is-external=true" title="class or interface in javax.xml.validation">Schema</a>&nbsp;schema)</code>
 <div class="block">Check if actual value is valid against given schema</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/MultipleNodeAssert.html" title="class in org.xmlunit.assertj">MultipleNodeAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#nodesByXPath-java.lang.String-">nodesByXPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xPath)</code>
 <div class="block">Create <a href="../../../org/xmlunit/assertj/MultipleNodeAssert.html" title="class in org.xmlunit.assertj"><code>MultipleNodeAssert</code></a> from nodes selecting by given <b>xPath</b>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj">ValueAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#valueByXPath-java.lang.String-">valueByXPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;xPath)</code>
 <div class="block">Create <a href="../../../org/xmlunit/assertj/ValueAssert.html" title="class in org.xmlunit.assertj"><code>ValueAssert</code></a> from value of given <b>xPath</b> expression.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withDocumentBuildFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuildFactory</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers">DocumentBuilderFactory</a>&nbsp;dbf)</code>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
  <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withNamespaceContext-java.util.Map-">withNamespaceContext</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;prefix2Uri)</code>
 <div class="block">Utility method used for creating a namespace context mapping to be used in XPath matching.</div>
@@ -414,6 +440,21 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 <dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the xPath is blank.</dd>
 <dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the actual value is <code>null</code>.</dd>
 <dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the actual value provide invalid XML.</dd>
+</dl>
+</li>
+</ul>
+<a name="and-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;<a href="../../../org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a>&nbsp;and(<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;control)</pre>
+<div class="block">Create <a href="../../../org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj"><code>CompareAssert</code></a> for given <b>control</b> XML source and actual XML source.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the actual value is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the control value is <code>null</code></dd>
 </dl>
 </li>
 </ul>
