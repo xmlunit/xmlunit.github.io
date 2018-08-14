@@ -4766,6 +4766,11 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/CompareMatcher.html#withDifferenceListeners-org.xmlunit.diff.ComparisonListener...-">withDifferenceListeners(ComparisonListener...)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/CompareMatcher.html" title="class in org.xmlunit.matchers">CompareMatcher</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/assertj/CompareAssert.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/CompareAssert.html" title="class in org.xmlunit.assertj">CompareAssert</a></dt>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
+ <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/builder/DiffBuilder.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.builder.<a href="org/xmlunit/builder/DiffBuilder.html" title="class in org.xmlunit.builder">DiffBuilder</a></dt>
 <dd>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
@@ -4779,11 +4784,6 @@ the order they are declared.</div>
  <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/xmlunit/matchers/HasXPathMatcher.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/HasXPathMatcher.html" title="class in org.xmlunit.matchers">HasXPathMatcher</a></dt>
-<dd>
-<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
- <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#withDocumentBuildFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuildFactory(DocumentBuilderFactory)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
 <dd>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
  <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
@@ -4942,6 +4942,18 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="org/xmlunit/util/DocumentBuilderFactoryConfigurer.Builder.html#withXIncludeAware-boolean-">withXIncludeAware(boolean)</a></span> - Method in class org.xmlunit.util.<a href="org/xmlunit/util/DocumentBuilderFactoryConfigurer.Builder.html" title="class in org.xmlunit.util">DocumentBuilderFactoryConfigurer.Builder</a></dt>
 <dd>
 <div class="block">Configure the factory's XInclude awareness.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/assertj/XmlAssert.html#withXPathFactory-javax.xml.xpath.XPathFactory-">withXPathFactory(XPathFactory)</a></span> - Method in class org.xmlunit.assertj.<a href="org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></dt>
+<dd>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath"><code>XPathFactory</code></a> to use for XPath related assertions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/matchers/EvaluateXPathMatcher.html#withXPathFactory-javax.xml.xpath.XPathFactory-">withXPathFactory(XPathFactory)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/EvaluateXPathMatcher.html" title="class in org.xmlunit.matchers">EvaluateXPathMatcher</a></dt>
+<dd>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath"><code>XPathFactory</code></a> to use.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/xmlunit/matchers/HasXPathMatcher.html#withXPathFactory-javax.xml.xpath.XPathFactory-">withXPathFactory(XPathFactory)</a></span> - Method in class org.xmlunit.matchers.<a href="org/xmlunit/matchers/HasXPathMatcher.html" title="class in org.xmlunit.matchers">HasXPathMatcher</a></dt>
+<dd>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath"><code>XPathFactory</code></a> to use.</div>
 </dd>
 </dl>
 <a name="I:X">

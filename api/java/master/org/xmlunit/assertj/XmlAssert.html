@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -305,7 +305,7 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withDocumentBuildFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuildFactory</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers">DocumentBuilderFactory</a>&nbsp;dbf)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">withDocumentBuilderFactory</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers">DocumentBuilderFactory</a>&nbsp;dbf)</code>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
  <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
 </td>
@@ -314,6 +314,12 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 <td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withNamespaceContext-java.util.Map-">withNamespaceContext</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;prefix2Uri)</code>
 <div class="block">Utility method used for creating a namespace context mapping to be used in XPath matching.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/xmlunit/assertj/XmlAssert.html#withXPathFactory-javax.xml.xpath.XPathFactory-">withXPathFactory</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath">XPathFactory</a>&nbsp;xpf)</code>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath"><code>XPathFactory</code></a> to use for XPath related assertions.</div>
 </td>
 </tr>
 </table>
@@ -359,15 +365,29 @@ extends org.assertj.core.api.AbstractAssert&lt;<a href="../../../org/xmlunit/ass
 </dl>
 </li>
 </ul>
-<a name="withDocumentBuildFactory-javax.xml.parsers.DocumentBuilderFactory-">
+<a name="withDocumentBuilderFactory-javax.xml.parsers.DocumentBuilderFactory-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>withDocumentBuildFactory</h4>
-<pre>public&nbsp;<a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a>&nbsp;withDocumentBuildFactory(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers">DocumentBuilderFactory</a>&nbsp;dbf)</pre>
+<h4>withDocumentBuilderFactory</h4>
+<pre>public&nbsp;<a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a>&nbsp;withDocumentBuilderFactory(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers">DocumentBuilderFactory</a>&nbsp;dbf)</pre>
 <div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/parsers/DocumentBuilderFactory.html?is-external=true" title="class or interface in javax.xml.parsers"><code>DocumentBuilderFactory</code></a> to use when creating a
  <a href="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom"><code>Document</code></a> from the XML input.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the actual value is <code>null</code>.</dd>
+</dl>
+</li>
+</ul>
+<a name="withXPathFactory-javax.xml.xpath.XPathFactory-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withXPathFactory</h4>
+<pre>public&nbsp;<a href="../../../org/xmlunit/assertj/XmlAssert.html" title="class in org.xmlunit.assertj">XmlAssert</a>&nbsp;withXPathFactory(<a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath">XPathFactory</a>&nbsp;xpf)</pre>
+<div class="block">Sets the <a href="http://docs.oracle.com/javase/6/docs/api/javax/xml/xpath/XPathFactory.html?is-external=true" title="class or interface in javax.xml.xpath"><code>XPathFactory</code></a> to use for XPath related assertions.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/AssertionError.html?is-external=true" title="class or interface in java.lang">AssertionError</a></code> - if the actual value is <code>null</code>.</dd>
