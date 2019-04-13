@@ -220,7 +220,7 @@
               </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Builder.DiffBuilder:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+        <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -304,6 +304,19 @@
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
             Will remove all comment-Tags "&lt;!-- Comment --&gt;" from
             test- and control-XML before comparing.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace()">IgnoreElementContentWhitespace</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a></nobr><blockquote>
+            Ignore element content whitespace by removing all text
+            nodes solely consisting of whitespace.
             </blockquote></td>
               </tr>
               <tr valign="top">
@@ -470,6 +483,52 @@
             An enumerable containing a single element.
             </blockquote></td>
               </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Placeholder/PlaceholderSupport.html#M:Org.XmlUnit.Placeholder.PlaceholderSupport.WithPlaceholderSupport``1(``0)">WithPlaceholderSupport&lt;D&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">D</i>)<nobr> : <i title="To be added.">D</i></nobr><blockquote>
+            Adds placeholder support to an IDifferenceEngineConfigurer.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Placeholder/PlaceholderSupport.html#M:Org.XmlUnit.Placeholder.PlaceholderSupport.WithPlaceholderSupportChainedAfter``1(``0,Org.XmlUnit.Diff.DifferenceEvaluator)">WithPlaceholderSupportChainedAfter&lt;D&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">D</i>, <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a>)<nobr> : <i title="To be added.">D</i></nobr><blockquote>
+            Adds placeholder support to an IDifferenceEngineConfigurer
+            considering an additional DifferenceEvaluator.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Placeholder/PlaceholderSupport.html#M:Org.XmlUnit.Placeholder.PlaceholderSupport.WithPlaceholderSupportUsingDelimiters``1(``0,System.String,System.String)">WithPlaceholderSupportUsingDelimiters&lt;D&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">D</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <i title="To be added.">D</i></nobr><blockquote>
+            Adds placeholder support to an IDifferenceEngineConfigurer.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Placeholder/PlaceholderSupport.html#M:Org.XmlUnit.Placeholder.PlaceholderSupport.WithPlaceholderSupportUsingDelimitersChainedAfter``1(``0,System.String,System.String,Org.XmlUnit.Diff.DifferenceEvaluator)">WithPlaceholderSupportUsingDelimitersChainedAfter&lt;D&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">D</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../Org.XmlUnit.Diff/DifferenceEvaluator.html">Org.XmlUnit.Diff.DifferenceEvaluator</a>)<nobr> : <i title="To be added.">D</i></nobr><blockquote>
+            Adds placeholder support to an IDifferenceEngineConfigurer
+            considering an additional DifferenceEvaluator.
+            </blockquote></td>
+              </tr>
             </table>
           </div>
         </div>
@@ -497,7 +556,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Build():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical()">CheckForIdentical Method</h3>
@@ -517,7 +576,7 @@
               </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForIdentical():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar()">CheckForSimilar Method</h3>
@@ -549,7 +608,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.CheckForSimilar():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object)">Compare Method</h3>
@@ -578,7 +637,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.Compare(System.Object):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments()">IgnoreComments Method</h3>
@@ -599,7 +658,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreComments():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreCommentsUsingXSLTVersion(System.String)">IgnoreCommentsUsingXSLTVersion Method</h3>
@@ -629,7 +688,28 @@
               </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreCommentsUsingXSLTVersion(System.String):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace()">IgnoreElementContentWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace():member">
+          <div class="msummary">
+            Ignore element content whitespace by removing all text
+            nodes solely consisting of whitespace.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../Org.XmlUnit.Builder/DiffBuilder.html">DiffBuilder</a> <b>IgnoreElementContentWhitespace</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace():Remarks">
+            since XMLUnit 2.6.0
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreElementContentWhitespace():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace()">IgnoreWhitespace Method</h3>
@@ -645,11 +725,14 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+            If you only want to remove text nodes consisting solely of
+            whitespace (AKA element content whitespace) but leave all
+            other text nodes alone you should use
+            ignoreElementContentWhitespace instead.
+              </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.IgnoreWhitespace():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace()">NormalizeWhitespace Method</h3>
@@ -671,7 +754,7 @@
               </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.NormalizeWhitespace():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute})">WithAttributeFilter Method</h3>
@@ -711,7 +794,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithAttributeFilter(System.Predicate{System.Xml.XmlAttribute}):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController)">WithComparisonController Method</h3>
@@ -742,7 +825,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonController(Org.XmlUnit.Diff.ComparisonController):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter)">WithComparisonFormatter Method</h3>
@@ -773,7 +856,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonFormatter(Org.XmlUnit.Diff.IComparisonFormatter):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithComparisonListeners Method</h3>
@@ -804,7 +887,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithComparisonListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator)">WithDifferenceEvaluator Method</h3>
@@ -844,7 +927,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceEvaluator(Org.XmlUnit.Diff.DifferenceEvaluator):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[])">WithDifferenceListeners Method</h3>
@@ -876,7 +959,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithDifferenceListeners(Org.XmlUnit.Diff.ComparisonListener[]):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext Method</h3>
@@ -910,7 +993,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode})">WithNodeFilter Method</h3>
@@ -943,7 +1026,7 @@
               </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeFilter(System.Predicate{System.Xml.XmlNode}):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher)">WithNodeMatcher Method</h3>
@@ -976,7 +1059,7 @@
             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithNodeMatcher(Org.XmlUnit.Diff.INodeMatcher):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object)">WithTest Method</h3>
@@ -1005,7 +1088,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Builder.DiffBuilder.WithTest(System.Object):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.6.0.121</div>
+            <b>Namespace: </b>Org.XmlUnit.Builder<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.168</div>
           <hr size="1" />
         </blockquote>
       </div>
