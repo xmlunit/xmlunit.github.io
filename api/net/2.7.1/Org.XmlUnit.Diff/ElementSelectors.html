@@ -1,0 +1,1065 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Diff.ElementSelectors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Diff Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.ElementSelectors">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.ElementSelectors:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.ElementSelectors:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.ElementSelectors:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Diff.ElementSelectors">ElementSelectors  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Diff.ElementSelectors:Summary">
+            Common ElementSelector implementations.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Diff.ElementSelectors:Signature">public static class  <b>ElementSelectors</b></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Diff.ElementSelectors:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Diff.ElementSelectors:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Diff.ElementSelectors:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[])">And</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+              Accepts two elements if all of the given ElementSelectors do.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement)">ByName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            can be compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement)">ByNameAndAllAttributes</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for all attributes can be compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[])">ByNameAndAttributes</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[])">ByNameAndAttributes</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[])">ByNameAndAttributesControlNS</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement)">ByNameAndText</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Elements with the same local name (and namespace URI - if any)
+            and nested text (if any) can be compared.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector)">ByXPath</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Selects two elements as matching if the child elements selected
+            via XPath match using the given childSelector.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector)">ByXPath</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Selects two elements as matching if the child elements selected
+            via XPath match using the given childSelector.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder()">ConditionalBuilder</a>
+                  </b>()<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a></nobr><blockquote>
+              Allows to build complex ElementSelectors by combining simpler blocks.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector)">ConditionalSelector</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlElement&gt;</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element matches the given predicate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement)">Default</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Always returns true, i.e. each element can be compared to each
+            other element.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector)">Not</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+              Negates another ElementSelector
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[])">Or</a>
+                  </b>(<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+               Accepts two elements if at least one of the given ElementSelectors does.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector)">SelectorForElementNamed</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element has the given (local) name.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector)">SelectorForElementNamed</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element has the given name.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector)">Xor</a>
+                  </b>(<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a></nobr><blockquote>
+               Accepts two elements if exactly on of the given ElementSelectors does.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Diff.ElementSelectors:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[])">And Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[]):member">
+          <div class="msummary">
+              Accepts two elements if all of the given ElementSelectors do.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>And</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[] selectors)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[]):Parameters">
+            <dl>
+              <dt>
+                <i>selectors</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.And(Org.XmlUnit.Diff.ElementSelector[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement)">ByName Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            can be compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>ByName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> controlElement, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> testElement)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement):Parameters">
+            <dl>
+              <dt>
+                <i>controlElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>testElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByName(System.Xml.XmlElement,System.Xml.XmlElement):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement)">ByNameAndAllAttributes Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for all attributes can be compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>ByNameAndAllAttributes</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> controlElement, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> testElement)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement):Parameters">
+            <dl>
+              <dt>
+                <i>controlElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>testElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAllAttributes(System.Xml.XmlElement,System.Xml.XmlElement):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[])">ByNameAndAttributes Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[]):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ByNameAndAttributes</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] attribs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[]):Parameters">
+            <dl>
+              <dt>
+                <i>attribs</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[]):Remarks">Attributes are only searched for in the null
+            namespace.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.String[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[])">ByNameAndAttributes Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[]):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ByNameAndAttributes</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a>[] attribs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[]):Parameters">
+            <dl>
+              <dt>
+                <i>attribs</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[]):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributes(System.Xml.XmlQualifiedName[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[])">ByNameAndAttributesControlNS Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[]):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            and attribute values for the given attribute names can be
+            compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ByNameAndAttributesControlNS</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] attribs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[]):Parameters">
+            <dl>
+              <dt>
+                <i>attribs</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[]):Remarks">
+            Namespace URIs of attributes are those of the attributes on
+            the control element or the null namespace if they don't
+            exist.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndAttributesControlNS(System.String[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement)">ByNameAndText Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement):member">
+          <div class="msummary">
+            Elements with the same local name (and namespace URI - if any)
+            and nested text (if any) can be compared.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>ByNameAndText</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> controlElement, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> testElement)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement):Parameters">
+            <dl>
+              <dt>
+                <i>controlElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>testElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByNameAndText(System.Xml.XmlElement,System.Xml.XmlElement):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector)">ByXPath Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+            Selects two elements as matching if the child elements selected
+            via XPath match using the given childSelector.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ByXPath</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xpath, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> childSelector)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>xpath</i>
+              </dt>
+              <dd>XPath expression applied in the context of the
+            elements to chose from that selects the children to compare.</dd>
+              <dt>
+                <i>childSelector</i>
+              </dt>
+              <dd>ElementSelector to apply to the selected children.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector):Returns">an ElementSelector</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector):Remarks">
+                The xpath expression should yield elements.  Two elements
+                match if a DefaultNodeMatcher applied to the selected children
+                finds matching pairs for all children.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector)">ByXPath Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+            Selects two elements as matching if the child elements selected
+            via XPath match using the given childSelector.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ByXPath</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xpath, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a> prefix2Uri, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> childSelector)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>xpath</i>
+              </dt>
+              <dd>XPath expression applied in the context of the
+            elements to chose from that selects the children to compare.</dd>
+              <dt>
+                <i>prefix2Uri</i>
+              </dt>
+              <dd>provides prefix mapping for
+            namespace prefixes used inside the xpath expression. Maps
+            from prefix to namespace URI</dd>
+              <dt>
+                <i>childSelector</i>
+              </dt>
+              <dd>ElementSelector to apply to the selected children.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector):Remarks">
+                The xpath expression should yield elements.  Two elements
+                match if a DefaultNodeMatcher applied to the selected children
+                finds matching pairs for all children.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ByXPath(System.String,System.Collections.Generic.IDictionary{System.String,System.String},Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder()">ConditionalBuilder Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder():member">
+          <div class="msummary">
+              Allows to build complex ElementSelectors by combining simpler blocks.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelectors+IConditionalSelectorBuilder.html">ElementSelectors.IConditionalSelectorBuilder</a> <b>ConditionalBuilder</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder():Remarks">
+                All pairs created by the when*/thenUse pairs
+                are evaluated in order until one returns true, finally the
+                default, if any, is consulted.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalBuilder():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector)">ConditionalSelector Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element matches the given predicate.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>ConditionalSelector</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlElement&gt;</a> predicate, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>predicate</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>es</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.ConditionalSelector(System.Predicate{System.Xml.XmlElement},Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement)">Default Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement):member">
+          <div class="msummary">
+            Always returns true, i.e. each element can be compared to each
+            other element.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Default</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> controlElement, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlElement">System.Xml.XmlElement</a> testElement)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement):Parameters">
+            <dl>
+              <dt>
+                <i>controlElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>testElement</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement):Remarks">
+            Generally this means elements will be compared in document
+            order.
+            </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Default(System.Xml.XmlElement,System.Xml.XmlElement):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector)">Not Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+              Negates another ElementSelector
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>Not</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>es</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Not(Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[])">Or Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):member">
+          <div class="msummary">
+               Accepts two elements if at least one of the given ElementSelectors does.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>Or</b> (<b>params</b> <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a>[] selectors)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Parameters">
+            <dl>
+              <dt>
+                <i>selectors</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Remarks">
+            <p>There is an important difference between using
+             ElementSelectors#Or to combine multiple ElementSelectors
+             and using DefaultNodeMatcher's constructor with multiple
+             ElementSelectors:</p>
+            <p>Consider ElementSelectors e1 and e2 and
+             two control and test nodes each.  Assume e1 would match the
+             first control node to the second test node and vice versa if used
+             alone, while e2 would match the nodes in order (the first
+             control node to the first test and so on).</p>
+            <p>ElementSelectors#Or creates a combined
+             ElementSelector that is willing to match the first control node to
+             both of the test nodes - and the same for the second control node.
+             Since nodes are compared in order when possible the result will be
+             the same as running e2 alone.</p>
+            <p>DefaultNodeMatcher with two ElementSelectors
+             will consult the ElementSelectors separately and only
+             invoke e2 if there are any nodes not matched by e1
+             at all.  In this case the result will be the same as running
+             e1 alone.</p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Or(Org.XmlUnit.Diff.ElementSelector[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector)">SelectorForElementNamed Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element has the given (local) name.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>SelectorForElementNamed</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> expectedName, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>expectedName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>es</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.String,Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector)">SelectorForElementNamed Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+            Applies the wrapped ElementSelector's logic if and only if the
+            control element has the given name.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>SelectorForElementNamed</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a> expectedName, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>expectedName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>es</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.SelectorForElementNamed(System.Xml.XmlQualifiedName,Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector)">Xor Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector):member">
+          <div class="msummary">
+               Accepts two elements if exactly on of the given ElementSelectors does.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> <b>Xor</b> (<a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es1, <a href="../Org.XmlUnit.Diff/ElementSelector.html">ElementSelector</a> es2)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector):Parameters">
+            <dl>
+              <dt>
+                <i>es1</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>es2</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.ElementSelectors.Xor(Org.XmlUnit.Diff.ElementSelector,Org.XmlUnit.Diff.ElementSelector):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.7.1.175</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
