@@ -207,9 +207,9 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler">IPlaceholderHandler  Interface</h1>
     <p class="Summary" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler:Summary">
-            Interface implemented by classes that are responsible for a
-            placeholder keyword.
-            </p>
+             Interface implemented by classes that are responsible for a
+             placeholder keyword.
+             </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler:Signature">public interface  <b>IPlaceholderHandler</b></div>
@@ -218,20 +218,20 @@
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler:Docs:Remarks">
         <p>
-            This interface and the whole module are considered experimental
-            and any API may change between releases of XMLUnit.
-              </p>
+             This interface and the whole module are considered experimental
+             and any API may change between releases of XMLUnit.
+               </p>
         <p>
-            Implementations are expected to be thread-safe, the Eevaluate
-            method may be invoked by multiple threads in parallel.
-              </p>
+             Implementations are expected to be thread-safe, the Eevaluate
+             method may be invoked by multiple threads in parallel.
+               </p>
         <p>
-            since 2.6.0
-              </p>
+             since 2.8.0
+               </p>
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+        <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <h2 class="Section">Public Properties</h2>
@@ -249,8 +249,8 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
                   </i>. 
-            The placeholder keyword this handler is responsible for.
-            </td>
+             The placeholder keyword this handler is responsible for.
+             </td>
               </tr>
             </table>
           </div>
@@ -266,11 +266,11 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String)">Evaluate</a>
-                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a></nobr><blockquote>
-            Evaluate the test value when control contained the
-            placeholder handled by this class.
-            </blockquote></td>
+                    <a href="#M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[])">Evaluate</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a></nobr><blockquote>
+             Evaluate the test value when control contained the
+             placeholder handled by this class.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -287,8 +287,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-            An enumerable containing a single element.
-            </blockquote></td>
+             An enumerable containing a single element.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -298,16 +298,16 @@
     <div class="Members" id="T:Org.XmlUnit.Placeholder.IPlaceholderHandler:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String)">Evaluate Method</h3>
-        <blockquote id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String):member">
+        <h3 id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[])">Evaluate Method</h3>
+        <blockquote id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[]):member">
           <div class="msummary">
-            Evaluate the test value when control contained the
-            placeholder handled by this class.
-            </div>
+             Evaluate the test value when control contained the
+             placeholder handled by this class.
+             </div>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a> <b>Evaluate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> testText)</div>
+          <div class="Signature">public <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a> <b>Evaluate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> testText, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] args)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String):Parameters">
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[]):Parameters">
             <dl>
               <dt>
                 <i>testText</i>
@@ -315,26 +315,32 @@
               <dd>
                 <span class="NotEntered">Documentation for this section has not yet been entered.</span>
               </dd>
+              <dt>
+                <i>args</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String):Returns">
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[]):Returns">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String):Remarks">
+          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[]):Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.IPlaceholderHandler.Evaluate(System.String,System.String[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
         <h3 id="P:Org.XmlUnit.Placeholder.IPlaceholderHandler.Keyword">Keyword Property</h3>
         <blockquote id="P:Org.XmlUnit.Placeholder.IPlaceholderHandler.Keyword:member">
           <div class="msummary">
-            The placeholder keyword this handler is responsible for.
-            </div>
+             The placeholder keyword this handler is responsible for.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Keyword</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
@@ -347,7 +353,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Org.XmlUnit.Placeholder.IPlaceholderHandler.Keyword:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
       </div>

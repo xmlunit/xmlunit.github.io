@@ -207,8 +207,10 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint">EvaluateXPathConstraint  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Summary">
-      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-    </p>
+             This NUnit3 Constraint verifies whether the evaluation of the
+             provided XPath expression corresponds to the value constraint
+             specified for the provided input XML object.
+             </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Signature">public class  <b>EvaluateXPathConstraint</b> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.Constraint</a></div>
@@ -216,11 +218,46 @@
     <div class="Remarks" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs:Remarks">
-        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+        <p>
+                 All types which are supported by Input.From(object)} can
+                 be used as input for the XML object against the constraint
+                 is evaluated.
+               </p>
+        <p>
+             since XMLUnit 2.1.0
+               </p>
       </div>
+      <h2 class="Section">Example</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs:Example:1">
+               Simple Example
+             <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             final String xml = "&lt;a&gt;&lt;b attr=\"abc\"&gt;&lt;/b&gt;&lt;/a&gt;";
+             Assert.That(xml, EvaluateXPathConstraint.HasXPath("//a/b/@attr", Is.EqualTo("abc")));
+             Assert.That(xml, EvaluateXPathConstraint.HasXPath("count(//a/b/c)", Is.EqualTo("0")));
+             </pre></td></tr></table></div>
+      <h2 class="Section">Example</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs:Example:2">
+               Example with namespace mapping
+             <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+                string xml = "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;" +
+                      "&lt;feed xmlns=\"http://www.w3.org/2005/Atom\"&gt;" +
+                      "   &lt;title&gt;title&lt;/title&gt;" +
+                      "   &lt;entry&gt;" +
+                      "       &lt;title&gt;title1&lt;/title&gt;" +
+                      "       &lt;id&gt;id1&lt;/id&gt;" +
+                      "   &lt;/entry&gt;" +
+                      "&lt;/feed&gt;";
+            
+                var prefix2Uri = new Dictionary&lt;string, string&gt;();
+                prefix2Uri["atom"] = "http://www.w3.org/2005/Atom";
+                Assert.That(xml,
+                      EvaluateXPathConstraint.HasXPath("//atom:feed/atom:entry/atom:id/text()",
+                                                       Is.EqualTo("id1"))
+                                             .WithNamespaceContext(prefix2Uri));
+             </pre></td></tr></table></div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+        <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -243,10 +280,10 @@
                     </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.IConstraint</a>)</div>
                 </td>
                 <td>
-            Creates a <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">Org.XmlUnit.Constraints.EvaluateXPathConstraint</a> instance
-            with the associated XPath expression and the value
-            constraint corresponding to the XPath evaluation.
-            </td>
+             Creates a <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">Org.XmlUnit.Constraints.EvaluateXPathConstraint</a> instance
+             with the associated XPath expression and the value
+             constraint corresponding to the XPath evaluation.
+             </td>
               </tr>
             </table>
           </div>
@@ -272,10 +309,10 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint)">HasXPath</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.IConstraint</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">EvaluateXPathConstraint</a></nobr><blockquote>
-            Creates a constraint that matches when the examined XML
-            input has a value at the specified <tt>xPath</tt> that
-            satisfies the specified <tt>valueConstraint</tt>.
-            </blockquote></td>
+             Creates a constraint that matches when the examined XML
+             input has a value at the specified <tt>xPath</tt> that
+             satisfies the specified <tt>valueConstraint</tt>.
+             </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -286,9 +323,9 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a>)<nobr> : <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">EvaluateXPathConstraint</a></nobr><blockquote>
-            Utility method used for creating a namespace context
-            mapping to be used in XPath matching.
-            </blockquote></td>
+             Utility method used for creating a namespace context
+             mapping to be used in XPath matching.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -305,8 +342,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-            An enumerable containing a single element.
-            </blockquote></td>
+             An enumerable containing a single element.
+             </blockquote></td>
               </tr>
             </table>
           </div>
@@ -319,10 +356,10 @@
         <h3 id="C:Org.XmlUnit.Constraints.EvaluateXPathConstraint(System.String,NUnit.Framework.Constraints.IConstraint)">EvaluateXPathConstraint Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Constraints.EvaluateXPathConstraint(System.String,NUnit.Framework.Constraints.IConstraint):member">
           <div class="msummary">
-            Creates a <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">Org.XmlUnit.Constraints.EvaluateXPathConstraint</a> instance
-            with the associated XPath expression and the value
-            constraint corresponding to the XPath evaluation.
-            </div>
+             Creates a <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">Org.XmlUnit.Constraints.EvaluateXPathConstraint</a> instance
+             with the associated XPath expression and the value
+             constraint corresponding to the XPath evaluation.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>EvaluateXPathConstraint</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xPath, <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.IConstraint</a> valueConstraint)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -344,7 +381,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Constraints.EvaluateXPathConstraint(System.String,NUnit.Framework.Constraints.IConstraint):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.ApplyTo``1(``0)">ApplyTo&lt;TActual&gt; Generic Method</h3>
@@ -386,16 +423,16 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.ApplyTo``1(``0):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint)">HasXPath Method</h3>
         <blockquote id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint):member">
           <div class="msummary">
-            Creates a constraint that matches when the examined XML
-            input has a value at the specified <tt>xPath</tt> that
-            satisfies the specified <tt>valueConstraint</tt>.
-            </div>
+             Creates a constraint that matches when the examined XML
+             input has a value at the specified <tt>xPath</tt> that
+             satisfies the specified <tt>valueConstraint</tt>.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">EvaluateXPathConstraint</a> <b>HasXPath</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xPath, <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.IConstraint</a> valueConstraint)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -419,22 +456,22 @@
           </div>
           <h2 class="Section">Example</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint):Example:1">
-            For example
-              <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
-            Assert.That(xml, EvaluateXPathConstraint.HasXPath("//fruits/fruit/@name",
-                                                              Is.EqualTo("apple"))
-              </pre></td></tr></table></div>
+             For example
+               <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             Assert.That(xml, EvaluateXPathConstraint.HasXPath("//fruits/fruit/@name",
+                                                               Is.EqualTo("apple"))
+               </pre></td></tr></table></div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext Method</h3>
         <blockquote id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):member">
           <div class="msummary">
-            Utility method used for creating a namespace context
-            mapping to be used in XPath matching.
-            </div>
+             Utility method used for creating a namespace context
+             mapping to be used in XPath matching.
+             </div>
           <h2>Syntax</h2>
           <div class="Signature">public <a href="../Org.XmlUnit.Constraints/EvaluateXPathConstraint.html">EvaluateXPathConstraint</a> <b>WithNamespaceContext</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;string, string&gt;</a> prefix2Uri)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -444,8 +481,8 @@
                 <i>prefix2Uri</i>
               </dt>
               <dd>maps from prefix to namespace
-            URI. It is used to resolve XML namespace prefixes in the
-            XPath expression</dd>
+             URI. It is used to resolve XML namespace prefixes in the
+             XPath expression</dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
@@ -458,7 +495,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.7.2.178</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.8.0.179</div>
           <hr size="1" />
         </blockquote>
       </div>

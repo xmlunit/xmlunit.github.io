@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>XMLUnit.NET 2.7.3-alpha-01: Org.XmlUnit.Placeholder</title>
+    <title>XMLUnit.NET 2.8.0-alpha-01: Org.XmlUnit.Placeholder</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -187,7 +187,7 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">XMLUnit.NET 2.7.3-alpha-01</a>
+      <a href="../index.html">XMLUnit.NET 2.8.0-alpha-01</a>
     </div>
     <h1 class="PageTitle">Org.XmlUnit.Placeholder Namespace</h1>
     <p class="Summary">
@@ -196,9 +196,68 @@
     </div>
     <div class="Remarks">
       <h2 class="Section"> Namespace</h2>
+      <p>
       <p>Experimental support for configuring parts of the test
-    engine by using ${xmlunit.KEYWORD} sequences inside the control
-    document.</p>
+      engine by using <tt>${xmlunit.KEYWORD}</tt> sequences inside the
+      control document.</p>
+
+      <p>This namepace and the whole package are considered
+      experimental and any API may change between releases of
+      XMLUnit.</p>
+
+      <p>The placeholder feature allows a placeholder sequence of
+      <tt>${xmlunit.KEYWORD(args...)}</tt> to be used as nested text in
+      elements or as attribute values of the control document and
+      trigger special handling based on the keyword.</p>
+
+      <p>The "special handling" is controlled by an instance of
+      <tt>IPlaceholderHandler</tt> per keyword. The class
+      <tt>PlaceholderDifferenceEvaluator</tt> loads all implementations
+      from the current assembly via reflection.</p>
+
+      <p>The placeholder sequence can take any number of string
+      values as arguments in the form
+      <tt>${xmlunit.KEYWORD(args1,arg2)}</tt> - if no arguments are used
+      the parentheses can be omitted completely. Arguments are not
+      quoted, whitespace inside of the argument list is
+      significant. All separators (by default <tt>${</tt>, <tt>}</tt>,
+      <tt>(</tt>, <tt>)</tt>, and <tt>,</tt>) can be configured
+      explicitly.</p>
+
+      <p>Keywords currently supported by built-in handlers
+      are:</p>
+      <table class="Documentation"><tr><th></th></tr><tr valign="top"><td><tt>${xmlunit.ignore}</tt></td><td>which
+        makes XMLUnit ignore the nested text or attribute
+        completely. This is handled by
+        <tt>IgnorePlaceholderHandler</tt>.</td></tr><tr valign="top"><td><tt>${xmlunit.isNumber}</tt></td><td>
+        makes the comparison pass if the textual content of the
+        element or attributes looks like a number. This is handled by
+        <tt>IsNumberPlaceholderHandler</tt>.</td></tr><tr valign="top"><td><tt>${xmlunit.matchesRegex}</tt></td><td> makes the comparison pass if the textual content
+        of the element or attribute matches the regular expression
+        specified as the first (and only) argument.  If there is no
+        argument at all, the comparison will fail. This is handled by
+        <tt>MatchesRegexPlaceholderHandler</tt>.</td></tr><tr valign="top"><td><tt>${xmlunit.isDateTime}</tt></td><td>
+        makes the comparison pass if the textual content of the
+        element or attributes looks like a date or datetime in the
+        current locale or parsed by ISO rules. An optional argument
+        can be used to specify a pattern unserstood by
+        <tt>DateTime.ParseExact</tt> to use when trying to parse the
+        test. This is handled by
+        <tt>IsDateTimePlaceholderHandler</tt>.</td></tr></table>
+
+      <p>The default delimiters of <tt>${</tt> and <tt>}</tt> can be
+      overwritten using custom regular expressions.</p>
+
+      <p>The easiest way to activate the placeholder feature is to
+      use one of the methods in <tt>PlaceholderSupport</tt> to add it to
+      a <tt>org.xmlunit.builder.DiffBuilder</tt> or
+      <tt>org.xmlunit.matchers.CompareMatcher</tt> instance. The
+      alternative approach is to create an instance of
+      <tt>PlaceholderDifferenceEvaluator</tt> as a
+      <tt>org.xmlunit.diff.DifferenceEvaluator</tt> and add it to the
+      builder yourself.</p>
+
+    </p>
       <table class="TypesListing" style="margin-top: 1em">
         <tr>
           <th>Type</th>
@@ -209,43 +268,59 @@
             <a href="./IgnorePlaceholderHandler.html">IgnorePlaceholderHandler</a>
           </td>
           <td>
-            Handler for the "ignore" placeholder keyword.
-            </td>
+             Handler for the "ignore" placeholder keyword.
+             </td>
         </tr>
         <tr valign="top">
           <td>
             <a href="./IPlaceholderHandler.html">IPlaceholderHandler</a>
           </td>
           <td>
-            Interface implemented by classes that are responsible for a
-            placeholder keyword.
-            </td>
+             Interface implemented by classes that are responsible for a
+             placeholder keyword.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IsDateTimePlaceholderHandler.html">IsDateTimePlaceholderHandler</a>
+          </td>
+          <td>
+             Handler for the "isDateTime" handler placeholder keyword
+             </td>
         </tr>
         <tr valign="top">
           <td>
             <a href="./IsNumberPlaceholderHandler.html">IsNumberPlaceholderHandler</a>
           </td>
           <td>
-            Handler for the "isNumber" placeholder keyword.
-            </td>
+             Handler for the "isNumber" placeholder keyword.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MatchesRegexPlaceholderHandler.html">MatchesRegexPlaceholderHandler</a>
+          </td>
+          <td>
+             Handler for the "matchesRegex()" placeholder keyword.
+             </td>
         </tr>
         <tr valign="top">
           <td>
             <a href="./PlaceholderDifferenceEvaluator.html">PlaceholderDifferenceEvaluator</a>
           </td>
           <td>
-            This class is used to add placeholder feature to XML comparison.
-            </td>
+             This class is used to add placeholder feature to XML comparison.
+             </td>
         </tr>
         <tr valign="top">
           <td>
             <a href="./PlaceholderSupport.html">PlaceholderSupport</a>
           </td>
           <td>
-            Adds support for the placeholder feature to a
-            DifferenceEngineConfigurer - like DiffBuilder or
-            CompareConstraint.
-            </td>
+             Adds support for the placeholder feature to a
+             DifferenceEngineConfigurer - like DiffBuilder or
+             CompareConstraint.
+             </td>
         </tr>
       </table>
     </div>
