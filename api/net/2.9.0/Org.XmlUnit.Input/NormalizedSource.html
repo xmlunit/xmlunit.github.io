@@ -1,0 +1,639 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Input.NormalizedSource</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Input Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Input.NormalizedSource">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Input.NormalizedSource:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Input.NormalizedSource:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Input.NormalizedSource:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Input.NormalizedSource">NormalizedSource  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Input.NormalizedSource:Summary">
+            Performs XML normalization on a given ISource or DOM Node.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Input.NormalizedSource:Signature">public class  <b>NormalizedSource</b> : <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IDisposable">IDisposable</a></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Input.NormalizedSource:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.NormalizedSource:Docs:Remarks">
+        <p>
+              This means adjacent text nodes are merged to single nodes
+              and empty Text nodes removed (recursively).  See the linked
+              API docs for details.
+              </p>
+        <p>
+              When reading documents a parser usually puts the document
+              into normalized form anway.  You will only need to perform
+              XML normalization on DOM trees you have created
+              programmatically.
+              </p>
+        <p>
+                https://msdn.microsoft.com/en-us/library/system.xml.xmlnode.normalize%28v=vs.110%29.aspx
+              </p>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.NormalizedSource:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource)">NormalizedSource</a>
+                    </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
+                </td>
+                <td>
+            Creates a new Source with the same content as another source normalizing the document.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode)">NormalizedSource</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)</div>
+                </td>
+                <td>
+            Creates a new Source wrapping a XmlNode after normalizing it.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String)">NormalizedSource</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+            Creates a new Source wrapping a XmlNode after normalizing it.
+            </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Input.NormalizedSource.Node">Node</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>
+                  </i>. 
+            The node this source is wrapping
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Input.NormalizedSource.Reader">Reader</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:Org.XmlUnit.Input.NormalizedSource.SystemId">SystemId</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Input.NormalizedSource.Dispose()">Dispose</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Input.NormalizedSource.ToString()">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Protected Methods</h2>
+        <div class="SectionBox" id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean)">Dispose</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Extension Methods</h2>
+        <div class="SectionBox" id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
+            An enumerable containing a single element.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Convert.html#M:Org.XmlUnit.Util.Convert.ToDocument(Org.XmlUnit.ISource)">ToDocument</a>
+                  </b>(<i>this</i> <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlDocument">System.Xml.XmlDocument</a></nobr><blockquote>
+            Creates a DOM Document from an ISource.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Util/Convert.html#M:Org.XmlUnit.Util.Convert.ToNode(Org.XmlUnit.ISource)">ToNode</a>
+                  </b>(<i>this</i> <a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
+            Creates a DOM Node from an ISource.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Input.NormalizedSource:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource)">NormalizedSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource):member">
+          <div class="msummary">
+            Creates a new Source with the same content as another source normalizing the document.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>NormalizedSource</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> originalSource)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource):Parameters">
+            <dl>
+              <dt>
+                <i>originalSource</i>
+              </dt>
+              <dd>source with the original content</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(Org.XmlUnit.ISource):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode)">NormalizedSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Creates a new Source wrapping a XmlNode after normalizing it.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>NormalizedSource</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> node)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>source with the original content</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String)">NormalizedSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String):member">
+          <div class="msummary">
+            Creates a new Source wrapping a XmlNode after normalizing it.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>NormalizedSource</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> node, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> systemId)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>source with the original content</dd>
+              <dt>
+                <i>systemId</i>
+              </dt>
+              <dd>the systemId to use</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.NormalizedSource(System.Xml.XmlNode,System.String):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Input.NormalizedSource.Dispose()">Dispose Method</h3>
+        <blockquote id="M:Org.XmlUnit.Input.NormalizedSource.Dispose():member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.Dispose():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.Dispose():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean)">Dispose Method</h3>
+        <blockquote id="M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean):member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected virtual <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Dispose</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> disposing)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>disposing</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.Dispose(System.Boolean):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Input.NormalizedSource.Node">Node Property</h3>
+        <blockquote id="P:Org.XmlUnit.Input.NormalizedSource.Node:member">
+          <div class="msummary">
+            The node this source is wrapping
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>Node</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Node:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Node:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Node:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Input.NormalizedSource.Reader">Reader Property</h3>
+        <blockquote id="P:Org.XmlUnit.Input.NormalizedSource.Reader:member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a> <b>Reader</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Reader:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Reader:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.Reader:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Org.XmlUnit.Input.NormalizedSource.SystemId">SystemId Property</h3>
+        <blockquote id="P:Org.XmlUnit.Input.NormalizedSource.SystemId:member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>SystemId</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.SystemId:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.SystemId:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Org.XmlUnit.Input.NormalizedSource.SystemId:Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Input.NormalizedSource.ToString()">ToString Method</h3>
+        <blockquote id="M:Org.XmlUnit.Input.NormalizedSource.ToString():member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.ToString():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.ToString():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Input.NormalizedSource.ToString():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.9.0.205</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
