@@ -6,6 +6,8 @@ org.custommonkey.xmlunit.util
 org.xmlunit
 org.xmlunit.assertj
 org.xmlunit.assertj.error
+org.xmlunit.assertj3
+org.xmlunit.assertj3.error
 org.xmlunit.builder
 org.xmlunit.diff
 org.xmlunit.input
