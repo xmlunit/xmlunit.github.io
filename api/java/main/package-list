@@ -9,6 +9,8 @@ org.xmlunit.assertj.error
 org.xmlunit.assertj3
 org.xmlunit.assertj3.error
 org.xmlunit.builder
+org.xmlunit.builder.jakarta_jaxb
+org.xmlunit.builder.javax_jaxb
 org.xmlunit.diff
 org.xmlunit.input
 org.xmlunit.matchers
