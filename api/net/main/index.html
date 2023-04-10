@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>XMLUnit.NET 2.9.0-alpha-01</title>
+    <title>XMLUnit.NET 2.10.0</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -188,22 +188,26 @@
   <body>
     <div class="CollectionTitle">
     </div>
-    <h1 class="PageTitle">XMLUnit.NET 2.9.0-alpha-01</h1>
+    <h1 class="PageTitle">XMLUnit.NET 2.10.0</h1>
     <p class="Summary">
       <div class="AssemblyRemarks" style="margin-top: 1em; margin-bottom: 1em">
         <p>
           <a href="https://www.xmlunit.org/">XMLUnit</a> helps testing code
     that creates XML.</p>
-        <p>XMLUnit.NET is separated into two assemblies:</p>
+        <p>XMLUnit.NET is separated into several assemblies:</p>
         <ul>
           <li>
-            <tt>xmlunit-core</tt> contains all algorithms and
+            <tt>XMLUnit.Core</tt> contains all algorithms and
         classes needed to validate XML, perform XPath queries or
         compare two pieces of XML.</li>
           <li>
-            <tt>xmlunit-constraints</tt>
-        contains <a href="http://nunit.org/">NUnit</a>
-        constraints on top of <tt>xmlunit-core</tt>.</li>
+            <tt>XMLUnit.NUnit2.Constraints</tt>
+        contains <a href="http://nunit.org/">NUnit 2.x</a>
+        constraints on top of <tt>XMLUnit.Core</tt>.</li>
+          <li>
+            <tt>XMLUnit.NUnit3.Constraints</tt>
+        contains <a href="http://nunit.org/">NUnit 3.x</a>
+        constraints on top of <tt>XMLUnit.Core</tt>.</li>
         </ul>
         <p>While XMLUnit is focussed on testing, parts of it may be useful
       in different contexts as well.  The IDifferenceEngine may be the driver behind a
@@ -219,6 +223,13 @@
       XML Schema (or even the schema document itself) or a DTD.</p>
         <p>The Builder namespace contains fluent builders that may provide an API that is
       more convenient to use in many cases.</p>
+        <p>XMLUnit.NET 2.6.0 adds a new experimental component
+      <tt>XMLUnit.Placeholders</tt> that aims to provide a
+      small DSL for configuring the test engine via the control XML
+      document rather than code. The initial code base only supports a
+      placeholder of <tt>${xmlunit.ignore}</tt> to be used in
+      order to make XMLUnit ignore the element containing this
+      sequence.</p>
         <ul>
           <li>
             <a href="https://www.xmlunit.org/">XMLUnit's home page</a>

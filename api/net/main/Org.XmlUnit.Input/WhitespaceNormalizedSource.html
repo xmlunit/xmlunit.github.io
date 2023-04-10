@@ -207,9 +207,9 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource">WhitespaceNormalizedSource  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource:Summary">
-             A source that is obtained from a different source by removing
-             all empty text nodes and normalizing the non-empty ones.
-             </p>
+            A source that is obtained from a different source by removing
+            all empty text nodes and normalizing the non-empty ones.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource:Signature">public class  <b>WhitespaceNormalizedSource</b> : <a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a></div>
@@ -217,13 +217,24 @@
     <div class="Remarks" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource:Docs">
       <h2 class="Section">Remarks</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource:Docs:Remarks">
-             "normalized" in this context means all whitespace characters
-             are replaced by space characters and consecutive whitespace
-             characters are collapsed.
-             </div>
+        <p>
+            "normalized" in this context means all whitespace characters
+            are replaced by space characters and consecutive whitespace
+            characters are collapsed.
+              </p>
+        <p>
+            This class is similiar to <a href="../Org.XmlUnit.Input/WhitespaceStrippedSource.html">Org.XmlUnit.Input.WhitespaceStrippedSource</a>
+            but in addition "normalizes" whitespace.
+              </p>
+        <p>
+            Unlike <a href="../Org.XmlUnit.Input/XmlWhitespaceNormalizedSource.html">Org.XmlUnit.Input.XmlWhitespaceNormalizedSource</a> this class uses
+            Unicode's idea of whitespace rather than the more restricted
+            subset considered whitespace by XML.
+              </p>
+      </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Input.WhitespaceNormalizedSource:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -246,8 +257,8 @@
                     </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
                 </td>
                 <td>
-             Creates a new Source with the same content as another source normalizing whitespace in Text nodes.
-             </td>
+            Creates a new Source with the same content as another source normalizing whitespace in Text nodes.
+            </td>
               </tr>
             </table>
           </div>
@@ -267,8 +278,8 @@
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>
                   </i>. 
-             The node this source is wrapping
-              (<i>Inherited from <a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a>.</i>)</td>
+            The node this source is wrapping
+             (<i>Inherited from <a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a>.</i>)</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -355,8 +366,8 @@
                   <b>
                     <a href="../Org.XmlUnit.Util/Linqy.html#M:Org.XmlUnit.Util.Linqy.Singleton``1(``0)">Singleton&lt;T&gt;</a>
                   </b>(<i>this</i> <i title="To be added.">T</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a></nobr><blockquote>
-             An enumerable containing a single element.
-             </blockquote></td>
+            An enumerable containing a single element.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -369,8 +380,8 @@
         <h3 id="C:Org.XmlUnit.Input.WhitespaceNormalizedSource(Org.XmlUnit.ISource)">WhitespaceNormalizedSource Constructor</h3>
         <blockquote id="C:Org.XmlUnit.Input.WhitespaceNormalizedSource(Org.XmlUnit.ISource):member">
           <div class="msummary">
-             Creates a new Source with the same content as another source normalizing whitespace in Text nodes.
-             </div>
+            Creates a new Source with the same content as another source normalizing whitespace in Text nodes.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>WhitespaceNormalizedSource</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> originalSource)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -388,7 +399,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Input.WhitespaceNormalizedSource(Org.XmlUnit.ISource):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
       </div>

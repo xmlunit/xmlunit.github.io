@@ -207,8 +207,8 @@
     </div>
     <h1 class="PageTitle" id="T:Org.XmlUnit.Util.Nodes">Nodes  Class</h1>
     <p class="Summary" id="T:Org.XmlUnit.Util.Nodes:Summary">
-             Utility algorithms that work on DOM nodes.
-             </p>
+            Utility algorithms that work on DOM nodes.
+            </p>
     <div>
       <h2>Syntax</h2>
       <div class="Signature" id="T:Org.XmlUnit.Util.Nodes:Signature">public static class  <b>Nodes</b></div>
@@ -220,7 +220,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Util.Nodes:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+        <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -239,8 +239,19 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode)">GetAttributes</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;System.Xml.XmlQualifiedName, string&gt;</a></nobr><blockquote>
-             Obtains an element's attributes as dictionary.
-             </blockquote></td>
+            Obtains an element's attributes as dictionary.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute})">GetAttributes</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;System.Xml.XmlQualifiedName, string&gt;</a></nobr><blockquote>
+            Obtains an element's attributes as dictionary.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -250,9 +261,9 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.GetMergedNestedText(System.Xml.XmlNode)">GetMergedNestedText</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
-             Tries to merge all direct Text and CDATA children of the given
-             Node and concatenates their value.
-             </blockquote></td>
+            Tries to merge all direct Text and CDATA children of the given
+            Node and concatenates their value.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -262,8 +273,8 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.GetQName(System.Xml.XmlNode)">GetQName</a>
                   </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a></nobr><blockquote>
-             Extracts a Node's name and namespace URI (if any).
-             </blockquote></td>
+            Extracts a Node's name and namespace URI (if any).
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -273,11 +284,25 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode)">NormalizeWhitespace</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             empty text or CDATA nodes and where all textual content
-             including attribute values or comments are normalized.
-             </blockquote></td>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are normalized.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode)">NormalizeXmlWhitespace</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are normalized.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -287,10 +312,10 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.StripElementContentWhitespace(System.Xml.XmlNode)">StripElementContentWhitespace</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             text or CDATA nodes that only consist of whitespace.
-             </blockquote></td>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            text or CDATA nodes that only consist of whitespace.
+            </blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -300,11 +325,40 @@
                   <b>
                     <a href="#M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode)">StripWhitespace</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             empty text or CDATA nodes and where all textual content
-             including attribute values or comments are trimmed.
-             </blockquote></td>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are trimmed.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)">StripXmlElementContentWhitespace</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            text or CDATA nodes that only consist of XML whitespace.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode)">StripXmlWhitespace</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a></nobr><blockquote>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are trimmed of
+            characters XML considers whitespace according to
+            <a href="https://www.w3.org/TR/xml11/#NT-S"></a>.
+            </blockquote></td>
               </tr>
             </table>
           </div>
@@ -317,8 +371,8 @@
         <h3 id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode)">GetAttributes Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode):member">
           <div class="msummary">
-             Obtains an element's attributes as dictionary.
-             </div>
+            Obtains an element's attributes as dictionary.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;System.Xml.XmlQualifiedName, string&gt;</a> <b>GetAttributes</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -342,15 +396,52 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute})">GetAttributes Method</h3>
+        <blockquote id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute}):member">
+          <div class="msummary">
+            Obtains an element's attributes as dictionary.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IDictionary`2">IDictionary&lt;System.Xml.XmlQualifiedName, string&gt;</a> <b>GetAttributes</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlAttribute&gt;</a> attributeFilter)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute}):Parameters">
+            <dl>
+              <dt>
+                <i>n</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>attributeFilter</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute}):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute}):Remarks">
+            since XMLUnit 2.10.0
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.GetAttributes(System.Xml.XmlNode,System.Predicate{System.Xml.XmlAttribute}):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Util.Nodes.GetMergedNestedText(System.Xml.XmlNode)">GetMergedNestedText Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.GetMergedNestedText(System.Xml.XmlNode):member">
           <div class="msummary">
-             Tries to merge all direct Text and CDATA children of the given
-             Node and concatenates their value.
-             </div>
+            Tries to merge all direct Text and CDATA children of the given
+            Node and concatenates their value.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetMergedNestedText</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -374,14 +465,14 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.GetMergedNestedText(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Util.Nodes.GetQName(System.Xml.XmlNode)">GetQName Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.GetQName(System.Xml.XmlNode):member">
           <div class="msummary">
-             Extracts a Node's name and namespace URI (if any).
-             </div>
+            Extracts a Node's name and namespace URI (if any).
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlQualifiedName">System.Xml.XmlQualifiedName</a> <b>GetQName</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -405,17 +496,17 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.GetQName(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode)">NormalizeWhitespace Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode):member">
           <div class="msummary">
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             empty text or CDATA nodes and where all textual content
-             including attribute values or comments are normalized.
-             </div>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are normalized.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>NormalizeWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -435,22 +526,83 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode):Remarks">
-             "normalized" in this context means all whitespace
-             characters are replaced by space characters and
-             consecutive whitespace characaters are collapsed.
-               </div>
+            <p>
+            "normalized" in this context means all whitespace
+            characters are replaced by space characters and
+            consecutive whitespace characters are collapsed.
+              </p>
+            <p>
+            This method is similiar to <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode)">Nodes.StripWhitespace(System.Xml.XmlNode)</a>
+            but in addition "normalizes" whitespace.
+              </p>
+            <p>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode)">Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode)</a> this uses Unicode's idea
+            of whitespace rather than the more restricted subset considered
+            whitespace by XML.
+             </p>
+          </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode)">NormalizeXmlWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are normalized.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>NormalizeXmlWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>original</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode):Remarks">
+            <p>
+            "normalized" in this context means all XML whitespace
+            characters are replaced by space characters and
+            consecutive XML whitespace characters are collapsed.
+              </p>
+            <p>
+            This method is similiar to <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode)">Nodes.StripXmlWhitespace(System.Xml.XmlNode)</a>
+            but in addition "normalizes" XML whitespace.
+              </p>
+            <p>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.NormalizeWhitespace(System.Xml.XmlNode)">Nodes.NormalizeWhitespace(System.Xml.XmlNode)</a> this uses XML's idea
+            of whitespace rather than the more extensive set considered
+            whitespace by Unicode.
+             </p>
+            <p>
+            since XMLUnit 2.10.0
+             </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.NormalizeXmlWhitespace(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Util.Nodes.StripElementContentWhitespace(System.Xml.XmlNode)">StripElementContentWhitespace Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.StripElementContentWhitespace(System.Xml.XmlNode):member">
           <div class="msummary">
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             text or CDATA nodes that only consist of whitespace.
-             </div>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            text or CDATA nodes that only consist of whitespace.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>StripElementContentWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -471,26 +623,31 @@
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripElementContentWhitespace(System.Xml.XmlNode):Remarks">
             <p>
-             This doesn't have any effect if applied to a text or CDATA
-             node itself.
-               </p>
+            This doesn't have any effect if applied to a text or CDATA
+            node itself.
+              </p>
             <p>
-             since XMLUnit 2.6.0
-               </p>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)">Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)</a> this uses Unicode's idea
+            of whitespace rather than the more restricted subset considered
+            whitespace by XML.
+             </p>
+            <p>
+            since XMLUnit 2.6.0
+              </p>
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripElementContentWhitespace(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode)">StripWhitespace Method</h3>
         <blockquote id="M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode):member">
           <div class="msummary">
-             Creates a new Node (of the same type as the original node)
-             that is similar to the orginal but doesn't contain any
-             empty text or CDATA nodes and where all textual content
-             including attribute values or comments are trimmed.
-             </div>
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are trimmed.
+            </div>
           <h2>Syntax</h2>
           <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>StripWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
           <h4 class="Subsection">Parameters</h4>
@@ -510,11 +667,100 @@
           </blockquote>
           <h2 class="Section">Remarks</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode):Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode)">Nodes.StripXmlWhitespace(System.Xml.XmlNode)</a> this uses Unicode's idea
+            of whitespace rather than the more restricted subset considered
+            whitespace by XML.
+             </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.8.1.198</div>
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)">StripXmlElementContentWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            text or CDATA nodes that only consist of XML whitespace.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>StripXmlElementContentWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>original</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode):Remarks">
+            <p>
+            This doesn't have any effect if applied to a text or CDATA
+            node itself.
+              </p>
+            <p>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)">Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode)</a> this uses XML's idea
+            of whitespace rather than the more extensive set considered
+            whitespace by Unicode.
+             </p>
+            <p>
+            since XMLUnit 2.10.0
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlElementContentWhitespace(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode)">StripXmlWhitespace Method</h3>
+        <blockquote id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Creates a new Node (of the same type as the original node)
+            that is similar to the orginal but doesn't contain any
+            empty text or CDATA nodes and where all textual content
+            including attribute values or comments are trimmed of
+            characters XML considers whitespace according to
+            <a href="https://www.w3.org/TR/xml11/#NT-S"></a>.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> <b>StripXmlWhitespace</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> original)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>original</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode):Remarks">
+            <p>
+            Unlike <a href="../Org.XmlUnit.Util/Nodes.html#M:Org.XmlUnit.Util.Nodes.StripWhitespace(System.Xml.XmlNode)">Nodes.StripWhitespace(System.Xml.XmlNode)</a> this uses XML's idea
+            of whitespace rather than the more extensive set considered
+            whitespace by Unicode.
+             </p>
+            <p>
+            since XMLUnit 2.10.0
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Util.Nodes.StripXmlWhitespace(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Util<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
       </div>

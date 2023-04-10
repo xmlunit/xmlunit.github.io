@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler</title>
+    <title>Org.XmlUnit.Input.XmlWhitespaceStrippedSource</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -187,45 +187,60 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">xmlunit-placeholders</a> : <a href="index.html">Org.XmlUnit.Placeholder Namespace</a></div>
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Input Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler">Overview</a>
+        <a href="#T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource">Overview</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Signature">Signature</a>
+        <a href="#T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Docs">Remarks</a>
+        <a href="#T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Members">Member Details</a>
+        <a href="#T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler">MatchesRegexPlaceholderHandler  Class</h1>
-    <p class="Summary" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Summary">
-            Handler for the "matchesRegex()" placeholder keyword.
-            </p>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource">XmlWhitespaceStrippedSource  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Summary">
+            A source that is obtained from a different source by removing
+            all empty text nodes and removing all characters XML considers
+            whitespace at the start and end of the text content of the
+            non-empty ones. <a href="https://www.w3.org/TR/xml11/#NT-S"></a></p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Signature">public class  <b>MatchesRegexPlaceholderHandler</b> : <a href="../Org.XmlUnit.Placeholder/IPlaceholderHandler.html">IPlaceholderHandler</a></div>
+      <div class="Signature" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Signature">public class  <b>XmlWhitespaceStrippedSource</b> : <a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a></div>
     </div>
-    <div class="Remarks" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Docs">
+    <div class="Remarks" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Docs:Remarks">
-            since 2.8.0
-              </div>
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Docs:Remarks">
+        <p>
+            If you only want to remove text nodes consisting solely of
+            whitespace (AKA element content whitespace) but leave all
+            other text nodes alone you should use
+            ElementContentWhitespaceStrippedSource instead.
+              </p>
+        <p>
+            Unlike <a href="../Org.XmlUnit.Input/WhitespaceStrippedSource.html">Org.XmlUnit.Input.WhitespaceStrippedSource</a> this uses XML's idea
+            of whitespace rather than the more extensive set considered
+            whitespace by Unicode.
+              </p>
+        <p>
+            since XMLUnit 2.10.0
+              </p>
+      </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+      <div class="SectionBox" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+								<a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a>.
 							</p>
         <h2 class="Section">Public Constructors</h2>
         <div class="SectionBox" id="Public Constructors">
@@ -239,12 +254,12 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler()">MatchesRegexPlaceholderHandler</a>
-                    </b>()</div>
+                      <a href="#C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource)">XmlWhitespaceStrippedSource</a>
+                    </b>(<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a>)</div>
                 </td>
                 <td>
-                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-                </td>
+            Creates a new Source with the same content as another source trimming whitespace from Text nodes.
+            </td>
               </tr>
             </table>
           </div>
@@ -257,13 +272,42 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword">Keyword</a>
+                    <a href="../Org.XmlUnit.Input/DOMSource.html#P:Org.XmlUnit.Input.DOMSource.Node">Node</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>
+                  </i>. 
+            The node this source is wrapping
+             (<i>Inherited from <a href="../Org.XmlUnit.Input/DOMSource.html">DOMSource</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="../Org.XmlUnit.Input/AbstractSource.html#P:Org.XmlUnit.Input.AbstractSource.Reader">Reader</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlReader">System.Xml.XmlReader</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../Org.XmlUnit.Input/AbstractSource.html">AbstractSource</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../Org.XmlUnit.Input/AbstractSource.html#P:Org.XmlUnit.Input.AbstractSource.SystemId">SystemId</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
-                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../Org.XmlUnit.Input/AbstractSource.html">AbstractSource</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -279,8 +323,34 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[])">Evaluate</a>
-                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+                    <a href="../Org.XmlUnit.Input/AbstractSource.html#M:Org.XmlUnit.Input.AbstractSource.Dispose()">Dispose</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../Org.XmlUnit.Input/AbstractSource.html">AbstractSource</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Input/AbstractSource.html#M:Org.XmlUnit.Input.AbstractSource.ToString()">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../Org.XmlUnit.Input/AbstractSource.html">AbstractSource</a>.</i>)</blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Protected Methods</h2>
+        <div class="SectionBox" id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Org.XmlUnit.Input/AbstractSource.html#M:Org.XmlUnit.Input.AbstractSource.Dispose(System.Boolean)">Dispose</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../Org.XmlUnit.Input/AbstractSource.html">AbstractSource</a>.</i>)</blockquote></td>
               </tr>
             </table>
           </div>
@@ -305,80 +375,32 @@
         </div>
       </div>
     </div>
-    <div class="Members" id="T:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler:Members">
+    <div class="Members" id="T:Org.XmlUnit.Input.XmlWhitespaceStrippedSource:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler()">MatchesRegexPlaceholderHandler Constructor</h3>
-        <blockquote id="C:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler():member">
+        <h3 id="C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource)">XmlWhitespaceStrippedSource Constructor</h3>
+        <blockquote id="C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource):member">
           <div class="msummary">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
+            Creates a new Source with the same content as another source trimming whitespace from Text nodes.
+            </div>
           <h2>Syntax</h2>
-          <div class="Signature">public  <b>MatchesRegexPlaceholderHandler</b> ()</div>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler():Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler():Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[])">Evaluate Method</h3>
-        <blockquote id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[]):member">
-          <div class="msummary">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="../Org.XmlUnit.Diff/ComparisonResult.html">Org.XmlUnit.Diff.ComparisonResult</a> <b>Evaluate</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> testText, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] args)</div>
+          <div class="Signature">public  <b>XmlWhitespaceStrippedSource</b> (<a href="../Org.XmlUnit/ISource.html">Org.XmlUnit.ISource</a> originalSource)</div>
           <h4 class="Subsection">Parameters</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[]):Parameters">
+          <blockquote class="SubsectionBox" id="C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource):Parameters">
             <dl>
               <dt>
-                <i>testText</i>
+                <i>originalSource</i>
               </dt>
-              <dd>
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </dd>
-              <dt>
-                <i>args</i>
-              </dt>
-              <dd>
-                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-              </dd>
+              <dd>source with the original content</dd>
             </dl>
           </blockquote>
-          <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[]):Returns">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[]):Remarks">
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource):Remarks">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Evaluate(System.String,System.String[]):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword">Keyword Property</h3>
-        <blockquote id="P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword:member">
-          <div class="msummary">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Keyword</b>  { get; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword:Value">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword:Remarks">
-            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Org.XmlUnit.Placeholder.MatchesRegexPlaceholderHandler.Keyword:Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Placeholder<br /><b>Assembly: </b>xmlunit-placeholders (in xmlunit-placeholders.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+          <div class="SectionBox" id="C:Org.XmlUnit.Input.XmlWhitespaceStrippedSource(Org.XmlUnit.ISource):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Input<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
           <hr size="1" />
         </blockquote>
       </div>
