@@ -1,0 +1,429 @@
+<html>
+  <head>
+    <title>Org.XmlUnit.Diff.NodeFilters</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">xmlunit-core</a> : <a href="index.html">Org.XmlUnit.Diff Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.NodeFilters">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.NodeFilters:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.NodeFilters:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Org.XmlUnit.Diff.NodeFilters:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Org.XmlUnit.Diff.NodeFilters">NodeFilters  Class</h1>
+    <p class="Summary" id="T:Org.XmlUnit.Diff.NodeFilters:Summary">
+            Common NodeFilter implementations.
+            </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:Org.XmlUnit.Diff.NodeFilters:Signature">public static class  <b>NodeFilters</b></div>
+    </div>
+    <div class="Remarks" id="T:Org.XmlUnit.Diff.NodeFilters:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Diff.NodeFilters:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:Org.XmlUnit.Diff.NodeFilters:Docs:Version Information">
+        <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode)">AcceptAll</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Suppresses document-type and XML declaration nodes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode)">Default</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Suppresses document-type and XML declaration nodes.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[])">SatifiesAll</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a></nobr><blockquote>
+              Accepts nodes that are accepted by all given filters.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[])">SatifiesAny</a>
+                  </b>(<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a></nobr><blockquote>
+              Accepts nodes that are accepted by at least on of the given filters.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:Org.XmlUnit.Diff.NodeFilters:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode)">AcceptAll Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Suppresses document-type and XML declaration nodes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AcceptAll</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>n</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode):Remarks">
+                since XMLUnit 2.6.0
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.AcceptAll(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode)">Default Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode):member">
+          <div class="msummary">
+            Suppresses document-type and XML declaration nodes.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Default</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Xml.XmlNode">System.Xml.XmlNode</a> n)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode):Parameters">
+            <dl>
+              <dt>
+                <i>n</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode):Remarks">
+            This is the default used by AbstractDifferenceEngine and
+            thus DOMDifferenceEngine.
+              </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.Default(System.Xml.XmlNode):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[])">SatifiesAll Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[]):member">
+          <div class="msummary">
+              Accepts nodes that are accepted by all given filters.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> <b>SatifiesAll</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>[] predicates)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[]):Parameters">
+            <dl>
+              <dt>
+                <i>predicates</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[]):Remarks">
+            <p>
+                This short-circuits the given list of predicates and
+                returns false as soon as the first predicate does.
+              </p>
+            <p>
+                since XMLUnit 2.9.2
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAll(System.Predicate{System.Xml.XmlNode}[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[])">SatifiesAny Method</h3>
+        <blockquote id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[]):member">
+          <div class="msummary">
+              Accepts nodes that are accepted by at least on of the given filters.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a> <b>SatifiesAny</b> (<b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Predicate`1">Predicate&lt;System.Xml.XmlNode&gt;</a>[] predicates)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[]):Parameters">
+            <dl>
+              <dt>
+                <i>predicates</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[]):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[]):Remarks">
+            <p>
+                This short-circuits the given list of predicates and
+                returns true as soon as the first predicate does.
+              </p>
+            <p>
+                since XMLUnit 2.9.2
+              </p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Diff.NodeFilters.SatifiesAny(System.Predicate{System.Xml.XmlNode}[]):Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Diff<br /><b>Assembly: </b>xmlunit-core (in xmlunit-core.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
