@@ -187,7 +187,7 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">xmlunit-nunit3-constraints</a> : <a href="index.html">Org.XmlUnit.Constraints Namespace</a></div>
+      <a href="../index.html">xmlunit-nunit4-constraints</a> : <a href="index.html">Org.XmlUnit.Constraints Namespace</a></div>
     <div class="SideBar">
       <p>
         <a href="#T:Org.XmlUnit.Constraints.EvaluateXPathConstraint">Overview</a>
@@ -211,7 +211,7 @@
     </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Signature">public class  <b>EvaluateXPathConstraint</b> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.Constraint</a></div>
+      <div class="Signature" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Signature">public class  <b>EvaluateXPathConstraint</b> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.PrefixConstraint</a></div>
     </div>
     <div class="Remarks" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs">
       <h2 class="Section">Remarks</h2>
@@ -220,12 +220,12 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:Org.XmlUnit.Constraints.EvaluateXPathConstraint:Docs:Version Information">
-        <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+        <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.Constraint</a>.
+								<a href="javascript:alert(&quot;Documentation not found.&quot;)">NUnit.Framework.Constraints.PrefixConstraint</a>.
 							</p>
         <h2 class="Section">Public Constructors</h2>
         <div class="SectionBox" id="Public Constructors">
@@ -293,6 +293,24 @@
             </table>
           </div>
         </div>
+        <h2 class="Section">Protected Methods</h2>
+        <div class="SectionBox" id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation()">GetStringRepresentation</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+            Returns the string representation of the constraint.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
         <h2 class="Section">Extension Methods</h2>
         <div class="SectionBox" id="Extension Methods">
           <div class="SubsectionBox">
@@ -344,7 +362,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:Org.XmlUnit.Constraints.EvaluateXPathConstraint(System.String,NUnit.Framework.Constraints.IConstraint):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.ApplyTo``1(``0)">ApplyTo&lt;TActual&gt; Generic Method</h3>
@@ -386,7 +404,27 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.ApplyTo``1(``0):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation()">GetStringRepresentation Method</h3>
+        <blockquote id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation():member">
+          <div class="msummary">
+            Returns the string representation of the constraint.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetStringRepresentation</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.GetStringRepresentation():Version Information">
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint)">HasXPath Method</h3>
@@ -426,7 +464,7 @@
               </pre></td></tr></table></div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.HasXPath(System.String,NUnit.Framework.Constraints.IConstraint):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
           <hr size="1" />
         </blockquote>
         <h3 id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String})">WithNamespaceContext Method</h3>
@@ -458,7 +496,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Org.XmlUnit.Constraints.EvaluateXPathConstraint.WithNamespaceContext(System.Collections.Generic.IDictionary{System.String,System.String}):Version Information">
-            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit3-constraints (in xmlunit-nunit3-constraints.dll)<br /><b>Assembly Versions: </b>2.10.0.241</div>
+            <b>Namespace: </b>Org.XmlUnit.Constraints<br /><b>Assembly: </b>xmlunit-nunit4-constraints (in xmlunit-nunit4-constraints.dll)<br /><b>Assembly Versions: </b>2.11.0.283</div>
           <hr size="1" />
         </blockquote>
       </div>
